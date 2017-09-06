@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Arial", sans-serif;
+  src: url(fonts/ArialRegular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial", sans-serif;
+  src: url(fonts/ArialBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calibri", sans-serif;
+  src: url(fonts/Calibrib.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+.container {
+  max-width: 1300px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.clrfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 270px;
+  background-image: url(img/bg-head.png);
+  background-size: cover;
+}
+footer:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25px;
+  -webkit-box-shadow: inset 0 -3px 3px rgba(92, 92, 92, 0.5);
+          box-shadow: inset 0 -3px 3px rgba(92, 92, 92, 0.5);
+  background-color: #8d8d8d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.4;
+}
+footer .f-logo-menu {
+  display: inline-block;
+  width: 32%;
+}
+footer .f-logo {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+footer .f-logo img {
+  width: 100%;
+  height: auto;
+}
+footer .f-menu {
+  width: 50%;
+  display: inline-block;
+}
+footer .f-menu ul {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+footer .f-menu li {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #f29339;
+  padding-bottom: 5px;
+}
+footer .f-menu li:last-child {
+  border: none;
+}
+footer .f-menu a {
+  text-decoration: none;
+  font-size: 0.938em;
+  color: #ffffff;
+  font-family: "Calibri";
+  font-weight: 700;
+}
+footer .f-menu a:before {
+  content: url(img/arr-right.png);
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .f-contact {
+  width: 25%;
+  float: right;
+  top: 0;
+  right: 0;
+}
+footer .f-contact .time {
+  margin-top: 50px;
+}
+footer .f-contact p {
+  color: #ffffff;
+  font-family: "Calibri";
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+footer .f-contact .number {
+  margin-top: 10px;
+}
+footer .f-contact .number .st {
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Calibri";
+  font-size: 0.938em;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.content-menu .row-content {
+  margin-top: 50px;
+  font-size: 0;
+}
+.content-menu .row-content:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px dotted #ed7d11;
+  margin-top: 20px;
+}
+.content-menu .menu {
+  display: inline-block;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px 0 10px;
+}
+.content-menu .menu ul {
+  border-radius: 10px;
+  border: 2px solid #eb7c10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.content-menu .menu ul li {
+  border-bottom: 2px dotted #c1c1c1;
+}
+.content-menu .menu ul li:hover {
+  border-bottom: 2px dotted #faa755;
+}
+.content-menu .menu ul li:last-child {
+  border: none;
+}
+.content-menu .menu ul li a {
+  text-decoration: none;
+  color: #494949;
+  font-family: "Calibri";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 15px;
+}
+.content-menu .menu ul li a:after {
+  content: url(img/arr-menu.png);
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+}
+.content-menu .cont-text {
+  display: inline-block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  vertical-align: top;
+}
+.content-menu .cont-text h1 {
+  color: #494949;
+  font-family: "Arial";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.content-menu .cont-text p {
+  color: #494949;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.content-menu .cont-text span {
+  font-weight: 700;
+}
+.content-menu .cont-photo {
+  display: inline-block;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+  padding: 0 40px 10px 40px;
+}
+.content-menu .cont-photo .photo {
+  background-image: url(img/rve.png);
+  border: 2px solid #eb7c11;
+  width: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-menu .cont-photo h2 {
+  color: #323232;
+  font-family: "Arial";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
