@@ -72,7 +72,9 @@
 					школы, Профессор, Доктор медицинских наук Радзинский Виктор Евсеевич.</p>
 				</div>
 				<div class="cont-photo">
-					<div class="photo"></div>
+					<div class="photo"></div
+
+					>
 					<h2>Радзинский  Виктор Евсеевич</h2>
 				</div>
 			</div>
@@ -227,11 +229,16 @@
 		
 	</div>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script>
-	$('.sl').slick();
+	$(document).ready(function(){
+		$('.sl').slick({
+		  infinite: true,
+		  slidesToShow: 5,
+		  slidesToScroll: 1
+});
+		});
 </script>
 </body>
 </html>

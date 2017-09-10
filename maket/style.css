@@ -224,11 +224,17 @@ footer .f-contact .number .st {
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
-  margin: 0 auto;
-  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.cont-direction .sl {
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
 .cont-direction .sl .slayd {
-  display: block;
+  display: inline-block;
+  width: 20%;
+  border-size: border-box;
   font-size: 15px;
   border: 2px solid #e3740e;
   margin-right: 15px;
@@ -261,24 +267,6 @@ footer .f-contact .number .st {
   line-height: 26px;
   float: right;
   margin-right: 10px;
-}
-.cont-direction .sl .dir-carousel .owl-next {
-  width: 47px;
-  height: 47px;
-  border-radius: 2px;
-  background-color: #e88f3d;
-  position: absolute;
-  top: -68px;
-  right: 0;
-}
-.cont-direction .sl .dir-carousel .owl-prev {
-  width: 47px;
-  height: 47px;
-  border-radius: 2px;
-  background-color: #e88f3d;
-  position: absolute;
-  top: -68px;
-  left: 0;
 }
 
 .interview-content {
