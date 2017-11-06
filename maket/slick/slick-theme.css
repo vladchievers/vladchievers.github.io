@@ -23,10 +23,10 @@
     line-height: 0;
 
     position: absolute;
-    top: 0;
-
+    top: -10px;
+    background-image: url(img/arr-l-owl.png);
     display: block;
-
+    
     width: 20px;
     height: 20px;
     padding: 0;
@@ -111,7 +111,8 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(img/arr-l-owl.png);
+    display: block;
 }
 [dir='rtl'] .slick-next:before
 {
