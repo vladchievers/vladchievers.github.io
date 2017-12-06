@@ -300,9 +300,9 @@ header {
     opacity: 0.9;
     color: #ffffff;
     text-align: center; }
-  .comment p {
+  .comment .comment_text {
     text-align: center;
-    width: 770px;
+    width: 80%;
     opacity: 0.85;
     font-size: 1.143em;
     margin: 40px auto; }
