@@ -230,7 +230,15 @@
 	<script type="text/javascript">
 		 $('.single-item').slick({
       arrows: false,
-      dots: true
+      dots: true,
+      responsive: [
+      	{
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+    	}
+      }]
       
     });
 	</script>
