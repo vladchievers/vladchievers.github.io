@@ -16,7 +16,8 @@
 				<div class="header-top">
 					<div class="h-logo"><a href="#" class="logo-icon">tajam</a></div>
 					<nav>
-						<ul>
+						<ul class="menu" id="topnav">
+							<li id="icon_nav" class="icon"><a  href="#">&#9776;</a>
 							<li><a href="#">home</a></li>
 							<li><a href="#">about</a></li>
 							<li><a href="#">expertise</a></li>
@@ -37,7 +38,9 @@
 						</div>
 						<div class="item">
 							<h1>We Are Awesome Creative Agency</h1>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem<br>
+							<p>This is Photoshop's version   
+
+OUR Sof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem<br>
 							quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh<br> id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 							<button class="btn head-btn"><a  href="#">learn more</a></button>
 						</div>
@@ -106,22 +109,22 @@
 				<h2>MEET OUR AMAZING TEAM</h2>
 				<h3>Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
 				<div class="row">
-					<div class="item item2">
+					<div class="item ">
 						<div class="ph"></div>
 						<h4>SEMF UCUK</h4>
 						<p>CEO & FOUNDER</p>
 					</div>
-					<div class="item item2">
+					<div class="item ">
 						<div class="ph"></div>
 						<h4>DIK ADALIN</h4>
 						<p>ENGINEERING</p>
 					</div>
-					<div class="item item2">
+					<div class="item ">
 						<div class="ph"></div>
 						<h4>JENG KOL</h4>
 						<p>DESIGNER</p>
 					</div>
-					<div class="item item2">
+					<div class="item ">
 						<div class="ph"></div>
 						<h4>PET ROMAK</h4>
 						<p>MARKETING</p>
@@ -241,6 +244,16 @@
       }]
       
     });
+
+		 	icon_nav.onclick = function myfunction (){
+			var x = document.getElementById("topnav");
+
+			if(x.className === "menu"){
+				x.className+= " responsive";
+			}else{
+				x.className = "menu"
+			}
+		}
 	</script>
 </body>
 </html>

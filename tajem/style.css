@@ -110,10 +110,12 @@ header {
         text-transform: uppercase; }
         header nav li a:hover {
           color: #00e0d0; }
+    header nav .icon {
+      display: none;
+      font-size: 1.6em; }
   header .header-carousel {
     margin-top: 100px; }
     header .header-carousel .single-item {
-      padding: 30px;
       padding-bottom: 100px; }
       header .header-carousel .single-item .item {
         display: inline-block; }
@@ -451,16 +453,42 @@ footer {
       margin-right: 20px; }
 
 @media screen and (max-width: 768px) {
-  .our_team .container .row .item {
-    width: 48%;
-    margin: 1%; }
+  header nav li {
+    display: none; }
+  header nav .icon {
+    display: inline-block;
+    float: right;
+    margin-right: 20px; }
+  header nav .menu.responsive {
+    position: relative;
+    z-index: 500;
+    margin-top: 20px;
+    padding: 0 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-right: 20px; }
+  header nav .menu.responsive li {
+    display: block;
+    margin: 10px auto; }
+  header nav .menu.responsive li.icon {
+    position: absolute;
+    top: -30px;
+    right: 0; }
 
-  .for_clients .container .row .item_news {
+  .expertise .row .item {
+    width: 50%; }
+
+  .our_team .container .row .item {
+    width: 50%; }
+    .our_team .container .row .item:nth-child(1n+2) {
+      border-right: 1px solid rgba(0, 0, 15, 0.2); }
+
+  .for_clients .item_news {
     width: 80%;
     margin-bottom: 30px;
     text-align: center; }
-    .for_clients .container .row .item_news .item-form {
-      margin: 0 auto; }
+    .for_clients .item_news .item-form {
+      text-align: center; }
 
   .for_clients .container .row .item_clients {
     width: 100%;
@@ -475,22 +503,22 @@ footer {
       width: 100%;
       margin: 0 auto; } }
 @media screen and (max-width: 320px) {
-  .our_team .container .row .item {
+  .our_team .item {
     width: 98%;
     margin: 1%; }
 
-  .for_clients .container .row .item_news {
+  .for_clients .item_news {
     width: 100%;
     margin-bottom: 30px;
     text-align: center; }
-    .for_clients .container .row .item_news .item-form {
+    .for_clients .item_news .item-form {
       margin: 0 auto; }
 
-  .for_clients .container .row .item_clients {
+  .for_clients .item_clients {
     width: 100%;
     text-align: center; }
 
-  footer .bg-grad .container .row .item {
+  footer .item {
     width: 100%;
     display: block;
     text-align: center;
