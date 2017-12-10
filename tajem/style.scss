@@ -549,6 +549,26 @@ footer{
 		}
 }
 
+.slick-dots{
+	li button{
+		border: 2px  solid white;
+		border-radius: 50%;
+		padding: 3px;
+		width: 5px;
+		height: 5px;
+			&:before{
+				content: '';
+			}
+	}
+	.slick-active button{
+		background: #00e0d0;
+		opacity: 1;
+	}
+
+	
+
+}
+
 @media screen and(max-width: 768px){
 	header{
 		nav{
@@ -562,17 +582,18 @@ footer{
 			
 			}
 			.menu.responsive{
-				position: relative;
+				position: absolute	;
 				z-index: 500;
-				margin-top: 20px;
+				margin-top: 24px;
 				padding: 0 30px;
-				background: rgba(0,0,0, 0.5);
+				background: rgba(0,0,0, 0.8);
 				border-radius: 5px;
-				margin-right: 20px;
+				right: 20px;
 			}
 			.menu.responsive li{
 				display: block;
 				margin: 10px auto;
+
 			}
 			.menu.responsive li.icon{
 				position: absolute;
@@ -581,32 +602,36 @@ footer{
 			}
 		}
 	}
-	.expertise .row{
+	.expertise .container .row{
 		.item{
 			width: 50%;
+			border: none;
 		}
 	}
-	.our_team .container .row{
+	.our_team .bg-grad .container .row{
 			.item{
-			width: 50%;
-				&:nth-child(1n+2){
-					border-right: 1px solid rgba(0,0,15, 0.2);
-				}
+			width: 49%;
+			margin-right: 2%;
+			margin-bottom: 10px;
+				&:nth-child(2n+2){
+				margin: 0;
 			}
+			}
+			
 	}
-	.for_clients{
+	.for_clients .container .row{
 		.item_news{
+		display	: block;
 		width: 80%;
-		margin-bottom: 30px;
 		text-align: center;
-			.item-form{
-				text-align: center;
-			}
+		margin: 0 auto;
 		}
-	}
-	.for_clients .container .row .item_clients{
+		.item_clients{
+		margin-top: 20px;
 		width: 100%;
 		text-align: center;
+	}
+
 	}
 	footer .bg-grad .container .row .item{
 		width: 50%;
@@ -619,35 +644,58 @@ footer{
 			}
 	}
 }
+
 @media screen and(max-width: 320px){
-	.our_team{
-			.item{
-			width: 98%;
-			margin: 1%;
+	.expertise .container .row{
+		.item{
+			width: 90%;
+			border: none;
+			margin: 0 auto;
+			display: block;
 		}
 	}
-	.for_clients	{
-		.item_news{
-		width: 100%;
-		margin-bottom: 30px;
+	.our_team .bg-grad .container .row{
+			.item{
+			display: block;
+			width: 90%;
+			margin: 10px auto !important;
+			
+			}
+	}
+	.our_works .container {
 		text-align: center;
-			.item-form{
+			.all{
+				float: none;
+				margin-top: 5px;
+			}
+	}
+	footer .bg-grad .container .row{
+		.item{
+				width: 90%;
+				display: block;
+				text-align: center;
 				margin: 0 auto;
 			}
-		}
 	}
-	.for_clients{
-		.item_clients{
-		width: 100%;
-		text-align: center;
-		}
-	}
-	footer{
-		 .item{
-		width: 100%;
-		display: block;
-		text-align: center;
-		margin: 0;
-		}
-	}
+	footer .container .footer_copy{
+				ul{
+					display: block;
+					width: 90%;
+					margin: 0 auto;
+						li{
+							margin-right: 10px;
+								&:last-child{
+									margin: 0;
+								}
+						}
+				}
+				.copy{
+					display: block;
+					float: none;
+					margin: 20px 0 0 0;
+					text-align: center;
+
+				}
+
+			}
 }
