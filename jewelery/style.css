@@ -192,9 +192,9 @@ header {
     background: transparent;
     cursor: pointer; }
   .slider .next {
-    right: -10%; }
+    right: -5%; }
   .slider .prev {
-    left: -10%; }
+    left: -5%; }
 
 .why_we .choose_we {
   display: -webkit-box;
