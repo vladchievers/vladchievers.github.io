@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Расчески - TREND</title>
+    <meta name="keywords" content="Расчески, ">
+	<meta name="description" content="Расчески. ">
+
+    <meta name="geo.placename" content="Ukraine, Odessa">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+
+    <link rel="stylesheet" href="/template/www/css/sprite.css?v1.1">
+    <link rel="stylesheet" href="/template/mobile/css/style.css?1514283956">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header class="top-catalog">
+            <a href="/?main=trend" class="active">TREND</a>
+            <a href="/?main=deco" class="">DECO</a>
+	</header>
+	<header id="top-menu" style="top: 50px;">
+	    <a onclick="openMenu();"><i class="fa fa-bars"></i></a>
+	    <a href="tel:+380 98 228 77 88" class="phone"><i class="fa fa-phone"></i></a>
+	    <a href="/profile/"><i class="fa fa-user"></i></a>
+	    <a href="/favorites/" class="heart"><i class="fa fa-heart"></i><span style="margin-left:5px;" class="js-favorites-count">0</span></a>
+	    <a href="/order/"><i class="fa fa-shopping-bag"></i><span style="margin-left:5px;" class="js-order_item_count">0</span></a>
+	</header>
+	<aside id="side-menu" style="width: 0px;">
+    <div class="side-menu">
+
+        <div class="catalog">
+            <input id="radio_catalog_trend" onchange="toggleList(this);" type="radio" name="catalog" value="trend" checked="">
+            <label for="radio_catalog_trend" class="btn">TREND</label>
+            <input id="radio_catalog_deco" onchange="toggleList(this);" type="radio" name="catalog" value="deco">
+            <label for="radio_catalog_deco" class="btn">DECO</label>
+        </div>
+
+
+        <a class="search" href="/catalog/search/"><i class="fa fa-search"></i>Поиск</a>
+
+        <ul class="menu">
+            <li><a href="/catalog/new/">Новинка</a></li>
+        </ul>
+        <ul class="menu" rel="site_trigger" id="hm_list_trend">
+            <li>
+                <a href="/catalog/aksessuary/76/">Аксессуары</a>
+                <i class="fa fa-angle-down" ontouchstart="toggleList(this);" id="am_toggle_child_76"></i>
+                <ul class="sub-menu" id="am_child_list_76" style="height: auto;">
+                    <li><a href="/catalog/rascheski/103/">Расчески</a></li>
+                    <li><a href="/catalog/chasy/100/">Часы</a></li>
+                    <li><a href="/catalog/koshel-ki/101/">Кошельки</a></li>
+                    <li><a href="/catalog/perevodnye-tatu/102/">Переводные тату</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/bizhuteriya/72/">Бижутерия</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_72"></i>
+                <ul class="sub-menu" id="am_child_list_72" style="height: 0px;">
+                    <li><a href="/catalog/brendovye-braslety/84/">Брендовые браслеты</a></li>
+                    <li><a href="/catalog/braslety/85/">Браслеты</a></li>
+                    <li><a href="/catalog/broshi/86/">Броши</a></li>
+                    <li><a href="/catalog/ukrasheniya-na-golovu/87/">Украшения на голову</a></li>
+                    <li><a href="/catalog/chokery/82/">Чокеры</a></li>
+                    <li><a href="/catalog/ser-gi/83/">Серьги</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/zakolki/73/">Заколки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_73"></i>
+                <ul class="sub-menu" id="am_child_list_73" style="height: 0px;">
+                    <li><a href="/catalog/zakolki/88/">Заколки</a></li>
+                    <li><a href="/catalog/obruchi/89/">Обручи</a></li>
+                    <li><a href="/catalog/rezinki/90/">Резинки</a></li>
+                    <li><a href="/catalog/banty/91/">Банты </a></li>
+                   <li><a href="/catalog/kraby/92/">Крабы</a></li>
+                    <li><a href="/catalog/shpil-ki/93/">Шпильки</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/sumki/74/">Сумки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_74"></i>
+                <ul class="sub-menu" id="am_child_list_74" style="height: 0px;">
+                    <li><a href="/catalog/sumki/94/">Сумки</a></li>
+                    <li><a href="/catalog/ryukzaki/95/">Рюкзаки</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu" rel="site_trigger" id="hm_list_deco" style="height:0px;">
+            <li>
+                <a href="/catalog/dekor/77/">Декор</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_77"></i>
+                <ul class="sub-menu" id="am_child_list_77" style="height: 0px;">
+                    <li><a href="/catalog/svechi/104/">Свечи</a></li>
+                    <li><a href="/catalog/butaforiya/105/">Бутафория</a></li>
+                    <li><a href="/catalog/svadebnyy/106/">Свадебный</a></li>
+                    <li><a href="/catalog/pesok/107/">Песок</a></li>
+                    <li><a href="/catalog/nakleyki/108/">Наклейки</a></li>
+                    <li><a href="/catalog/kashpo/109/">Кашпо</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/hand-made/78/">Hand made</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_78"></i>
+                <ul class="sub-menu" id="am_child_list_78" style="height: 0px;">
+                    <li><a href="/catalog/skrabbuking/110/">Скраббукинг</a></li>
+                    <li><a href="/catalog/cvetnaya-bumaga/111/">Цветная бумага</a></li>
+                    <li><a href="/catalog/bukvy/112/">Буквы</a></li>
+                    <li><a href="/catalog/dekupazh/113/">Декупаж</a></li>
+                    <li><a href="/catalog/biser/114/">Бисер</a></li>
+                    <li><a href="/catalog/dlya-raboty/115/">Для работы</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/furnitura/79/">Фурнитура</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_79"></i>
+                <ul class="sub-menu" id="am_child_list_79" style="height: 0px;">
+                    <li><a href="/catalog/lenta/116/">Лента</a></li>
+                    <li><a href="/catalog/lepestki/117/">Лепестки</a></li>
+                    <li><a href="/catalog/kruzheva/118/">Кружева</a></li>
+                    <li><a href="/catalog/per-ya/119/">Перья</a></li>
+                    <li><a href="/catalog/banty/120/">Банты</a></li>
+                    <li><a href="/catalog/klievye-kamni/121/">Клиевые камни</a></li>
+                    <li><a href="/catalog/zhemchug/122/">Жемчуг</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/upakovka/80/">Упаковка</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_80"></i>
+                <ul class="sub-menu" id="am_child_list_80" style="height: 0px;">
+                    <li><a href="/catalog/korobki/123/">Коробки</a></li>
+                    <li><a href="/catalog/napolnitel-/124/">Наполнитель</a></li>
+                    <li><a href="/catalog/gifki/125/">Гифки</a></li>
+                    <li><a href="/catalog/bumaga/126/">Бумага</a></li>
+                    <li><a href="/catalog/teyp-lenta/127/">Тейп-лента</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/podarki/81/">Подарки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_81"></i>
+                <ul class="sub-menu" id="am_child_list_81" style="height: 0px;">
+                    <li><a href="/catalog/otkrytki/128/">Открытки</a></li>
+                    <li><a href="/catalog/fotobutaforiya/129/">Фотобутафория</a></li>
+                    <li><a href="/catalog/fotoramki/130/">Фоторамки</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li><a href="/catalog/sale/" class="sale">SALE</a></li>
+            <li><a href="/story/">IN TREND</a></li>
+            <li><a href="/blog/">Блог</a></li>
+        </ul>
+    </div>
+    <div class="close-menu" onclick="closeMenu();"></div>
+	</aside>
+     <header class="top-header">
+        <ul class="top-menu">
+            <li><a href="#">БИЖУТЕРИЯ</a></li>
+            <li><a href="#">ЗАКОЛКИ</a></li>
+            <li><a href="#">СУМКИ</a></li>
+            <li><a href="#">АКСЕССУАРЫ</a></li>
+            <li><a class="red" href="#">SALE</a></li>
+            <li><a href="#">IN TREND</a></li>
+            <li><a href="#">БЛОГ</a></li>
+        </ul>
+    </header>
+    <section class="blog">
+        <div class="header-blog">
+            <ul class="header-blog-menu">
+                <li><a href="#" class="active">Все</a></li>
+                <li><a href="#" >Тренд</a></li>
+                <li><a href="#" >Деко</a></li>
+                <li><a href="#" >Обучение</a></li>
+                <li><a href="#" >Видео обзоры</a></li>
+                <li><a href="#" >Новинки моды</a></li>
+                <li><a href="#" >Тренды сезона</a></li>
+            </ul>
+        </div>
+        <div class="items-blog">
+            <div class="item">
+                <a href="blog-inTrend.html">
+                    <img src="http://trend.com.ua/library/blog/14gf/az24/dcsd/53_zq89975se48073sd.jpg" alt="">
+                </a>
+                <a href="blog-inTrend.html" class="blog-title">THE LIGHT OF OR LIFE</a>
+                <a href="#" class="item-btn">Новинки моды</a>
+                <a href="#" class="item-btn">Тренды сезона</a>
+            </div>
+            <div class="item">
+                <a href="blog-inTrend.html">
+                    <img src="http://trend.com.ua/library/blog/azgf/sduh/seuh/63_gf20093az94729az.jpg" alt="">
+                </a>
+                <a href="blog-inTrend.html" class="blog-title">ЛЕГКОЕ РЕШЕНИЕ ЕЖЕДНЕВНЫХ</a>
+                <a href="#" class="item-btn">Тренд</a>
+            </div>
+            <div class="item">
+                <a href="blog-inTrend.html">
+                    <img src="http://trend.com.ua/library/blog/14gf/az24/dcsd/53_zq89975se48073sd.jpg" alt="">
+                </a>
+                <a href="blog-inTrend.html" class="blog-title">THE LIGHT OF OR LIFE</a>
+                <a href="#" class="item-btn">Новинки моды</a>
+            </div>
+        </div>
+    </section>
+
+
+
+     <footer class="footer-main">
+        <ul class="footer-contacts">
+            <li><a href="/page/o-nas/106/"><span class="icon icon-about"></span>О нас</a></li>
+            <li><a href="/story/"><span class="icon icon-trend"></span>В тренде</a></li>
+            <li><a href="/page/dostavka-i-oplata/107/"><span class="icon icon-delivery"></span>Доставка и оплата</a></li>
+            <li><a href="/blog/"><span class="icon icon-blog"></span>Полезный блог</a></li>
+            <li><a href="/reviews/"><span class="icon icon-testimonials"></span>Отзывы</a></li>
+            <li><a href="/page/kontakty/111/"><span class="icon icon-contacts"></span>Контакты</a></li>
+                
+        </ul>
+
+        <p class="phone">+380 98 228 77 88</p>
+
+        <div class="footer-menu clear">
+            <ul class="menu">
+                <li>
+                   <a href="/?main=trend" class="top">TREND</a>
+                    <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_9"></i>
+                    <ul class="sub-menu" id="fm_child_list_9" style="height: 0px;">
+                        <li>
+                            <a href="/catalog/aksessuary/76/">Аксессуары</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_76"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_76" style="height: 0px;">
+                                <li><a href="/catalog/rascheski/103/">Расчески</a></li>
+                                <li><a href="/catalog/chasy/100/">Часы</a></li>
+                                <li><a href="/catalog/koshel-ki/101/">Кошельки</a></li>
+                                <li><a href="/catalog/perevodnye-tatu/102/">Переводные тату</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/bizhuteriya/72/">Бижутерия</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_72"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_72" style="height: 0px;">
+                                <li><a href="/catalog/brendovye-braslety/84/">Брендовые браслеты</a></li>
+                                <li><a href="/catalog/braslety/85/">Браслеты</a></li>
+                                <li><a href="/catalog/broshi/86/">Броши</a></li>
+                                <li><a href="/catalog/ukrasheniya-na-golovu/87/">Украшения на голову</a></li>
+                                <li><a href="/catalog/chokery/82/">Чокеры</a></li>
+                                <li><a href="/catalog/ser-gi/83/">Серьги</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/zakolki/73/">Заколки</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_73"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_73" style="height: 0px;">
+                                <li><a href="/catalog/zakolki/88/">Заколки</a></li>
+                                <li><a href="/catalog/obruchi/89/">Обручи</a></li>
+                                <li><a href="/catalog/rezinki/90/">Резинки</a></li>
+                                <li><a href="/catalog/banty/91/">Банты</a></li>
+                                <li><a href="/catalog/kraby/92/">Крабы</a></li>
+                                <li><a href="/catalog/shpil-ki/93/">Шпильки</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/sumki/74/">Сумки</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_74"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_74" style="height: 0px;">
+                                <li><a href="/catalog/sumki/94/">Сумки</a></li>
+                                <li><a href="/catalog/ryukzaki/95/">Рюкзаки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li>
+                   <a href="/?main=deco" class="top">DECO</a>
+                    <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_71"></i>
+                    <ul class="sub-menu" id="fm_child_list_71" style="height: 0px;">
+                        <li>
+                            <a href="/catalog/dekor/77/">Декор</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_77"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_77" style="height: 0px;">
+                                <li><a href="/catalog/svechi/104/">Свечи</a></li>
+                                <li><a href="/catalog/butaforiya/105/">Бутафория</a></li>
+                                <li><a href="/catalog/svadebnyy/106/">Свадебный</a></li>
+                                <li><a href="/catalog/pesok/107/">Песок</a></li>
+                                <li><a href="/catalog/nakleyki/108/">Наклейки</a></li>
+                                <li><a href="/catalog/kashpo/109/">Кашпо</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/hand-made/78/">Hand made</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_78"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_78" style="height: 0px;">
+                                <li><a href="/catalog/skrabbuking/110/">Скраббукинг</a></li>
+                                <li><a href="/catalog/cvetnaya-bumaga/111/">Цветная бумага</a></li>
+                                <li><a href="/catalog/bukvy/112/">Буквы</a></li>
+                                <li><a href="/catalog/dekupazh/113/">Декупаж</a></li>
+                                <li><a href="/catalog/biser/114/">Бисер</a></li>
+                                <li><a href="/catalog/dlya-raboty/115/">Для работы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/furnitura/79/">Фурнитура</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_79"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_79" style="height: 0px;">
+                                <li><a href="/catalog/lenta/116/">Лента</a></li>
+                                <li><a href="/catalog/lepestki/117/">Лепестки</a></li>
+                                <li><a href="/catalog/kruzheva/118/">Кружева</a></li>
+                                <li><a href="/catalog/per-ya/119/">Перья</a></li>
+                                <li><a href="/catalog/banty/120/">Банты</a></li>
+                                <li><a href="/catalog/klievye-kamni/121/">Клиевые камни</a></li>
+                                <li><a href="/catalog/zhemchug/122/">Жемчуг</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/upakovka/80/">Упаковка</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_80"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_80" style="height: 0px;">
+                                <li><a href="/catalog/korobki/123/">Коробки</a></li>
+                                <li><a href="/catalog/napolnitel-/124/">Наполнитель</a></li>
+                                <li><a href="/catalog/gifki/125/">Гифки</a></li>
+                                <li><a href="/catalog/bumaga/126/">Бумага</a></li>
+                                <li><a href="/catalog/teyp-lenta/127/">Тейп-лента</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/podarki/81/">Подарки</a>
+                            <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="fm_toggle_child_81"></i>
+                            <ul class="sub-sub-menu" id="fm_child_list_81" style="height: 0px;">
+                                <li><a href="/catalog/otkrytki/128/">Открытки</a></li>
+                                <li><a href="/catalog/fotobutaforiya/129/">Фотобутафория</a></li>
+                                <li><a href="/catalog/fotoramki/130/">Фоторамки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <p>Присоединяйся, будь в тренде!</p>
+
+        <ul class="social">
+            <li><a class="icon icon-fb" href="#"></a></li>
+            <li><a class="icon icon-vk" href="#"></a></li>
+            <li><a class="icon icon-p" href="#"></a></li>
+            <li><a class="icon icon-youtube" href="#"></a></li>
+            <li><a class="icon icon-inst" href="#"></a></li>
+        </ul>
+        <ul class="user-agreement">
+            <li><a href="/page/pol-zovatel-skoe-soglashenie/108/">Пользовательское соглашение</a></li>
+            <li><a href="/page/politika-konfidencial-nosti/120/">Политика конфиденциальности</a></li>
+            <li><a href="/page/usloviya-ispol-zovaniya/119/">Условия использования</a></li>
+            <li><a href="/page/vozvrat-tovara/109/">Возврат товара</a></li>
+            <li><a href="/page/chasto-zadavaemye-voprosy/110/">Часто задаваемые вопросы</a></li>
+        </ul>
+    </footer>
+    <footer class="copyrights">2017 Copyright trend.ua<br>Created by <a href="http://www.groupkb.com/">groupkb</a>
+    </footer>
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script async="" src="main.js"></script>
+</body>
+</html>
