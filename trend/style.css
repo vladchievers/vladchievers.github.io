@@ -914,6 +914,26 @@ textarea{
 }
 
 /************************buy-trend carousel  END***********************/
+
+/************************Header tab ***********************/
+.top-header{
+    background-color: #f8f6f7;
+    display: none;
+    font-style: uppercase;
+}
+.top-menu{
+    text-align: center;
+}
+.top-menu li{
+    display: inline-block;
+    padding: 10px;
+}
+.top-menu li .red{
+    color: #b13024;
+    
+}
+/************************Header tab  END***********************/
+
 /*order - start*/
 
 .main-order{
@@ -1177,32 +1197,19 @@ textarea{
     text-align: center;
 }
 .our-trend img{
-    border: 1px solid #8d9192;
-    max-width: 280px;
-    max-height: 150px;
+    max-width: 95%;
+    margin-bottom: 
 }
 .our-trend p{
     text-align: left;
     font-size: 14px;
 }
-
-.top-header{
-    background-color: #f8f6f7;
-    display: none;
-    font-style: uppercase;
+.trend-content{
+    margin: 20px 0;
 }
-.top-menu{
-    text-align: center;
+.trend-content p{
+    margin-top: 20px; 
 }
-.top-menu li{
-    display: inline-block;
-    padding: 10px;
-}
-.top-menu li .red{
-    color: #b13024;
-    
-}
-
 /*inTrend-end*/
 
 /*blog-start*/
@@ -1328,6 +1335,65 @@ textarea{
 .accessories-block:last-child img{
     width: 320px;
     height: 200px;
+}
+
+/*accessories - END*/
+
+/*catalog-accessories - start*/
+.catalog-header{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+.catalog-header .title-btn{
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-style: uppercase; 
+    font-weight: 400;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.catalog-header .title-btn .fas{
+    float: left;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    display: inline-block;
+}
+.catalog-header header{
+    margin: 20px 0;
+}
+.catalog-filter{
+    background-color: #f8f6f7;
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+.catalog-filter .fas{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px; 
+}
+.catalog-filter .filter-btn{
+    display: inline-block;
+    margin-left: 10px;
+}
+.catalog-filter .sort-btn{
+    display: inline-block;
+    float: right;
+}
+.filter-btn .fas{
+    margin-right: 10px; 
+}
+.filter-btn span{
+    color: #fc707a;
+    margin-left: 5px;
+}
+.sort-btn .fas{
+    margin-left: 10px;
 }
 @media (min-width: 768px){
         .main-order .order, .delivery, .gray , .pay{
