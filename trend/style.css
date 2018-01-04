@@ -896,7 +896,7 @@ textarea{
     right: 10px;
     color: #b6b9b9;
 }
-.my-carousel .fa.active-heart{
+.item .fa.active-heart{
     color: #FF8181;
 }
 .price{
@@ -1197,18 +1197,14 @@ textarea{
     text-align: center;
 }
 .our-trend img{
-    max-width: 95%;
-    margin-bottom: 
+    max-width: 100%;
 }
 .our-trend p{
     text-align: left;
     font-size: 14px;
 }
 .trend-content{
-    margin: 20px 0;
-}
-.trend-content p{
-    margin-top: 20px; 
+    margin: 40px 0;
 }
 /*inTrend-end*/
 
@@ -1394,6 +1390,50 @@ textarea{
 }
 .sort-btn .fas{
     margin-left: 10px;
+}
+.items .item{
+    font-size: 14px;
+    width: 46%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 2%;
+}
+}
+.items .item img{
+    width: 100%;
+    max-width: 140px;
+    max-height: 140px;
+    margin: 0 auto;
+}
+.buy-trend .item p{
+    margin-top: 10px;
+}
+.my-carousel{
+    overflow: hidden;
+}
+.my-carousel .fa{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #b6b9b9;
+}
+.item .fa.active-heart{
+    color: #FF8181;
+}
+.price{
+    color: black;
+    font-size: 1.2em;
+}
+.red{
+    color: #b84435;
+}
+.red span{
+    color:#8d9192;
+    font-size: 0.85em;
+    text-decoration: line-through;
+    margin-right: 10px;
 }
 @media (min-width: 768px){
         .main-order .order, .delivery, .gray , .pay{
