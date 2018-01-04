@@ -1204,6 +1204,7 @@ textarea{
 }
 .trend-content{
     margin: 40px 0;
+    text-align: left;
 }
 /*inTrend-end*/
 
@@ -1390,7 +1391,11 @@ textarea{
 .sort-btn .fas{
     margin-left: 10px;
 }
-.items .item{
+.catalog-items{
+    font-size: 0;
+    padding: 5px;
+}
+.catalog-items .item{
     font-size: 14px;
     width: 46%;
     box-sizing: border-box;
@@ -1398,21 +1403,32 @@ textarea{
     text-align: center;
     position: relative;
     margin: 2%;
+    vertical-align: top;
 }
+.catalog-items .item a{
+    display: block;
 }
-.items .item img{
-    width: 100%;
-    max-width: 140px;
-    max-height: 140px;
-    margin: 0 auto;
+.catalog-items .item span{
+    padding-top: 100%;
+    text-align: center; 
+    position: relative;
+    display: block;
+    
 }
-.buy-trend .item p{
+.catalog-items .item img{
+    max-width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:  auto;
+    max-height: 100%;
+}
+.catalog-items .item p{
     margin-top: 10px;
 }
-.my-carousel{
-    overflow: hidden;
-}
-.my-carousel .fa{
+.catalog-items .fa{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1513,6 +1529,12 @@ textarea{
         }
         .accessories-block:nth-child(3) img{
             height: 420px;
+        }
+        .catalog-items{
+            padding: 10px 40px;
+        }
+        .catalog-items .item{
+            width: 29.33333333%;
         }
 }
 @media (max-width: 768px){
