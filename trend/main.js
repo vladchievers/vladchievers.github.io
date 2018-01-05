@@ -59,6 +59,20 @@ function toggleList(that){
 
 }
 
+var blocks = document.querySelectorAll('.view-description');
+var list = document.querySelectorAll('.list');
+var fas = document.querySelectorAll('.view-description i')
+
+for (var i = 0; i < blocks.length; i++) {
+    blocks[i].addEventListener('click' , function(){
+        for (var i = 0; i < list.length; i++) {
+                
+        list[i].classList.toggle('block');
+        }
+    })
+}
+
+
 var heart = document.querySelectorAll('.heart');
 
 
@@ -130,6 +144,9 @@ var heart = document.querySelectorAll('.heart');
                 ]
 
                 
+            });
+            $('.view-carousel').slick({
+                dots: true
             });
             
        });
