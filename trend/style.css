@@ -796,6 +796,7 @@ textarea{
     width: 100%;
     max-width: 180px;
     max-height: 220px;
+    margin: 0 auto;
 }
 .carousel-block .item .title-item{
     font-size: 16px;
@@ -933,6 +934,27 @@ textarea{
 }
 /************************Header tab  END***********************/
 
+/************************pages***********************/
+.pages{
+    text-align: center;
+    margin: 30px 0;
+}
+.pages .list-pages{
+    
+    display: inline-block;
+}
+.pages .list-pages li{
+    border: 1px solid #fc707a;
+    margin: 5px;
+    display: inline-block;
+}
+.pages .list-pages a{
+    color: #fc707a;
+    padding: 10px 15px;
+    display: block;
+}
+
+/************************pages  END***********************/
 /*order - start*/
 
 .main-order{
@@ -1188,7 +1210,7 @@ textarea{
      vertical-align: middle;  
 }
 
-/*story-end*/
+/*story-end*/  
 
 /*inTrend - start*/
 .our-trend{
@@ -1212,8 +1234,7 @@ textarea{
 
 .blog{
     width: 95%;
-    margin: 0 auto;
-
+    margin: 0 auto; 
 }
 .header-blog{
     padding: 30px 0;
@@ -1282,8 +1303,7 @@ textarea{
     text-align: center;
 }
 .blog-inTrend__block img{
-    width: 95%;
-    max-width: 
+    width: 100%;
     min-width: 280px;
 }
 .blog-inTrend__block p{
@@ -1291,6 +1311,9 @@ textarea{
 }
 .blog-active{
     color: red;
+}
+.blog-content{
+    margin: 40px 0;
 }
 /*blog-inTrend - End*/
 
