@@ -872,18 +872,30 @@ textarea{
 }
 .buy-trend .item{
     font-size: 14px;
-    width: 46%;
+    width: 140px;
     box-sizing: border-box;
     display: inline-block;
-    text-align: center;
+    margin: 0 auto;
     position: relative;
     outline: none;
+    margin: 5px;
 }
+.my-carousel .item a{
+    display: block;
+
+}
+.my-carousel .item span{
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 140px;
 }
 .my-carousel .item img{
-    width: 100%;
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
     margin: 0 auto;
 }
 .buy-trend .item p{
@@ -970,13 +982,18 @@ textarea{
     min-width: 300px;
     height: 300px;
     max-width: 550px;
-    
+    line-height: 300px;
     margin: 0 auto;
+    text-align: center;
     position: relative;
+    display: inline-block;
 }
 .view-carousel .item img{
-    width: 100%;
-    margin: 0 auto
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 .view-carousel .fa{
     position: absolute;
@@ -1274,17 +1291,19 @@ textarea{
 .header-blog-menu{
     margin: 0 auto;
     text-align: center;
+    font-size: 0;
 }
 .header-blog-menu li{
     display: inline-block;
     padding: 0 5px;
     border-right: 1px solid #1c2934;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 .header-blog-menu li:last-child{
     border: none;
 }
-.header-blog-menu .active{
+.header-blog-menu li.active a{
     color: #fc707a;
 }
 
@@ -1642,11 +1661,9 @@ textarea{
         .top-header{
             display: block;
         }
-        .my-carousel .item img{
-           width: 95%;
+        .my-carousel .item span{
             max-width: 200px;
             max-height: 200px;
-            margin: 0 auto;
         }
         .our-trend img{
             width: 100%;
@@ -1700,13 +1717,14 @@ textarea{
         }*/
         .view-carousel .item div{
             height: 550px;
+            line-height: 550px;
         }
 }
 @media (max-width: 768px){
-    .my-carousel .item img{
+    /*.my-carousel .item img{
         width: 100%;
         max-width: 140px;
          max-height: 140px;
         margin: 0 auto;
         }
-}
+}*/

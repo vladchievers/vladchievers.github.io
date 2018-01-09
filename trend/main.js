@@ -114,7 +114,7 @@ var heart = document.querySelectorAll('.heart');
                 ]
                 });
             $('.my-carousel').slick({
-                infinite: true,
+                infinite: false,
                 slidesToShow: 6,
                 responsive: [
                     {
