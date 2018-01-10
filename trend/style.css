@@ -1651,16 +1651,16 @@ textarea{
 .basket header{
     text-align: center;
     font-size: 18px;
-    margin: 20px;
+    margin: 20px;4
 }
 .icon-header{
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 display: inline-block;
 background: url(template/img/sprite.png) no-repeat -2px -259px;
 background-size: 490px 490px;
-margin-right: 20px;
-vertical-align: -10px;
+margin-right: 10px;
+vertical-align: -20px;
 }
 .basket-list li{
     padding: 10px 0;
@@ -1768,6 +1768,12 @@ vertical-align: -10px;
     float: right;
     margin-top: 10px; 
     font-size: 16px;
+}
+.promo-block{
+    border: 1px solid #e1e2e2;
+    background-color: #f8f6f7;
+    padding: 20px;
+    margin: 10px 0;
 }
 /*basket  END*/
 .block{
@@ -1886,8 +1892,8 @@ vertical-align: -10px;
             top: 45%;
         }
 }
-@media (max-width: 768px){
-    /*.my-carousel .item img{
+/*@media (max-width: 768px){
+    .my-carousel .item img{
         width: 100%;
         max-width: 140px;
          max-height: 140px;
