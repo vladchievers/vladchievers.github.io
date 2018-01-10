@@ -1330,7 +1330,7 @@ textarea{
     display: block ;
 
 }
-.items-blog .item-btn{
+.item .item-btn{
     padding: 10px;
     background-color: #f8f6f7;
     display: inline-block;
