@@ -1350,9 +1350,8 @@ textarea{
 }
 .blog-inTrend__block{
     margin: 30px 0;
-    text-align: center;
 }
-.blog-inTrend__block img{
+.blog-inTrend__block .blog-inTrend__img img{
     width: 100%;
     min-width: 280px;
 }
