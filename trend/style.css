@@ -787,11 +787,10 @@ textarea{
 }
 .carousel-block .item{
     text-align: center;
-    width: 60%;
+    max-width: 220px;
     display: inline-block;
     margin: 0 1%;
     outline: none;
-
 }
 .carousel-block .item img{
     width: 100%;
@@ -1335,6 +1334,7 @@ textarea{
     background-color: #f8f6f7;
     display: inline-block;
     margin: 5px ;
+    float: left;
 }
 .items-blog img{
     max-width: 100%;
