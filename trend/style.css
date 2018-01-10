@@ -1641,6 +1641,135 @@ textarea{
     margin: 20px 0 10px 0;
     display: none;
 }
+/*catalog-view  END*/
+
+/*basket*/
+.basket{
+    width: 95%;
+    margin: 0 auto;
+}
+.basket header{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+.icon-header{
+width: 50px;
+height: 50px;
+display: inline-block;
+background: url(template/img/sprite.png) no-repeat -2px -259px;
+background-size: 490px 490px;
+margin-right: 20px;
+vertical-align: -10px;
+}
+.basket-list li{
+    padding: 10px 0;
+    border-top: 1px solid #ececec;
+}
+.basket-list li:last-child{
+    border-bottom: 1px solid #ececec;
+}
+.product{
+    position: relative;
+    font-size: 14px;
+}
+.btn-product{
+    text-align: right;
+}
+.btn-product .icon-product{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-product .heart-icon{
+    background: url(template/img/sprite.png) no-repeat -167px -193px;
+    background-size: 475px 475px;
+}
+.btn-product .cancel-icon{
+    background: url(template/img/sprite.png) no-repeat -111px -92px;
+    background-size: 580px 580px;
+    vertical-align: -8px;
+}
+.product-photo{
+    display: inline-block;
+}
+.product-photo a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-photo span{
+    width: 70px;
+    padding-top: 100%;
+    position: relative; 
+    display: inline-block;
+}
+.product-photo span img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+    display: block;
+}
+.product-info{
+    margin-top: 10px;
+}
+.product-content{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 7px; 
+}
+.product-content .link{
+    margin-top: 5px;
+    display: none;
+}
+.product-content p{
+    max-width: 220px;
+}
+.product-content .code{
+    display: block;
+    float: none;
+    margin-top: 10px; 
+    color: #8d9192;
+}
+.product-input{
+    margin-top: 10px;
+    text-align: center;
+}
+.product-input form{
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+
+}
+.product-input form select{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #e1e2e2;
+    
+}
+.product-input form .fa{
+    position: absolute;
+    right: 3px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    pointer-events: none;
+}
+.product-input .red{
+    display: inline-block;
+    float: right;
+    margin-top: 10px; 
+    font-size: 16px;
+}
+/*basket  END*/
 .block{
     display: block;
 }
@@ -1737,6 +1866,24 @@ textarea{
         .view-carousel .item div{
             height: 550px;
             line-height: 550px;
+        }
+        .product-content .link{
+            display: block;
+            margin-top: 10px 
+        }
+        .btn-product .link{
+            display: none;
+        }
+        .product-photo span{
+             width: 100px;
+        }
+        .product-content p{
+            max-width: 321px;
+        }
+        .product-input form{
+            position: absolute;
+            left: 440px;
+            top: 45%;
         }
 }
 @media (max-width: 768px){
