@@ -1661,11 +1661,11 @@ background-size: 490px 490px;
 margin-right: 10px;
 vertical-align: -20px;
 }
-.basket-list li{
+.basket-list > li{
     padding: 10px 0;
     border-top: 1px solid #ececec;
 }
-.basket-list li:last-child{
+.basket-list > li:last-child{
     border-bottom: 1px solid #ececec;
 }
 .product{
@@ -1675,18 +1675,18 @@ vertical-align: -20px;
 .btn-product{
     text-align: right;
 }
-.btn-product .icon-product{
+.icon-product{
     width: 20px;
     height: 20px;
     margin-left: 10px; 
     display: inline-block;
     vertical-align: middle;
 }
-.btn-product .heart-icon{
+.heart-icon{
     background: url(template/img/sprite.png) no-repeat -167px -193px;
     background-size: 475px 475px;
 }
-.btn-product .cancel-icon{
+.cancel-icon{
     background: url(template/img/sprite.png) no-repeat -111px -92px;
     background-size: 580px 580px;
     vertical-align: -8px;
@@ -1866,6 +1866,58 @@ vertical-align: -20px;
 .wrap-info{
     max-width: 265px;
     margin: 0 auto;
+}
+.gift-block{
+    border-top: 1px solid #e1e2e2;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px 0;
+    display: none ;
+}
+.gift-title h5{
+    display: inline-block;
+}
+.gift-title .cancel-icon{
+    float: right;
+}
+.text-box p{
+    margin: 10px 0;
+}
+.package-box{
+    text-align: center;
+}
+.package-box li{
+    display: inline-block;
+    width: 140px;
+}
+.package-box .image{
+    max-width: 140px;
+    max-height: 140px; 
+}
+.package-box img {
+    max-width: 100%;
+}
+.package-box input{
+    display: block;
+    margin: 0 auto;
+}
+.btn-container{
+    margin: 10px;
+}
+.btn-container p{
+    margin: 20px 0;
+}
+.btn-container .btn-want{
+    background-color: #F9F7F8;
+    color: black;
+    border: 1px solid #E4E4E4;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btn-container .link{
+    border-bottom: 1px solid #FF8181; 
+    margin-left: 10px; 
+
 }
 /*basket  END*/
 .block{

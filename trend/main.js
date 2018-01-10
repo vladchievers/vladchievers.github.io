@@ -144,10 +144,7 @@ var heart = document.querySelectorAll('.heart');
                 ]
 
                 
-            });
-            $('.view-carousel').slick({
-                dots: true
-            });          
+            }); 
 });
        
 
