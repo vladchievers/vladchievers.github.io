@@ -801,10 +801,10 @@ textarea{
 }
 .carousel-block .item .title-item{
     font-size: 16px;
-    margin: 20px auto;
+    margin: 20px 0;
     font-weight: 300;
     display: block;
-    
+    float: left;
 }
 .carousel-block .item .trend-btn{
     padding: 0 10px;
@@ -1333,7 +1333,7 @@ textarea{
     padding: 10px;
     background-color: #f8f6f7;
     display: inline-block;
-    margin: 5px ;
+    margin: 5px;
     float: left;
 }
 .items-blog img{
@@ -1558,7 +1558,7 @@ textarea{
 .stars  span{
     margin-left: 10px;
 }
-.code{
+.catalog-view .code{
     display: inline-block;
     float: right;
 }
@@ -1775,6 +1775,99 @@ vertical-align: -20px;
     padding: 20px;
     margin: 10px 0;
 }
+.head-promo .fas{
+    display: inline-block;
+    margin-right: 10px;
+    color: #8d9192;
+    vertical-align: middle;
+}
+.input-promo {
+    margin: 10px 0;
+    display: inline-block;
+}
+.input-promo input{
+    padding: 8px;
+    box-sizing: border-box;
+    max-width: 130px;
+}
+.input-promo .btn-main-order{
+    padding: 10px 15px;
+}
+.input-promo p{
+    color: #8d9192;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.promo-codes {
+    vertical-align: top;
+}
+.promo-codes p{
+    margin-bottom: 5px;
+}
+.promo-codes .code{
+    display: inline-block;
+    color: #aeb0b2;
+    font-size: 14px;
+}
+.promo-codes .code span{
+    color: #f98b93;
+}
+.promo-codes .link{
+    float: right;
+}
+.error-code{
+    margin-top: 20px;
+    color: #b74334;
+    font-size: 14px;
+    display: none;
+}
+.error-code .fas{
+    display: inline-block;
+    vertical-align: top;
+}
+.error-code p{
+    display: inline-block;
+    width: 210px;
+}
+.info-about-order{
+    background-color: #f8f6f7;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border: 1px solid #e1e2e2;
+}
+.info-about-order h4{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.info-about-order p{
+    font-size: 14px;
+    color: #6a6a6a;
+    display: inline-block;
+    margin: 0;
+}
+.info-about-order .row:nth-child(3){
+    margin-bottom: 20px;
+}
+.info-about-order .right{
+    margin-left: 20px;
+}
+.info-about-order .row:nth-child(5) .right{
+    width: 35%;
+}
+.info-about-order .row:nth-child(2) .left{
+    margin-left: 27px;
+}
+.info-about-order .row:nth-child(3) .left{
+    margin-left: 51px;
+}
+.info-about-order .row:nth-child(5) .left{
+    margin-left: 81px;
+    vertical-align: top;
+}
+.wrap-info{
+    max-width: 265px;
+    margin: 0 auto;
+}
 /*basket  END*/
 .block{
     display: block;
@@ -1788,7 +1881,7 @@ vertical-align: -20px;
         box-sizing: border-box;
         margin-right: 2%;
         }
-        .info-about-order{
+        .order .info-about-order{
             position: absolute;
             width: 32%;
             top: 31px;
@@ -1796,7 +1889,7 @@ vertical-align: -20px;
             padding: 5px;
             padding-left: 10px;
         }
-        .info-about-order .right{
+        .order .info-about-order .right{
             margin-left: 6px;
         }
         .thanks{
@@ -1890,6 +1983,14 @@ vertical-align: -20px;
             position: absolute;
             left: 440px;
             top: 45%;
+        }
+        .promo-codes{
+            margin-left: 20px;
+            width: 320px;
+            display: inline-block;
+        }
+        .input-promo input{
+            max-width: 230px; 
         }
 }
 /*@media (max-width: 768px){
