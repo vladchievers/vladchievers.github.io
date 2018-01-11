@@ -616,6 +616,10 @@ textarea{
 .content-pages ul.list{
     list-style-type: disc;
     padding-left:10px;
+    width:100%;
+    max-width:100%;
+    box-sizing: border-box;
+    display:block;
 }
 .content-pages ul.sub-list{
     list-style: none;
@@ -675,8 +679,8 @@ textarea{
     display:block;
     border-top:1px solid #E4E4E4;
 }
-.content-block .content-block__body{
-
+.content-pages .content-text{
+    margin:20px 0 0 0;
 }
 
 
@@ -1637,7 +1641,7 @@ textarea{
 .view-description .fas{
     float: right;
 }
-.list{
+.catalog-view .list{
     max-width: 230px;
     font-size: 14px;
     margin: 20px 0 10px 0;

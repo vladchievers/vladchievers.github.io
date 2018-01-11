@@ -120,17 +120,11 @@ var heart = document.querySelectorAll('.heart');
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 5
-                        }
-                    },
-                    {
-                        breakpoint: 880,
-                        settings: {
                             slidesToShow: 4
                         }
                     },
                     {
-                        breakpoint: 768,
+                        breakpoint: 880,
                         settings: {
                             slidesToShow: 3
                         }
@@ -148,9 +142,10 @@ var heart = document.querySelectorAll('.heart');
                         }
                     }
                 ]
-
-                
-            }); 
+            });
+            $('.view-carousel').slick({
+                dots: true
+            })
 });
        
 
