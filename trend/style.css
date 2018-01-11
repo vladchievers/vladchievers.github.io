@@ -777,7 +777,7 @@ textarea{
     margin: 30px 0;
     padding: 20px 10px;
 }
-.carousel-trend h3{
+.carousel-trend header{
     font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
@@ -863,8 +863,9 @@ textarea{
 /************************buy-trend carousel ***********************/
 .buy-trend{
     margin: 50px 0;
+    text-align: center;
 }
-.buy-trend h4{
+.buy-trend header{
     text-align: center;
     font-weight: 200;
     margin-bottom: 20px;
@@ -1044,8 +1045,8 @@ textarea{
     margin: 0 auto;
     padding: 10px;
 }
-.main-order .submenu-order > div{
-    margin: 15px auto;
+.main-order .submenu-order form > div{
+    margin: 10px auto;
     width: 95%;
 }
 .method{
@@ -1830,7 +1831,7 @@ vertical-align: -20px;
     display: inline-block;
     width: 210px;
 }
-.info-about-order{
+.basket .info-about-order{
     background-color: #f8f6f7;
     padding: 15px 20px;
     margin: 20px 0;
@@ -2062,7 +2063,7 @@ vertical-align: -5px;
         box-sizing: border-box;
         margin-right: 2%;
         }
-        .order .info-about-order{
+        .main-order .info-about-order{
             position: absolute;
             width: 32%;
             top: 31px;
@@ -2070,7 +2071,7 @@ vertical-align: -5px;
             padding: 5px;
             padding-left: 10px;
         }
-        .order .info-about-order .right{
+        .main-order .info-about-order .right{
             margin-left: 6px;
         }
         .thanks{
