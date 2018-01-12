@@ -1663,7 +1663,8 @@ vertical-align: -20px;
     margin-top: 5px;
     display: none;
 }
-.product-content p{
+.product-content a{
+    display: block;
     max-width: 200px;
 }
 .product-content .code{
@@ -1942,7 +1943,8 @@ vertical-align: -5px;
     margin-top: 5px;
     display: none;
 }
-.product-content p{
+.product-content a{
+    display: block;
     max-width: 200px;
 }
 .product-content .code{
@@ -2007,10 +2009,10 @@ vertical-align: -5px;
 }
 .archive-list > li{
     padding: 10px 0;
-    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 .archive-list > li:last-child{
-    border-bottom: 1px solid #ececec;
+    border-bottom: none;
 }
 .product{
     position: relative;
