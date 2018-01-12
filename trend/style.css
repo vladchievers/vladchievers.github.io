@@ -1656,8 +1656,8 @@ vertical-align: -20px;
 .product-content{
     display: inline-block;
     vertical-align: top;
-    margin-top: 3px;
-    margin-left: 7px; 
+    padding-top: 3px;
+    padding-left: 7px; 
 }
 .product-content .link{
     margin-top: 5px;
@@ -1673,23 +1673,23 @@ vertical-align: -20px;
     margin-top: 10px; 
     color: #8d9192;
 }
-.product-input{
+.product-price{
     margin-top: 10px;
     text-align: center;
 }
-.product-input form{
+.product-price form{
     display: inline-block;
     vertical-align: bottom;
     position: relative;
 
 }
-.product-input form select{
+.product-price form select{
     padding: 10px 15px;
     outline: none;
     border: 1px solid #e1e2e2;
     
 }
-.product-input form .fa{
+.product-price form .fa{
     position: absolute;
     right: 3px;
     top: 11px;
@@ -1698,7 +1698,7 @@ vertical-align: -20px;
     background-color: #fff;
     pointer-events: none;
 }
-.product-input .red{
+.product-price .red{
     display: inline-block;
     float: right;
     margin-top: 10px; 
@@ -1936,12 +1936,8 @@ vertical-align: -5px;
 .product-content{
     display: inline-block;
     vertical-align: top;
-    margin-top: 3px;
-    margin-left: 7px; 
-}
-.product-content .link{
-    margin-top: 5px;
-    display: none;
+    padding-top: 3px;
+    padding-left: 7px; 
 }
 .product-content a{
     display: block;
@@ -2048,8 +2044,8 @@ vertical-align: -5px;
 .product-content{
     display: inline-block;
     vertical-align: top;
-    margin-top: 3px;
-    margin-left: 7px; 
+    padding-top: 3px;
+    padding-left: 7px; 
 }
 .product-content .link{
     margin-top: 5px;
@@ -2176,10 +2172,10 @@ vertical-align: -5px;
         .product-content p{
             max-width: 321px;
         }
-        .product-input form{
+        .product-price form{
             position: absolute;
             left: 440px;
-            top: 45%;
+            top: 40%;
         }
         .promo-codes{
             margin-left: 20px;
@@ -2189,7 +2185,7 @@ vertical-align: -5px;
         .input-promo input{
             max-width: 230px; 
         }
-        .product-input{
+        .product-price{
             margin-top: -30px;
         }
         .btn-product{
