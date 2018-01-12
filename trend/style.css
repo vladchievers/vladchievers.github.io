@@ -1591,7 +1591,7 @@ textarea{
 width: 60px;
 height: 60px;
 display: inline-block;
-background: url(template/img/sprite.png) no-repeat -2px -259px;
+background: url(template/mobile/img/sprite.png) no-repeat -2px -259px;
 background-size: 490px 490px;
 margin-right: 10px;
 vertical-align: -20px;
@@ -1618,11 +1618,11 @@ vertical-align: -20px;
     vertical-align: middle;
 }
 .heart-icon{
-    background: url(template/img/sprite.png) no-repeat -167px -193px;
+    background: url(template/mobile/img/sprite.png) no-repeat -167px -193px;
     background-size: 475px 475px;
 }
 .cancel-icon{
-    background: url(template/img/sprite.png) no-repeat -111px -92px;
+    background: url(template/mobile/img/sprite.png) no-repeat -111px -92px;
     background-size: 580px 580px;
     vertical-align: -8px;
 }
@@ -1897,15 +1897,6 @@ vertical-align: -5px;
     display: inline-block;
     vertical-align: middle;
 }
-.heart-icon{
-    background: url(template/img/sprite.png) no-repeat -167px -193px;
-    background-size: 475px 475px;
-}
-.cancel-icon{
-    background: url(template/img/sprite.png) no-repeat -111px -92px;
-    background-size: 580px 580px;
-    vertical-align: -8px;
-}
 .product-photo{
     display: inline-block;
 }
@@ -1953,7 +1944,7 @@ vertical-align: -5px;
     margin-top: 10px;
     text-align: center;
 }
-.product-price .red, .price{
+.product-price .red{
     display: inline-block;
     float: right;
     margin-top: 10px; 
@@ -1982,7 +1973,6 @@ vertical-align: -5px;
 .fas{
     margin-right: 10px;
 }
-
 .personal-list .submenu{
     width: 93%;
     background-color: white;
@@ -2002,6 +1992,9 @@ vertical-align: -5px;
 .archive-orders-list{
     padding: 10px;
     border: 1px solid #ececec;
+}
+.archive-list {
+    display: none;
 }
 .archive-list > li{
     padding: 10px 0;
@@ -2059,6 +2052,25 @@ vertical-align: -5px;
     float: none;
     margin-top: 10px; 
     color: #8d9192;
+}
+.archive-orders{
+    margin: 10px 0;
+}
+.archive-orders-list .row{
+    margin-bottom: 10px;
+}
+.archive-orders-list .item-date,.item-order{
+    width: 75px;
+    float: left;
+    margin-right: 10px;
+}
+.archive-orders-list .item-number{
+    float: right;
+    width: 100px;
+    margin: 0;
+}
+.archive-orders-list .row .fs{
+    font-size: 12px;
 }
 
 /*personal END*/
@@ -2193,6 +2205,12 @@ vertical-align: -5px;
         }
         .carousel-block .item{
             width: 220px;
+        }
+        .archive-orders-list .item-row{
+            margin-right: 30px;
+        }
+        .archive-orders-list{
+            padding: 10px 60px;
         }
 }
 /*@media (max-width: 768px){
