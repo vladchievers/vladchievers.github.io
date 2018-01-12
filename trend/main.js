@@ -72,6 +72,16 @@ for (var i = 0; i < blocks.length; i++) {
     })
 }
 
+var jst =  document.getElementsByClassName('.js-toggle');
+
+ for (var i = 0; i < jst.length; i++) {
+     jst[i].addEventListener('click' , function(){
+    var collapse = document.querySelectorAll('.js-collapse');
+        for (var i = 0; i < collapse.length; i++) {
+            collapse[i].classList.toggle('block');
+        };
+    });
+}
 
 var heart = document.querySelectorAll('.heart');
 
@@ -230,5 +240,7 @@ if(typeof btn !== 'undefined' && btn !== null ){
     method.textContent = getMethod;
  }
 
+
+ 
 
 

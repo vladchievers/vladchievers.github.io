@@ -600,6 +600,7 @@ textarea{
     height:30px;
     font-size:30px;
     line-height:30px;
+
 }
 .content-block .content-block__body.active{
     display:block;
@@ -700,6 +701,9 @@ textarea{
     display: inline-block;
     border: 1px solid transparent;
     box-sizing: border-box;
+}
+header .phone p{
+    display: none;
 }
 
 /************************carousel-trend***********************/
@@ -1992,12 +1996,16 @@ vertical-align: -5px;
     margin-top: 10px; 
 }
 /*personal END*/
+.js-collapse{
+    display: none;
+}
 .block{
     display: block;
 }
 .block-none{
     display: none;
 }
+
 @media (min-width: 768px){
         .main-order .order, .delivery, .gray , .pay{
         width: 64%;
@@ -2138,5 +2146,11 @@ vertical-align: -5px;
         }
         .comment-people{
             padding: 10px 70px;
+        }
+        header .phone p{
+            display: inline-block;
+        }
+        header .phone i{
+            display: none;
         }
 }
