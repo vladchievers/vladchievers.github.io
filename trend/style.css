@@ -959,7 +959,6 @@ header .phone p{
 }
 .pink{
     background-color: #fff5f5;
-    border-bottom: 1px solid #e1e2e2;
     padding: 10px;
 }
 .fas{
@@ -1886,13 +1885,9 @@ vertical-align: -5px;
 }
 .archive-orders-list{
     padding: 10px;
-    border: 1px solid #ececec;
     font-size: 14px;
 }
-.archive-orders .pink{
-    border: 1px solid #ececec;
-    border-bottom: 0;
-}
+
 .archive-list {
     display: none;
 }
@@ -1905,6 +1900,8 @@ vertical-align: -5px;
 }
 .archive-orders{
     margin: 10px 0;
+    border: 1px solid #ececec;
+}
 }
 .archive-orders-list .row{
     margin-bottom: 10px;
@@ -1952,7 +1949,7 @@ vertical-align: -5px;
     font-weight: 600;
 }
 .personal-comment{
-    padding: 10px 10px 20px 10px;
+    padding: 10px;
     border: 1px solid #ececec;
     margin: 10px 0;
 }

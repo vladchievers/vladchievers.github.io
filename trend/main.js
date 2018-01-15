@@ -129,16 +129,21 @@ var heart = document.querySelectorAll('.heart');
                     }
                 ]
             });
+
             $('.view-carousel').slick({
                 dots: true
-            })
-            function tg(event){
-                var target = $(event.target);
-                if(target.is('.js-toggle')){
-                    target.$('.js-collapse').slideToggle();
+            });
+
+           $('.js-toggle').click(function(){
+                if($(this).find('i').hasClass('fa-angle-down')){
+                    $(this).find('i').removeClass('fa-angle-down');
+                    $(this).find('i').addClass('fa-angle-right');
+                }else{
+                    $(this).find('i').removeClass('fa-angle-right');
+                    $(this).find('i').addClass('fa-angle-down')
                 }
-            }
-            $('.personal-list').click(tg).hide();
+            $(this).next().toggleClass('block');
+           })
 });
        
 
@@ -154,6 +159,7 @@ var heart = document.querySelectorAll('.heart');
  var comment = document.querySelector('.m');
  var thk = document.querySelector('.thanks');
  var info = document.querySelector('.info-about-order');
+
 
 
 if(typeof btn !== 'undefined' && btn !== null ){

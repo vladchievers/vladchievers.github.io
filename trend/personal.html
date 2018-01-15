@@ -175,19 +175,21 @@
 			Личный Кабинет
 		</header>
 			<div class="personal-list">
-				<div class="pink js-toggle"><a href="#"><i class="fas fa-angle-down"></i> Личные данные</a></div>
-				<div class="submenu js-collapse">
-						<form action="">
-							<div><input type="text" required placeholder="Ваше ФИО*"  value="name surname"></div>
-							<div><input type="text" required placeholder="Ваш e-mail:*" value="name surname"></div>
-							<div><input type="text" required placeholder="Ваш телефон" value="name surname"></div>
-							<div><input type="password" required placeholder="Ваш новый пароль"></div>
-							<div><input type="password" required placeholder="Повторить пароль"></div>
-						</form>	
-				</div>
+				<div class="pink js-toggle"><a href="#"><i class="fas fa-angle-right"></i> Личные данные</a>
+                </div>
+                <div class="submenu js-collapse">
+                        <form action="">
+                            <div><input type="text" required placeholder="Ваше ФИО*"  value="name surname"></div>
+                            <div><input type="text" required placeholder="Ваш e-mail:*" value="name surname"></div>
+                            <div><input type="text" required placeholder="Ваш телефон" value="name surname"></div>
+                            <div><input type="password" required placeholder="Ваш новый пароль"></div>
+                            <div><input type="password" required placeholder="Повторить пароль"></div>
+                        </form> 
+                 </div>
+				
             </div>
             <div class="archive-orders">
-                <div class="pink js-toggle"><a href="#"><i class="fas fa-angle-down"></i>Архив заказов</a></div>
+                <div class="pink js-toggle"><a href="#"><i class="fas fa-angle-right"></i>Архив заказов</a></div>
                 <div class="archive-orders-list js-collapse">
                     <div class="row">
                         <div class="item-number">
@@ -259,15 +261,16 @@
                                             <div class="rate">0</div>
                                         </div>            
                                     </div>
-                                </div>
+                                </div>rightright
                             </li>
                         </ul>
                     </div>        
               </div>     
          </div>
          <div class="personal-comment">
-             <div><i class="fas fa-angle-down"></i> Отзыв</div>
-             <div class="your-opinion">
+             <div class="js-toggle"><i class="fas fa-angle-right"></i> Отзыв</div>
+             <div class="js-collapse .block-none">
+                 <div class="your-opinion">
                  <h3>Нам Важно Ваше мнение!</h3>
                  <p>Оставьте свой отзыв!</p>
              </div>
@@ -286,6 +289,7 @@
                      <textarea name="" id="" cols="30" rows="10"></textarea>
                      <button class="btn-main-order">Оставить отзыв</button>
                  </div>
+             </div>
              </div>
          </div>
     </section>
