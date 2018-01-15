@@ -59,30 +59,6 @@ function toggleList(that){
 
 }
 
-var blocks = document.querySelectorAll('.view-description');
-var list = document.querySelectorAll('.list');
-var fas = document.querySelectorAll('.view-description i')
-
-for (var i = 0; i < blocks.length; i++) {
-    blocks[i].addEventListener('click' , function(){
-        for (var i = 0; i < list.length; i++) {
-                
-        list[i].classList.toggle('block');
-        }
-    })
-}
-
-var jst =  document.getElementsByClassName('.js-toggle');
-
- for (var i = 0; i < jst.length; i++) {
-     jst[i].addEventListener('click' , function(){
-    var collapse = document.querySelectorAll('.js-collapse');
-        for (var i = 0; i < collapse.length; i++) {
-            collapse[i].classList.toggle('block');
-        };
-    });
-}
-
 var heart = document.querySelectorAll('.heart');
 
 
@@ -156,6 +132,13 @@ var heart = document.querySelectorAll('.heart');
             $('.view-carousel').slick({
                 dots: true
             })
+            function tg(event){
+                var target = $(event.target);
+                if(target.is('.js-toggle')){
+                    target.$('.js-collapse').slideToggle();
+                }
+            }
+            $('.personal-list').click(tg).hide();
 });
        
 
@@ -168,7 +151,7 @@ var heart = document.querySelectorAll('.heart');
  var edit = document.querySelector('.edit');
  var pay = document.querySelector('.pay');
  var gray = document.querySelector('.gray');
- var m = document.querySelector('.m');
+ var comment = document.querySelector('.m');
  var thk = document.querySelector('.thanks');
  var info = document.querySelector('.info-about-order');
 
@@ -200,7 +183,7 @@ if(typeof btn !== 'undefined' && btn !== null ){
  });
 }
  
-if(typeof btn !== 'undefined' && btn !== null ){
+if(typeof edit !== 'undefined' && edit !== null ){
      edit.addEventListener('click' , function(){
         if(order.classList.contains('block-none')){
           order.classList.remove('block-none');
@@ -210,8 +193,8 @@ if(typeof btn !== 'undefined' && btn !== null ){
         };
      });
 };
-if(typeof btn !== 'undefined' && btn !== null ){
-     m.addEventListener('click' , function(){
+if(typeof comment !== 'undefined' && comment !== null ){
+     comment.addEventListener('click' , function(){
         del_block.classList.remove('block');
         pay.classList.remove('block');
         thk.classList.toggle('block');
