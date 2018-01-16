@@ -6,14 +6,14 @@ function closeMenu(){
 }
 
 
-window.addEventListener('scroll', function(){
-    var scroll = window.pageYOffset || document.documentElement.scrollTop;
-    if ( scroll >= 50 ) {
-        document.getElementById('top-menu').style.top = '0px';
-    } else if ( scroll < 50 ) {
-        document.getElementById('top-menu').style.top = '50px';
-    }
-});
+// window.addEventListener('scroll', function(){
+//     var scroll = window.pageYOffset || document.documentElement.scrollTop;
+//     if ( scroll >= 50 ) {
+//         document.getElementById('top-menu').style.top = '0px';
+//     } else if ( scroll < 50 ) {
+//         document.getElementById('top-menu').style.top = '50px';
+//     }
+// });
 
 function toggleList(that){
 
@@ -34,10 +34,10 @@ function toggleList(that){
 
     }    
 
-    if ( that.className == 'fa fa-angle-up' ){
+    if ( that.className == 'fa fa-angle-right' ){
         that.className = 'fa fa-angle-down';
     } else if ( that.className == 'fa fa-angle-down' ){
-        that.className = 'fa fa-angle-up';
+        that.className = 'fa fa-angle-right';
     }
 
     var list = document.getElementById(list_id);
