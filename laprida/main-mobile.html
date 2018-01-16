@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="template/www/css/sprite.css">
+
+	<!-- <link rel="stylesheet" href="https://laprida.ua/template/www/img/sprite.png"> -->
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="template/www/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<a class="icon icon-logo" href=""></a>
+			<div class="header-basket"><span class="icon icon-min-bag"></span>100000,000грн</div>
+			<a class="header-burger" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+			<div class="clearfix"></div>
+		</div>
+		<div class="header-buttons">
+			<buttom class="btn-header button-call"><span class="phone">24/7</span></buttom>
+			<buttom class="btn-header button-enter"><span class="icon icon-person"></span></buttom>
+		</div>	
+	</header>
+	<aside id="side-menu" style="width: 0px;">
+    <div class="side-menu">
+    	<a class="close" href="#" onclick="closeMenu()">Закрыть</a>
+
+        <a class="search" href="/catalog/search/"><i class="fa fa-search"></i>Поиск</a>
+
+        <ul class="menu">
+            <li><a href="/catalog/new/">Новинка</a></li>
+        </ul>
+        <ul class="menu" rel="site_trigger" id="hm_list_trend">
+            <li>
+                <a href="/catalog/aksessuary/76/">Аксессуары</a>
+                <i class="fa fa-angle-down" ontouchstart="toggleList(this);" id="am_toggle_child_76"></i>
+                <ul class="sub-menu" id="am_child_list_76" style="height: auto;">
+                    <li><a href="/catalog/rascheski/103/">Расчески</a></li>
+                    <li><a href="/catalog/chasy/100/">Часы</a></li>
+                    <li><a href="/catalog/koshel-ki/101/">Кошельки</a></li>
+                    <li><a href="/catalog/perevodnye-tatu/102/">Переводные тату</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/bizhuteriya/72/">Бижутерия</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_72"></i>
+                <ul class="sub-menu" id="am_child_list_72" style="height: 0px;">
+                    <li><a href="/catalog/brendovye-braslety/84/">Брендовые браслеты</a></li>
+                    <li><a href="/catalog/braslety/85/">Браслеты</a></li>
+                    <li><a href="/catalog/broshi/86/">Броши</a></li>
+                    <li><a href="/catalog/ukrasheniya-na-golovu/87/">Украшения на голову</a></li>
+                    <li><a href="/catalog/chokery/82/">Чокеры</a></li>
+                    <li><a href="/catalog/ser-gi/83/">Серьги</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/zakolki/73/">Заколки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_73"></i>
+                <ul class="sub-menu" id="am_child_list_73" style="height: 0px;">
+                    <li><a href="/catalog/zakolki/88/">Заколки</a></li>
+                    <li><a href="/catalog/obruchi/89/">Обручи</a></li>
+                    <li><a href="/catalog/rezinki/90/">Резинки</a></li>
+                    <li><a href="/catalog/banty/91/">Банты </a></li>
+                   <li><a href="/catalog/kraby/92/">Крабы</a></li>
+                    <li><a href="/catalog/shpil-ki/93/">Шпильки</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/sumki/74/">Сумки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_74"></i>
+                <ul class="sub-menu" id="am_child_list_74" style="height: 0px;">
+                    <li><a href="/catalog/sumki/94/">Сумки</a></li>
+                    <li><a href="/catalog/ryukzaki/95/">Рюкзаки</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu" rel="site_trigger" id="hm_list_deco" style="height:0px;">
+            <li>
+                <a href="/catalog/dekor/77/">Декор</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_77"></i>
+                <ul class="sub-menu" id="am_child_list_77" style="height: 0px;">
+                    <li><a href="/catalog/svechi/104/">Свечи</a></li>
+                    <li><a href="/catalog/butaforiya/105/">Бутафория</a></li>
+                    <li><a href="/catalog/svadebnyy/106/">Свадебный</a></li>
+                    <li><a href="/catalog/pesok/107/">Песок</a></li>
+                    <li><a href="/catalog/nakleyki/108/">Наклейки</a></li>
+                    <li><a href="/catalog/kashpo/109/">Кашпо</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/hand-made/78/">Hand made</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_78"></i>
+                <ul class="sub-menu" id="am_child_list_78" style="height: 0px;">
+                    <li><a href="/catalog/skrabbuking/110/">Скраббукинг</a></li>
+                    <li><a href="/catalog/cvetnaya-bumaga/111/">Цветная бумага</a></li>
+                    <li><a href="/catalog/bukvy/112/">Буквы</a></li>
+                    <li><a href="/catalog/dekupazh/113/">Декупаж</a></li>
+                    <li><a href="/catalog/biser/114/">Бисер</a></li>
+                    <li><a href="/catalog/dlya-raboty/115/">Для работы</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/furnitura/79/">Фурнитура</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_79"></i>
+                <ul class="sub-menu" id="am_child_list_79" style="height: 0px;">
+                    <li><a href="/catalog/lenta/116/">Лента</a></li>
+                    <li><a href="/catalog/lepestki/117/">Лепестки</a></li>
+                    <li><a href="/catalog/kruzheva/118/">Кружева</a></li>
+                    <li><a href="/catalog/per-ya/119/">Перья</a></li>
+                    <li><a href="/catalog/banty/120/">Банты</a></li>
+                    <li><a href="/catalog/klievye-kamni/121/">Клиевые камни</a></li>
+                    <li><a href="/catalog/zhemchug/122/">Жемчуг</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/upakovka/80/">Упаковка</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_80"></i>
+                <ul class="sub-menu" id="am_child_list_80" style="height: 0px;">
+                    <li><a href="/catalog/korobki/123/">Коробки</a></li>
+                    <li><a href="/catalog/napolnitel-/124/">Наполнитель</a></li>
+                    <li><a href="/catalog/gifki/125/">Гифки</a></li>
+                    <li><a href="/catalog/bumaga/126/">Бумага</a></li>
+                    <li><a href="/catalog/teyp-lenta/127/">Тейп-лента</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/catalog/podarki/81/">Подарки</a>
+                <i class="fa fa-angle-up" ontouchstart="toggleList(this);" id="am_toggle_child_81"></i>
+                <ul class="sub-menu" id="am_child_list_81" style="height: 0px;">
+                    <li><a href="/catalog/otkrytki/128/">Открытки</a></li>
+                    <li><a href="/catalog/fotobutaforiya/129/">Фотобутафория</a></li>
+                    <li><a href="/catalog/fotoramki/130/">Фоторамки</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li><a href="/catalog/sale/" class="sale">SALE</a></li>
+            <li><a href="/story/">IN TREND</a></li>
+            <li><a href="/blog/">Блог</a></li>
+        </ul>
+    </div>
+    <div class="close-menu" onclick="closeMenu();"></div>
+	</aside>
+
+	<footer>
+		<div class="footer-main">
+			<ul class="icons-block">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-vk"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+			<ul class="footer-list">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Как заказать</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Скидки</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+			<div class="service">
+				<p>Служба поддержки:</p>
+				<p class="footer-phone">+38 (098) 68 27 680</p>
+				<a href="#" class="write-us">Напиши нам</a>
+			</div>
+			<div class="icon icon-footer-logo"></div>
+		</div>
+		<div class="footer">
+			<p>Лучшие товары для вашего бизнеса</p>
+			<p>laprida.ua 2016 | Created by <a href="#" class="kb">kb.ua</a></p>
+			<ul>
+				<li><a href="#">Политика конфиденциальности</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
+				<li><a href="#">Согласие с рассылкой</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+
+
+	<script src="template/www/js/main.js"></script>
+	
+</body>
+</html>
