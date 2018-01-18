@@ -62,11 +62,11 @@ textarea{
 .header-buttons{
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 20px; 
+	margin-bottom: 10px; 
 }
 .btn-header{
 	display: inline-block;
-	background-color: #ececec;
+	background-color:#ececec;
 	width: 135px;
 	height: 40px;
 	position: relative;
@@ -123,6 +123,7 @@ textarea{
 	float: right;
 	display: inline-block;
 	padding: 10px;
+    
 	font-size: 16px;
 	
 }
@@ -313,7 +314,7 @@ textarea{
 
 /***************main-page **********************/
 .container{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -341,16 +342,17 @@ textarea{
     font-size: 0;
 }
 .catalog-list li{
-    width: 140px;
+    width: 134px;
     display: inline-block;
     margin: 5px;
+    margin-bottom: 10px;
     padding-bottom: 15px; 
     text-align: center;
     font-size: 16px;
     box-sizing: border-box; 
 }
 .catalog-list li .image{
-    width: 100%;
+    width: 134px;
     display: inline-block;
 }
 .catalog-list li .image img{
@@ -386,6 +388,7 @@ textarea{
 }
 .info-content{
     padding: 0 20px;
+    text-align: center;
 }
 .info-list li{
     text-align: center;
@@ -496,13 +499,15 @@ textarea{
     font-size: 14px;
     color: #fff;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 20px;
     vertical-align: top;
-    width: 140px;
+    width: 130px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .images-list .image{
-    width: 130px;
+    width: 125px;
     height: 90px;
     display: inline-block;
     margin-bottom: 10px;
@@ -545,9 +550,9 @@ textarea{
     text-align: center;
 }
 .blog-list li{
-    max-width: 135px;
+    max-width: 134px;
     margin: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     display: inline-block;
     font-size: 14px;
@@ -555,7 +560,7 @@ textarea{
     text-align: left;
 }
 .blog-list li .image{
-    width: 135px;
+    width: 134px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: inline-block;
@@ -566,7 +571,7 @@ textarea{
     display: block;
     margin: 0 auto;
 }
-.blog-list .date,.views{
+.date,.views{
     color: #909090;
     margin-bottom: 10px;
     text-align: left;
@@ -589,3 +594,104 @@ textarea{
     font-size: 14px;
 }
 /***************main-page end**********************/
+
+
+/***************header-list-block **********************/
+.header-list-block{
+    margin-bottom: 20px;
+}
+.header-list{
+    font-size: 0;
+}
+.header-list li{
+    display: inline-block;
+    font-size: 14px;
+}
+.header-list li a{
+    color: #000;
+}
+.header-list .visited a{
+    color: #e0e0e0;
+}
+.header-list .visited:after{
+    display: inline-block;
+    font-weight: 900;
+    font-family: Font Awesome\ 5 Free;
+    content: "\f105"; 
+    color: #e0e0e0;
+    margin:0 10px;
+    font-size: 14px;
+    vertical-align: -1px;
+}
+/***************header-list-block end **********************/
+
+
+/***************blog **********************/
+.blog header{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+.blog header span{
+    margin-left: 5px;
+    color: #898989;
+}
+.blog-items{
+    font-size: 0;
+    text-align: center;
+}
+.blog-items .item{
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.image{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.image img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.date-views{
+    margin: 10px 0;
+    text-align: left;
+}
+.date-views .date,.views{
+    display: inline-block;
+    vertical-align: top;
+}
+.date-views .views{
+    float: right;
+}
+.item p{
+    text-align: left;
+}
+.number-pages{
+    margin: 20px 0;
+    text-align: center;
+}
+.list-pages li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.list-pages li a{
+    color: #9a9a9a;
+    
+}
+.list-pages li:last-child{
+    margin-left: 10px;
+}
+.list-pages .active a{
+    color: #2c5986;
+    border-bottom: 1px solid #2c5986;
+}
+/***************blog end**********************/

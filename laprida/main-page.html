@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="template/www/css/sprite.css">
 
-	<!-- <link rel="stylesheet" href="https://laprida.ua/template/www/img/sprite.png"> -->
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="slick/slick.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="template/www/css/style.css">
 </head>
@@ -19,8 +20,8 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="header-buttons">
-			<buttom class="btn-header button-call"><span class="phone">24/7</span></buttom>
-			<buttom class="btn-header button-enter"><span class="icon icon-person"></span></buttom>
+			<a href="#" class="btn-header button-call"><span class="phone">24/7</span></a>
+			<a href="#" class="btn-header button-enter"><span class="icon icon-person"></span></a>
 		</div>	
 	</header>
 	<aside id="side-menu" style="width: 0px;">
@@ -206,16 +207,20 @@
             <a class="link-down">Развернуть<i class="fa fa-angle-down"></i></a>
         </div>
         <div class="social-block">
-            <header>Присоединяйся к нам в соц. сетях!</header>
-            <ul class="icons-block">
-                <li><a href="#"><i style="color:#456aae; "class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i style="color: #205a7d"class="fab fa-vk"></i></a></li>
-                <li><a href="#"><i style="color: #af34b1 "class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i style="color: #f77600"class="fab fa-odnoklassniki"></i></a></li>
-                <li><a href="#"><i style="color: #d22824"class="fab fa-pinterest-p"></i></a></li>
-                <li><a href="#"><i style="color: #d51b0f"class="fab fa-youtube"></i></a></li>
-            </ul>
-            <a href="#" class="link-lp">@LaPrida</a>
+           <div class="container">
+           		 <header>
+           		 	Присоединяйся к нам в соц. сетях!
+           		 </header>
+	            <ul class="icons-block">
+	                <li><a href="#"><i style="color:#456aae; "class="fab fa-facebook-f"></i></a></li>
+	                <li><a href="#"><i style="color: #205a7d"class="fab fa-vk"></i></a></li>
+	                <li><a href="#"><i style="color: #af34b1 "class="fab fa-instagram"></i></a></li>
+	                <li><a href="#"><i style="color: #f77600"class="fab fa-odnoklassniki"></i></a></li>
+	                <li><a href="#"><i style="color: #d22824"class="fab fa-pinterest-p"></i></a></li>
+	                <li><a href="#"><i style="color: #d51b0f"class="fab fa-youtube"></i></a></li>
+	            </ul>
+	            <a href="#" class="link-lp">@LaPrida</a>
+           </div>
         </div>
         <div class="info-business-block container">
             <header>
@@ -240,40 +245,42 @@
             </div>
         </div>
         <div class="info-blue-block">
-            <header>
-                Мы в цифрах
-                <div class="image-logo">
-                    <img src="https://m.laprida.ua/template/mobile/img/about-img-logo.png" alt="">
-                </div>
-            </header>
-            <div class="images-list">
-                <div class="row">
-                    <div class="item">
-                        <div class="image">
-                            <img src="https://m.laprida.ua/template/mobile/img/about-img1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="https://m.laprida.ua/template/mobile/img/about-img2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="https://m.laprida.ua/template/mobile/img/about-img3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="https://m.laprida.ua/template/mobile/img/about-img5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="https://m.laprida.ua/template/mobile/img/about-img4.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+            	<header>
+	                Мы в цифрах
+	                <div class="image-logo">
+	                    <img src="https://m.laprida.ua/template/mobile/img/about-img-logo.png" alt="">
+	                </div>
+	            </header>
+	            <div class="images-list">
+	                <div class="row">
+	                    <div class="item">
+	                        <div class="image">
+	                            <img src="https://m.laprida.ua/template/mobile/img/about-img1.png" alt="">
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="image">
+	                            <img src="https://m.laprida.ua/template/mobile/img/about-img2.png" alt="">
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="image">
+	                            <img src="https://m.laprida.ua/template/mobile/img/about-img3.png" alt="">
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="image">
+	                            <img src="https://m.laprida.ua/template/mobile/img/about-img5.png" alt="">
+	                        </div>
+	                    </div>
+	                    <div class="item">
+	                        <div class="image">
+	                            <img src="https://m.laprida.ua/template/mobile/img/about-img4.png" alt="">
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
             </div>
         </div>
         <div class="comment-block container">
@@ -408,8 +415,9 @@
 	</footer>
 
 
-
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="slick/slick.min.js"></script>
 	<script src="template/www/js/main.js"></script>
 	
 </body>
