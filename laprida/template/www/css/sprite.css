@@ -21,7 +21,7 @@
     background: url('../img/sprite.png') no-repeat -372px -53px;
     background-size: 500px 500px;
     vertical-align: middle;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 .icon-close {
     background: url('../img/sprite.png') no-repeat -374px -33px;
