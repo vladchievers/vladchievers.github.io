@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="template/www/css/sprite.css">
+
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="template/www/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<a class="icon icon-logo" href=""></a>
+			<div class="header-basket"><i class="fas fa-shopping-bag"></i></span>100,00грн</div>
+			<a class="header-burger" onclick="openMenu()"> 
+                        <div></div>
+                        <div></div>
+                        <div></div></a>
+			<div class="clearfix"></div>
+		</div>
+		<div class="header-buttons">
+			<a href="#" class="btn-header button-call"><span class="phone">24/7</span></a>
+			<a href="#" class="btn-header button-enter"><span class="icon icon-person"></span></a>
+		</div>	
+	</header>
+	<aside id="side-menu" style="width: 0px;">
+    <div class="side-menu">
+
+     	<a class="close" onclick="closeMenu()">Закрыть</a>
+
+    	<form action="">
+    		<input class="search" placeholder="Поиск" type="text">
+    		<button class="btn-search"><i class="fa fa-search"></i></button>
+    	</form>
+
+        <ul class="menu-header">
+            <li><p>Каталог продукции</p></li>
+        </ul>
+        <ul class="menu" rel="site_trigger" id="hm_list_trend">
+            <li>
+                <a href="#">Заколки</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_76"></i>
+                <ul class="sub-menu" id="am_child_list_76" style="height: 0px;">
+                    <li><a href="#">Расчески</a></li>
+                    <li><a href="#">Часы</a></li>
+                    <li><a hr+ef="#">Кошельки</a></li>
+                    <li><a href="#">Переводные тату</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Бижутерия</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_72"></i>
+                <ul class="sub-menu" id="am_child_list_72" style="height: 0px;">
+                    <li><a href="#">Брендовые браслеты</a></li>
+                    <li><a href="#">Браслеты</a></li>
+                    <li><a href="#">Броши</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Аксессуары</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_73"></i>
+                <ul class="sub-menu" id="am_child_list_73" style="height: 0px;">
+                    <li><a href="#">Заколки</a></li>
+                    <li><a href="#">Обручи</a></li>
+                    <li><a href="#">Резинки</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Декор</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_74"></i>
+                <ul class="sub-menu" id="am_child_list_74" style="height: 0px;">
+                    <li><a href="#">Сумки</a></li>
+                    <li><a href="#">Рюкзаки</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Товары для творчества</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_75"></i>
+                <ul class="sub-menu" id="am_child_list_75" style="height: 0px;">
+                    <li><a href="#/">Брендовые браслеты</a></li>
+                    <li><a href="#">Браслеты</a></li>
+                    <li><a href="#">Броши</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Упаковка - Пакеты Коробки</a>
+                <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_77"></i>
+                <ul class="sub-menu" id="am_child_list_77" style="height: 0px;">
+                    <li><a href="#">Брендовые браслеты</a></li>
+                    <li><a href="#">Браслеты</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-header">
+            <li><p>Личный кабинет</p></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Восстановить доступ</a></li>
+        </ul>
+        <ul class="menu-header">
+            <li><p>Информационный раздел</p></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Как заказать</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Блог</a></li>
+             <li><a href="#">Контакты</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+        </ul>
+    </div>
+    <div class="close-menu" onclick="closeMenu();"></div>
+	</aside>
+<!--**********
+**************
+***************
+***************
+***************
+***************
+***************
+***************
+***************
+***************-->
+    <section class="blog-view container">
+         <div class="header-list-block">
+            <ul class="header-list">
+                <li class="visited"><a href="#">Главная</a></li>
+                <li class="visited"><a href="#">Блог</a></li>
+                <li><a href="#">Светящиеся палочки: неоновые палочки для разного</a></li>
+            </ul>
+        </div>
+        <div class="blog-view-content">
+            <div class="item">
+                <span class="image"><img src="https://laprida.ua/library/blog/14zq/kd24/lklk/23544_az64726zq34818dc.jpeg" alt=""></span>
+                <div class="date-views">
+                    <p class="date">21.12.2019</p>
+                    <p class="views"><span class="icon icon-eye"></span>27</p>
+                </div>
+                <p>Светящиеся палочки: неоновые палочки для яркого праздника</p>
+            </div>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur minus, atque esse animi, recusandae quasi optio distinctio quaerat modi vel impedit molestiae. Repudiandae voluptate fuga expedita asperiores aspernatur, ducimus nostrum.</p>
+                <div class="item">
+                    <div class="image">
+                        <img src="https://laprida.ua/library/media/Muzeon-New-Year.jpg" alt="">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta impedit deleniti, temporibus consequuntur unde, sapiente esse, assumenda quisquam eveniet vero, repellendus porro odit sequi nisi facere provident qui reiciendis dolorem.</p>
+                <div class="item">
+                    <div class="image">
+                        <img src="https://laprida.ua/library/media/7f9e8646ab550b4fef895e064d740f96350be43c.jpg" alt="">
+                    </div>  
+                </div> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque, impedit libero, suscipit excepturi iure recusandae repellendus obcaecati aut fugit maxime quae. Sapiente, quia, aspernatur. Numquam adipisci sunt explicabo amet?</p>
+        </div>
+        <div class="blog-block">
+            <header>Читайте также</header>
+            <div class="blog-content">
+                <ul class="blog-list">
+                    <li>
+                        <a href="#">
+                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
+                            <p class="date">25.12.17</p>
+                            <p class="views"><span class="icon icon-eye"></span>229</p>
+                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
+                            <p class="date">25.12.17</p>
+                            <p class="views"><span class="icon icon-eye"></span>229</p>
+                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника
+                            Светящиеся палочки:неоновые палочки для яркого праздника  </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
+                            <p class="date">25.12.17</p>
+                            <p class="views"><span class="icon icon-eye"></span>229</p>
+                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
+                            <p class="date">25.12.17</p>
+                            <p class="views"><span class="icon icon-eye"></span>229</p>
+                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </section>
+<!--**********
+**************
+***************
+***************
+***************
+***************
+***************
+***************
+***************
+***************-->
+
+    <footer>
+        <div class="footer-main">
+            <ul class="icons-block">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+            <div class="service">
+                <p>Служба поддержки:</p>
+                <p class="footer-phone">+38 (098) 68 27 680</p>
+                <a href="#" class="write-us">Напиши нам</a>
+            </div>
+            <div class="icon icon-footer-logo"></div>
+        </div>
+        <div class="footer">
+            <p>Лучшие товары для вашего бизнеса</p>
+            <p>laprida.ua 2016 | Created by <a href="#" class="kb">kb.ua</a></p>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Согласие с рассылкой</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="template/www/js/main.js"></script>
+    
+</body>
+</html>
