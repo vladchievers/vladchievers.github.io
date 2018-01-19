@@ -21,7 +21,7 @@
     background: url('../img/sprite.png') no-repeat -372px -53px;
     background-size: 500px 500px;
     vertical-align: middle;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 .icon-close {
     background: url('../img/sprite.png') no-repeat -374px -33px;
@@ -189,9 +189,6 @@
     vertical-align: middle;
 }
 .icon-reload {
-    position: absolute;
-    top: 0;
-    left: -50px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -10px -119px;
@@ -199,9 +196,6 @@
     vertical-align: middle;
 }
 .icon-percent {
-    position: absolute;
-    top: 5px;
-    left: -50px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -55px -123px;
@@ -209,9 +203,6 @@
     vertical-align: middle;
 }
 .icon-min-bag {
-    position: absolute;
-    top: 0;
-    left: -50px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -98px -121px;
@@ -219,9 +210,6 @@
     vertical-align: middle;
 }
 .icon-boxes {
-    position: absolute;
-    top: 5px;
-    left: 310px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -142px -115px;
@@ -229,9 +217,6 @@
     vertical-align: middle;
 }
 .icon-thumb-up {
-    position: absolute;
-    top: 5px;
-    left: 310px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -198px -121px;
@@ -239,9 +224,6 @@
     vertical-align: middle;
 }
 .icon-72-hours {
-    position: absolute;
-    top: 0;
-    left: 310px;
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -246px -123px;

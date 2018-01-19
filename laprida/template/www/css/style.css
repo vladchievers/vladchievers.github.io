@@ -34,7 +34,7 @@ textarea{
 /***************HEADER**********************/
 .header-top{
 	background-color: #002f5d;
-	padding: 10px 15px;
+	padding: 20px 15px;
 	text-align: center;
 }
 .header-basket{
@@ -42,12 +42,18 @@ textarea{
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
+   margin: 0 auto;
+}
+.header-basket .fas{
+    margin-right: 10px;
 }
 .header-top .fa-bars{
 	color: #fff;
+    font-size: 18px;
 }
 .header-top .icon{
 	margin-left: 10px;
+    margin-top: 10px;
 }
 .header-burger{
 	display: inline-block;
@@ -56,11 +62,11 @@ textarea{
 .header-buttons{
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 20px; 
+	margin-bottom: 10px; 
 }
 .btn-header{
 	display: inline-block;
-	background-color: #ececec;
+	background-color:#ececec;
 	width: 135px;
 	height: 40px;
 	position: relative;
@@ -117,6 +123,7 @@ textarea{
 	float: right;
 	display: inline-block;
 	padding: 10px;
+    
 	font-size: 16px;
 	
 }
@@ -304,3 +311,387 @@ textarea{
 	font-size: 14px;
 }
 /***************FOOTER END**********************/
+
+/***************main-page **********************/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.catalog-block header{
+    text-align: center;
+    margin: 10px 0;
+}
+.main-header-logo{
+    width: 200px;
+    height: 60px;
+    background: url(../img/sprite.png) no-repeat -270px -289px;
+    background-size: 480px 480px;
+    display: inline-block;
+}
+.catalog-block .text-header{
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.content{
+    margin: 15px 0;
+}
+.catalog-list{
+    text-align: center;
+    font-size: 0;
+}
+.catalog-list li{
+    width: 134px;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 15px; 
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+.catalog-list li .image{
+    width: 134px;
+    display: inline-block;
+}
+.catalog-list li .image img{
+    max-width: 100%;
+}
+.catalog-list p{
+    margin: 7px 0;
+}
+.category-amount{
+    color: #b0b0b0;
+}
+.info-block header{
+    font-weight: 500px;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+.diamant-image{
+    width: 235px;
+    margin: 10px auto; 
+
+}
+.diamant-image:after{
+    content: '';
+    border-top: 1px solid #cdcdcd;
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.diamant-image img{
+    max-width: 100%;
+}
+.info-content{
+    padding: 0 20px;
+    text-align: center;
+}
+.info-list li{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    max-width: 285px;
+    display: inline-block;
+    vertical-align: top;
+}
+.info-list li:after{
+    content: '';
+    border-top: 1px solid #cdcdcd;
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+.info-list li .title{
+    color: #002f5d;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.info-list li p{
+    color: #696969;
+}
+.link-down{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.link-down .fa{
+    color: #002f5d;
+    display: block;
+    margin-top: 10px;
+}
+.social-block{
+    padding: 20px 15px;
+    background: #efefef;
+    text-align: center;
+    margin-top: 20px;
+}
+.social-block header{
+    font-size: 20px;
+    color: #000;
+}
+.social-block .icons-block  {
+    margin: 30px 0;
+}
+.link-lp{
+    font-size: 14px;
+    color: #000;
+}
+.info-business-block{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 40px ;
+}
+.info-business-block header p{
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0;
+}
+.info-business-content .row{
+    font-size: 0;
+}
+.info-business-content .row .item{
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    max-width: 240px;
+}
+.image-triangle{
+    width: 130px;
+    margin: 10px auto;
+}
+.image-triangle img{
+    max-width: 100%;
+}
+.info-blue-block{
+    background: url("https://m.laprida.ua/template/mobile/img/background-sample.jpg");
+     background-size: cover;
+     padding: 20px 0;
+      color: #fff;
+      text-align: center;
+}  
+.info-blue-block header{
+    font-size: 20px;
+}
+.info-blue-block .image-logo{
+    width: 167px;
+    margin: 20px auto;
+}
+.info-blue-block .image-logo img{
+    max-width: 100%;
+}
+.images-list{
+    margin: 10px 0;
+} 
+.images-list .row{
+    font-size: 0;
+    
+}
+.images-list .item{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    width: 130px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.images-list .image{
+    width: 125px;
+    height: 90px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.images-list .image img{
+    max-width: 100%;
+    display: inline-block;
+}
+.comment-block header{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.comments-list li{
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #909090;
+}
+.comments-list li .name{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+}
+.comments-list li p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.blog-block header{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.blog-list{
+    margin:20px 0;
+    font-size: 0;
+    text-align: center;
+}
+.blog-list li{
+    max-width: 134px;
+    margin: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+.blog-list li .image{
+    width: 134px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.blog-list li .image img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.date,.views{
+    color: #909090;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.info-about-us-block{
+    padding: 10px;
+    text-align: center;
+}
+.info-about-us-block header{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.info-about-us-block .firstP{
+    max-width: 190px;
+    margin: 20px auto;
+}
+.info-about-us-block p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+/***************main-page end**********************/
+
+
+/***************header-list-block **********************/
+.header-list-block{
+    margin-bottom: 20px;
+}
+.header-list{
+    font-size: 0;
+}
+.header-list li{
+    display: inline-block;
+    font-size: 14px;
+}
+.header-list li a{
+    color: #000;
+}
+.header-list .visited a{
+    color: #e0e0e0;
+}
+.header-list .visited:after{
+    display: inline-block;
+    font-weight: 900;
+    font-family: Font Awesome\ 5 Free;
+    content: "\f105"; 
+    color: #e0e0e0;
+    margin:0 10px;
+    font-size: 14px;
+    vertical-align: -1px;
+}
+/***************header-list-block end **********************/
+
+
+/***************blog **********************/
+.blog header{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+.blog header span{
+    margin-left: 5px;
+    color: #898989;
+}
+.blog-items{
+    font-size: 0;
+    text-align: center;
+}
+.blog-items .item{
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.image{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.image img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.date-views{
+    margin: 10px 0;
+    text-align: left;
+}
+.date-views .date,.views{
+    display: inline-block;
+    vertical-align: top;
+}
+.date-views .views{
+    float: right;
+}
+.item p{
+    text-align: left;
+}
+.number-pages{
+    margin: 20px 0;
+    text-align: center;
+}
+.list-pages li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.list-pages li a{
+    color: #9a9a9a;
+    
+}
+.list-pages li:last-child{
+    margin-left: 10px;
+}
+.list-pages .active a{
+    color: #2c5986;
+    border-bottom: 1px solid #2c5986;
+}
+/***************blog end**********************/
