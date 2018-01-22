@@ -51,7 +51,7 @@
     background: url('../img/sprite.png') no-repeat -7px -50px;
     background-size: 500px 500px;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 5px;top
 }
 .icon-discount {
     background: url('../img/sprite.png') no-repeat -34px -50px;
@@ -192,42 +192,42 @@
     height: 40px;
     background: url('../img/sprite.png') no-repeat -10px -119px;
     background-size: 500px 500px;
-    vertical-align: middle;
+    vertical-align:top;
 }
 .icon-percent {
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -55px -123px;
     background-size: 500px 500px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .icon-min-bag {
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -98px -121px;
     background-size: 500px 500px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .icon-boxes {
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -142px -115px;
     background-size: 480px 480px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .icon-thumb-up {
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -198px -121px;
     background-size: 500px 500px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .icon-72-hours {
     width: 40px;
     height: 40px;
     background: url('../img/sprite.png') no-repeat -246px -123px;
     background-size: 500px 500px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .icon-round-yb {
     width: 50px;

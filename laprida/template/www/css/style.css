@@ -12,6 +12,7 @@ html, body{
 }
 body{
     position: relative;
+    font-size: 14px;
 }
 
 a{
@@ -341,11 +342,11 @@ textarea{
 }
 .catalog-block .text-header{
     color: #000;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 5px;
 }
 .content{
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .catalog-list{
     text-align: center;
@@ -353,7 +354,6 @@ textarea{
 }
 .catalog-list li{
     width: 135px;
-    max-width: 210px;
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -361,41 +361,40 @@ textarea{
     text-align: center;
     font-size: 16px;
     box-sizing: border-box; 
+    vertical-align: top;
 }
 .catalog-list li:nth-child(2n){
 	margin-right: 0;
 }
 .catalog-list li .image{
     width: 135px;
+    height: 200px;
     display: inline-block;
 }
 .catalog-list li .image img{
     max-width: 100%;
 }
 .catalog-list p{
-    margin: 7px 0;
+    margin: 10px 0;
 }
 .category-amount{
     color: #b0b0b0;
 }
+.info-block {
+	position: relative;
+	padding: 20px 0
+}
 .info-block header{
     font-weight: 500px;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #000;
+   
 }
 .diamant-image{
-    width: 235px;
-    margin: 10px auto; 
-
-}
-.diamant-image:after{
-    content: '';
-    border-top: 1px solid #cdcdcd;
-    width: 80px;
+    width: 290px;
     margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
+    margin-top: 30px; 
 }
 .diamant-image img{
     max-width: 100%;
@@ -403,18 +402,26 @@ textarea{
 .info-content{
     padding: 0 20px;
     text-align: center;
+    height: 300px;
+    overflow: hidden;
+}
+.info-list{
+	font-size: 0;
 }
 .info-list li{
     text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
-    max-width: 285px;
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
+}
+.info-list li .left{
+	position: static;
 }
 .info-list li:after{
     content: '';
-    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     width: 80px;
     margin: 0 auto;
     display: block;
@@ -422,9 +429,9 @@ textarea{
 }
 .info-list li .title{
     color: #002f5d;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .info-list li p{
     color: #696969;
@@ -442,17 +449,18 @@ textarea{
     margin-top: 10px;
 }
 .social-block{
-    padding: 20px 15px;
+    padding: 30px;
     background: #efefef;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .social-block header{
     font-size: 20px;
     color: #000;
 }
 .social-block .icons-block  {
-    margin: 30px 0;
+    margin-top: 40px;
+    margin-bottom:30px;
 }
 .link-lp{
     font-size: 14px;
@@ -477,9 +485,10 @@ textarea{
     margin: 10px;
     color: #000;
     max-width: 240px;
+    text-align: center;
 }
 .image-triangle{
-    width: 130px;
+    width: 135px;
     margin: 10px auto;
 }
 .image-triangle img{
@@ -689,9 +698,6 @@ textarea{
 .date-views .views{
     float: right;
 }
-.item p{
-    text-align: left;
-}
 .number-pages{
     margin: 20px 0;
     text-align: center;
@@ -785,37 +791,145 @@ textarea{
 @media screen and (min-width: 480px){
 	.container{
 	    max-width: 440px;
-	    margin: 0 auto;
 	}
 	.btn-header{
 		width: 215px;
 	}
 	.catalog-list li{
 		width: 210px;
+		margin-right: 20px;
 	}
 	.catalog-list li .image{
     width: 210px;
+    height: 310px;
 	}
 }
 @media screen and (min-width: 720px){
 	.container{
 	    max-width: 680px;
-	    margin: 0 auto;
+	}
+	.link-down{
+		display: none;
 	}
 	.btn-header{
 		width: 335px;
 	}
 	.catalog-list li{
-		width: 155px;
+		width: 160px;
+		margin-right: 10px;
 	}
 	.catalog-list li .image{
-    width: 155px;
+    width: 160px;
+    height: 235px;
+    
+	}
+	.catalog-list li:nth-child(2){
+		margin-right: 10px;
+	}
+	.catalog-list li:last-child{
+		margin: 0;
+	}
+	.diamant-image{
+		position: absolute;
+		top: 120px;
+		left: 190px;
+	}
+	.info-content {
+		   height: 450px;
+	}
+	.info-list li .icon{
+		margin-top: 5px;
+	}
+	.info-list li .title{
+		display: inline-block;
+		width: 70%;
+	}
+	.info-list li{
+		position: absolute;
+		max-width: 205px;
+		vertical-align: top;
+	} 
+	.info-list li:after{
+		content: '';
+		border: none;
+		margin: 0;
+	}
+	.info-list li:first-child{
+		left: 0;
+		top: 50px;
+		text-align: left;
+		
+	}
+	.info-list li:first-child p{
+		padding-left: 50px;
+	}
+	.info-list li:first-child .icon{
+		margin-right: 7px;
+	}
+	.info-list li:nth-child(2){
+		left: 0;
+		top: 230px;
+		text-align: left;
+	}
+	.info-list li:nth-child(2) .icon{
+		margin-right: 7px;
+	}
+	.info-list li:nth-child(2) p{
+		padding-left: 50px; 
+	}
+	.info-list li:nth-child(3){
+		left: 0;
+		top: 360px;
+		text-align: left;
+	}
+	.info-list li:nth-child(3) .icon{
+		margin-right: 7px;
+	}
+	.info-list li:nth-child(3) p{
+		padding-left: 50px;
+	}
+	.info-list li:nth-child(4){
+		right: 0;
+		top: 50px;
+		text-align: right;
+		max-width: 255px;
+	}
+	.info-list li:nth-child(4) .icon{
+		float: right;
+		margin-left: 10px;
+	}
+	.info-list li:nth-child(4) p{
+		padding-right: 50px;
+	}
+		
+	.info-list li:nth-child(5){
+		right: 0;
+		top: 230px;
+		text-align: right;
+	}
+	.info-list li:nth-child(5) .icon{
+		float: right;
+		margin-left: 10px;
+	}
+	.info-list li:nth-child(5) p{
+		padding-right: 50px;
+	}
+	.info-list li:nth-child(6){
+		right: 0;
+		top: 360px;
+		text-align: right;
+	}
+	.info-list li:nth-child(6) .icon{
+		float: right;
+		margin-left: 10px;
+	}
+	.info-list li:nth-child(6) p{
+		padding-right: 50px;
 	}
 }
 @media screen and (min-width: 1019px){
 	.container{
 	    max-width: 980px;
-	    margin: 0 auto;
 	}
 	.btn-header{
 		width: 480px;
@@ -823,7 +937,22 @@ textarea{
 	.button-enter{
 		margin-left: 20px;
 	}
+	.catalog-list li{
+		width: 210px;
+		margin-right: 20px;
+	}
 	.catalog-list li .image{
     width: 210px;
+    height: 310px;
 	}
+	.diamant-image{
+		display: none !important;
+	}
+	.info-content{
+		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat;
+	}
+	.info-list li{
+		max-width: 300px;
+	}
+	
 }
