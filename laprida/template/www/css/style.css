@@ -34,7 +34,7 @@ textarea{
 }
 /***************HEADER**********************/
 .header-top{
-	background-color: #002f5d;
+	background-color: #003368;
 	padding: 15px 15px;
 	text-align: center;
 }
@@ -54,10 +54,6 @@ textarea{
 .header-top .fa-bars{
 	color: #fff;
     font-size: 18px;
-}
-.header-top .icon{
-	margin-left: 10px;
-    margin-top: 5px;
 }
 .header-burger{
 	display: inline-block;
@@ -95,17 +91,20 @@ textarea{
 .button-enter .icon{
 	margin-top: 10px; 
 }
+.phone-wrap{
+	position: relative;
+}
 .phone{
 	line-height: 40px;
-	font-weight: 600;
+	font-weight: bold;
 }
 .phone:before{
 	content: '';
     position: absolute;
     width: 30px;
     height: 20px;
-    left: 15px;
-    top: 10px;
+    left: -33px;
+    top: -2px;
     bottom: 0;
     background: url(../img/sprite.png) no-repeat -110px -389px;
     background-size: 470px 470px;
@@ -121,7 +120,6 @@ textarea{
     height:100vh;
     background-color: transparent;
     overflow-x:hidden;
-    transition: 0.3s;
     z-index:1000;
 }
 #side-menu .side-menu{
@@ -256,7 +254,7 @@ textarea{
 	padding-top: 30px;
 	padding-bottom: 70px;  
 	text-align: center;
-	background-color: #08305f;
+	background-color: #00356A;
 	color: #fff;
 	position: relative;
 	margin-top: 20px; 
@@ -275,9 +273,7 @@ textarea{
 	font-size: 24px;
 }
 .footer-list{
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 35px; 
+	margin: 35px auto;
 }
 .footer-list li{
 	padding: 10px;
@@ -291,7 +287,7 @@ textarea{
 	font-size: 14px;
 }
 .footer-phone{
-	font-size: 20px;
+	font-size: 22px;
 	margin: 20px 0;
 }
 .service .write-us{
@@ -299,15 +295,18 @@ textarea{
 }
 .footer{
 	background-color: #20232a;
-	padding-top: 70px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 	text-align: center;
 }
-.footer-main .icon{
-	position: absolute;
-	bottom: -50px; 
-	left: 50%;
-	margin-left: -43px;  
+.footer-content{
+	text-align: center;
+	margin-top: -65px;
+	position: relative;
+	z-index: 100;
+}
+.footer-content .icon{
+	margin-bottom: 20px;  
 }
 .footer p{
 	color: #fff;
@@ -316,13 +315,13 @@ textarea{
 .kb{
 	color: #89b0c7;
 }
-.footer ul{
+.footer-bottom{
 	margin-top: 30px; 
 }
-.footer li{
+.footer-bottom li{
 	margin-bottom: 10px; 
 }
-.footer li a{
+.footer-bottom li a{
 	color: #6e6e6e;
 	font-size: 14px;
 }
@@ -332,6 +331,7 @@ textarea{
 .container{
     max-width: 280px;
     margin: 0 auto;
+    position: relative;
 }
 .catalog-block header{
     text-align: center;
@@ -452,7 +452,7 @@ textarea{
     padding: 30px;
     background: #efefef;
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 .social-block header{
     font-size: 20px;
@@ -484,7 +484,7 @@ textarea{
     display: inline-block;
     margin: 10px;
     color: #000;
-    max-width: 240px;
+    max-width: 200px;
     text-align: center;
 }
 .image-triangle{
@@ -500,6 +500,7 @@ textarea{
      padding: 20px 0;
       color: #fff;
       text-align: center;
+      margin: 40px 0;
 }  
 .info-blue-block header{
     font-size: 20px;
@@ -562,7 +563,7 @@ textarea{
     font-style: italic;
 }
 .blog-block{
-	padding: 20px 0; 
+	padding: 50px 0; 
 }
 .blog-block header{
     text-align: center;
@@ -571,22 +572,25 @@ textarea{
     margin-bottom: 20px;
 }
 .blog-list{
-    margin:20px 0;
+    margin-top: 35px;
     font-size: 0;
     text-align: center;
 }
 .blog-list li{
-    max-width: 134px;
-    margin: 5px;
-    margin-bottom: 20px;
+    max-width: 135px;
+    margin-right: 10px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     display: inline-block;
     font-size: 14px;
     vertical-align: top;
     text-align: left;
 }
+.blog-list li:nth-child(2n){
+	margin-right: 0;
+}
 .blog-list li .image{
-    width: 134px;
+    width: 135px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: inline-block;
@@ -654,13 +658,15 @@ textarea{
 
 /***************blog **********************/
 .blog header{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     margin-bottom: 10px;
+    text-align: center;
 }
 .blog header span{
     margin-left: 5px;
     color: #898989;
+    font-size: 14px;
 }
 .blog-items{
     font-size: 0;
@@ -670,14 +676,14 @@ textarea{
 }
 .blog-items .item{
     display: inline-block;
-    min-width: 280px;
-    max-width: 500px
+    width: 280px;
     margin-bottom: 30px;
     font-size: 14px;
-   
+   	text-align: left;
 }
 .item .image{
-    width:100%;
+    width:280px;
+ 	height: 175px;
     display: inline-block;
     box-sizing: border-box;
     margin: 0 auto;
@@ -725,22 +731,19 @@ textarea{
 .blog-view-content{
 	padding: 20px 0;
 	border-top: 2px solid #e7e7e7;
-	text-align: center;
 }
 .blog-view-content p{
 	margin-bottom: 20px; 
 	font-size: 14px;
-	text-align: left;
+	margin-top: 20px;
 }
-.blog-view-content .item > p{
-	font-size: 16px;
+.blog-view-content .item .title{
+	font-size: 20px;
 	color: #000;
 }
 .blog-view-content .item{
-    display: inline-block;
-    min-width: 280px;
-    max-width: 500px;
-    font-size: 14px;
+    width: 280px;
+    margin: 0 auto;
 }
 /***************blog-view end**********************/
 
@@ -761,14 +764,16 @@ textarea{
 /***************how-order end**********************/
 
 /***************comments-page **********************/
+.comments-page{
+	padding-bottom: 20px;
+}
 .comments-page .comment-block header{
-	text-align: left;
 	font-size: 20px;
 	margin-bottom: 10px;
 }
 .comments-page .comment-block header span{
 	color: #aeaeae;
-	font-size: 16px;
+	font-size: 14px;
 	margin-left: 5px;
 }
 .comments-page .comments{
@@ -776,13 +781,60 @@ textarea{
 	border-top: 2px solid #e7e7e7; 
 }
 .comments-page form{
-	margin: 20px 0;
+	margin: 40px 0;
 	text-align: center;
+	position: relative;
 }
 .comments-page .input-action{
 	box-sizing: border-box;
 	width: 100%;
+	max-width: 400px;
 	padding: 10px;
+	border: 2px solid #e4e4e4;
+	border-radius: 4px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 7px;
+}
+.comments-list .name{
+	font-size: 16px;
+}
+.comments-page form p{
+	font-size: 12px;
+	color: #000;
+}
+.code-block{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 0;
+}
+.code-block .input-code{
+	width: 135px;
+	border: 2px solid #e4e4e4;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	vertical-align: top;
+	border-radius: 2px;
+}
+.code-block .code{
+	width: 135px;
+	margin-left: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	padding: 7px 0;
+	background-color: #c7c7c7;
+	font-size: 20px;
+	vertical-align: top;
+	border-radius: 2px;
+}
+.btn-comment-action{
+	background-color: #f1bc59;
+	border: 2px solid #b98e3c;
+	padding: 10px 20px; 
+	border-radius: 2px;
 }
 /***************comments-page end**********************/
 
@@ -802,6 +854,22 @@ textarea{
 	.catalog-list li .image{
     width: 210px;
     height: 310px;
+	}
+	.blog-list li:nth-child(2n){
+	margin-right: 10px;
+	}
+	.blog-list li:nth-child(3n){
+	margin-right: 0;
+	}
+	.blog-items .item{
+   		width: 440px;
+	}
+	.item .image{
+		width: 440px;
+	   height: 275px;
+	}
+	.blog-view-content .item{
+    	width: 440px;
 	}
 }
 @media screen and (min-width: 720px){
@@ -827,11 +895,11 @@ textarea{
 		margin-right: 10px;
 	}
 	.catalog-list li:last-child{
-		margin: 0;
+		margin-right: 0;
 	}
 	.diamant-image{
 		position: absolute;
-		top: 120px;
+		top: 100px;
 		left: 190px;
 	}
 	.info-content {
@@ -846,7 +914,7 @@ textarea{
 	}
 	.info-list li{
 		position: absolute;
-		max-width: 205px;
+		width: 205px;
 		vertical-align: top;
 	} 
 	.info-list li:after{
@@ -858,7 +926,6 @@ textarea{
 		left: 0;
 		top: 50px;
 		text-align: left;
-		
 	}
 	.info-list li:first-child p{
 		padding-left: 50px;
@@ -892,7 +959,7 @@ textarea{
 		right: 0;
 		top: 50px;
 		text-align: right;
-		max-width: 255px;
+		width: 255px;
 	}
 	.info-list li:nth-child(4) .icon{
 		float: right;
@@ -900,8 +967,7 @@ textarea{
 	}
 	.info-list li:nth-child(4) p{
 		padding-right: 50px;
-	}
-		
+	}	
 	.info-list li:nth-child(5){
 		right: 0;
 		top: 230px;
@@ -926,6 +992,66 @@ textarea{
 	.info-list li:nth-child(6) p{
 		padding-right: 50px;
 	}
+	.blog-list li:nth-child(3n){
+		margin-right: 10px;
+	}
+	.blog-list li:nth-child(4n){
+		margin-right: 0;
+	}
+	.footer-main .icons-block{
+		position: absolute;
+		max-width: 140px;
+		right: 0;
+		bottom: 0;
+	}
+	.footer-main .icons-block li:nth-child(3n){
+		margin-right: 0;
+	}
+	.footer-main .icons-block li{
+		margin-bottom: 20px;
+	}
+	.footer-list{
+		text-align: left;
+		max-width: 150px;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	.footer-list li{
+		border: none;
+	}
+	.service{
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-align: right;
+	}
+	.footer-content{
+		float: left;
+		margin-top: -375px;
+		max-width: 140px;
+		margin-left: 10px;
+	}
+	.footer-bottom{
+		margin-top: 0;
+	}
+	.footer{
+		padding: 20px;
+	}
+	.footer-bottom li{
+		display: inline-block;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	.blog-items .item{
+   		width: 520px;
+	}
+	.item .image{
+		width: 520px;
+	   height: 325px;
+	}
+	.blog-view-content .item{
+    	width: 520px;
+	}
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -941,6 +1067,9 @@ textarea{
 		width: 210px;
 		margin-right: 20px;
 	}
+	.catalog-list li:nth-child(2){
+		margin-right: 20px;
+	}
 	.catalog-list li .image{
     width: 210px;
     height: 310px;
@@ -949,10 +1078,35 @@ textarea{
 		display: none !important;
 	}
 	.info-content{
-		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat;
+		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat 42px 50px;
 	}
 	.info-list li{
-		max-width: 300px;
+		width: 340px;
 	}
-	
+	.info-list li:nth-child(4){
+		width: 350px;
+		top: 100px;
+	}
+	.info-list li .title{
+		width: 80%;
+	}
+	.info-list li:first-child{
+		top: 100px;
+	}
+	.image-triangle{
+		width: 220px;
+	}
+	.info-business-content .row .item{
+		margin: 0 50px;
+	}
+	.blog-list li:nth-child(4n){
+	margin-right: 10px;
+	}
+	.footer-content{
+		max-width: 240px;
+
+	}
+	.comment-left,.comment-right{
+		display: inline-block;
+	}
 }

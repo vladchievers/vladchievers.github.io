@@ -332,24 +332,24 @@
     right: 95px;
 }
 .comment-left {
-    display: inline-block;
+    display: none;
     width: 160px;
     height: 90px;
     background: url('../img/sprite.png') no-repeat -136px -177px;
     background-size: 500px 500px;
     position: absolute;
-    top: -178px;
-    left: -300px;
+    top: 100px;
+    left: 120px;
 }
 .comment-right {
-    display: inline-block;
+    display: none;
     width: 160px;
     height: 90px;
     background: url('../img/sprite.png') no-repeat -122px -275px;
     background-size: 500px 500px;
     position: absolute;
-    top: -177px;
-    left: 283px;
+    top: 90px;
+    right: 120px;
 }
 .comment-bottom {
     display: inline-block;
