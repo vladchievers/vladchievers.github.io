@@ -4,6 +4,7 @@
     background: url('../img/sprite.png') no-repeat -270px -289px;
     background-size: 480px 480px;
     display: inline-block;
+    zoom: 0.8;
 }
 .medium-logo {
     width: 130px;

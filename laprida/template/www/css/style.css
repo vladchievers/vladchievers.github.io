@@ -530,15 +530,17 @@ textarea{
     box-sizing: border-box;
     text-align: center;
 }
-.images-list .image{
-    width: 125px;
+.images-list .people {
+    background: url('../img/sprite2.png') no-repeat -40px -140px;
+    background-size: 800px 900px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 270px;
     height: 90px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-.images-list .image img{
-    max-width: 100%;
-    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
 }
 .comment-block header{
     font-size: 18px;
