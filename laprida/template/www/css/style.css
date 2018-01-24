@@ -17,7 +17,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #002f5d;
+    color: #003469;
 }
 li{
     list-style: none;
@@ -73,6 +73,7 @@ textarea{
 	padding-top: 10px;
 	padding-bottom: 10px; 
 	font-size: 0;
+	position: relative;
 }
 .btn-header{
 	display: inline-block;
@@ -84,6 +85,7 @@ textarea{
 	color: #1c8621;
 	box-sizing: border-box;
 	vertical-align: top;
+	
 }
 .button-enter{
 	margin-left: 10px;
@@ -98,7 +100,7 @@ textarea{
 	line-height: 40px;
 	font-weight: bold;
 }
-.phone:before{
+.phone-wrap .phone:before{
 	content: '';
     position: absolute;
     width: 30px;
@@ -108,6 +110,56 @@ textarea{
     bottom: 0;
     background: url(../img/sprite.png) no-repeat -110px -389px;
     background-size: 470px 470px;
+}
+.phone-block{
+	position: absolute;
+	background-color: #fff;
+	top: 40px;
+	left: 0;
+	z-index: 100;
+	font-size: 14px;
+	width: 280px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
+	text-align: center;
+	padding-bottom: 20px;
+	border: 1px solid #c7c7c7;
+	display: none;
+}
+.phone-block .product-list{
+	color: #000;
+	display: inline-block;
+	margin-right: 40px;
+	vertical-align: top;
+	text-align: left;
+}
+.phone-block .number-list{
+	display: inline-block;
+	color: #003469;
+	vertical-align: top;
+}
+.product-list li{
+	margin-bottom: 20px;
+}
+.number-list li{
+	margin-bottom: 20px;
+}
+.work{
+	margin: 10px 0;
+	color: #ee0023;
+}
+.phone-number{
+	font-size: 16px;
+	color: #1c8621;
+}
+.phone-number .phone:before{
+	content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+	margin-right: 10px;
+    background: url(../img/sprite.png) no-repeat -110px -389px;
+    background-size: 470px 470px;
+    vertical-align: -3px;
 }
 /***************HEADER END**********************/
 /***************ASIDE**********************/
@@ -133,9 +185,9 @@ textarea{
     box-sizing: border-box;
     padding: 0 10px;
 }
-.side-menu .close{
-	float: right;
-	display: inline-block;
+ .close{
+	text-align: right;
+	display: block;
 	padding: 20px 10px;
 	font-size: 14px;
 	
@@ -873,6 +925,9 @@ textarea{
 	.blog-view-content .item{
     	width: 440px;
 	}
+	.phone-block{
+		width: 440px;
+	}
 }
 @media screen and (min-width: 720px){
 	.container{
@@ -1054,6 +1109,9 @@ textarea{
 	.blog-view-content .item{
     	width: 520px;
 	}
+	.phone-block{
+		width: 334px;
+	}
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -1110,5 +1168,8 @@ textarea{
 	}
 	.comment-left,.comment-right{
 		display: inline-block;
+	}
+	.phone-block{
+		width: 479px;
 	}
 }

@@ -58,3 +58,12 @@ function toggleList(that){
     }
 
 }
+
+$('document').ready( function(){
+    $('.button-call').click( function(){
+        $('.phone-block').css('display','block');
+    });
+    $('.close').click(function(){
+        $(this).parent().css('display','none');
+    });
+});
