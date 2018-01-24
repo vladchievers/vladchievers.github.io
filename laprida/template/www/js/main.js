@@ -61,9 +61,10 @@ function toggleList(that){
 
 $('document').ready( function(){
     $('.button-call').click( function(){
-        $('.phone-block').css('display','block');
+        $('.phone-block').slideToggle();
+
     });
-    $('.close').click(function(){
+    $('.close-block').click(function(){
         $(this).parent().css('display','none');
     });
 });
