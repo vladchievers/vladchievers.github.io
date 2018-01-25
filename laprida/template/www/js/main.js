@@ -73,12 +73,22 @@ $('document').ready( function(){
     });
     $('.expand').click(function(){
         $(this).prev().css('height', 'auto');
-        $(this).css('display', 'none');
-        $(this).next().css('display', 'block');
+        $(this).hide();
+        $(this).next().show();
     });
     $('.turn').click(function(){
-        $(this).prev().css('display' , 'block');
-        $(this).prev().prev().css('height' , '270px');
-        $(this).css('display', 'none');
+        $(this).prev().show();
+        $(this).prev().prev().css('height' , '300px');
+        $(this).hide();
+    })
+    $('.expand-content').click(function(){
+        $(this).prev().css('height', 'auto');
+        $(this).hide();
+        $(this).next().show();
+    });
+    $('.turn-content').click(function(){
+        $(this).prev().show();
+        $(this).prev().prev().css('height' , '200px');
+        $(this).hide();
     })
 });
