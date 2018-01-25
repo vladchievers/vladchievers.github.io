@@ -454,7 +454,7 @@ textarea{
 .info-content{
     padding: 0 20px;
     text-align: center;
-    height: 300px;
+    height: 270px;
     overflow: hidden;
 }
 .info-list{
@@ -494,6 +494,10 @@ textarea{
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
+   	color: #003469;
+}
+.turn{
+	display: none;
 }
 .link-down .fa{
     color: #002f5d;
@@ -677,6 +681,11 @@ textarea{
     margin: 10px 0;
     font-size: 14px;
 }
+.info-about-us-block .content{
+	height: 270px;
+	overflow: hidden;
+}
+
 /***************main-page end**********************/
 
 

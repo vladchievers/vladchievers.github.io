@@ -61,10 +61,24 @@ function toggleList(that){
 
 $('document').ready( function(){
     $('.button-call').click( function(){
-        $('.phone-block').slideToggle();
-
+        var phone = $('.phone-block');
+        if(phone.css('display') === 'none'){
+            phone.css('display' , 'block');
+        }else{
+            phone.css('display' , 'none');
+        };
     });
     $('.close-block').click(function(){
         $(this).parent().css('display','none');
     });
+    $('.expand').click(function(){
+        $(this).prev().css('height', 'auto');
+        $(this).css('display', 'none');
+        $(this).next().css('display', 'block');
+    });
+    $('.turn').click(function(){
+        $(this).prev().css('display' , 'block');
+        $(this).prev().prev().css('height' , '270px');
+        $(this).css('display', 'none');
+    })
 });
