@@ -91,4 +91,5 @@ $('document').ready( function(){
         $(this).prev().prev().css('height' , '200px');
         $(this).hide();
     })
+    $('.my-carousel').slick();
 });

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="template/www/css/sprite.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template/www/css/sprite.css">
 
-	<link rel="stylesheet" href="slick/slick-theme.css">
-	<link rel="stylesheet" href="slick/slick.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="template/www/css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="template/www/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
-	<header>
+    <header>
           <div class="header-top">
                     <div class="container">
                         <a class="icon icon-logo" href=""></a>
@@ -26,7 +29,7 @@
                         <div class="clearfix"></div>
                     </div>
             </div>
-            <div class="header-buttons">
+             <div class="header-buttons">
                 <div class="container">
                     <a class="btn-header button-call">
                         <span class="phone-wrap">
@@ -53,17 +56,17 @@
                     </div>
                  </div>
             </div>  
-
-	</header>
-	<aside id="side-menu" style="width: 0px;">
+    </header>
+    
+    <aside id="side-menu" style="width: 0px;">
     <div class="side-menu">
 
-     	<a class="close" onclick="closeMenu()">Закрыть</a>
+        <a class="close" onclick="closeMenu()">Закрыть</a>
 
-    	<form action="">
-    		<input class="search" placeholder="Поиск" type="text">
-    		<button class="btn-search"><i class="fa fa-search"></i></button>
-    	</form>
+        <form action="">
+            <input class="search" placeholder="Поиск" type="text">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+        </form>
 
         <ul class="menu-header">
             <li><p>Каталог продукции</p></li>
@@ -146,7 +149,7 @@
         </ul>
     </div>
     <div class="close-menu" onclick="closeMenu();"></div>
-	</aside>
+    </aside>
 <!--**********
 **************
 ***************
@@ -157,93 +160,53 @@
 ***************
 ***************
 ***************-->
-    <section class="comments-page container">
+    <section class="main-catalog container">
         <div class="header-list-block">
             <ul class="header-list">
                 <li class="visited"><a href="#">Главная</a></li>
-                <li><a href="#">Блог</a></li>
+                <li ><a href="#">Бижутерия - Аксессуары - Товары для детей</a></li>            
             </ul>
         </div>
-             <div class="comment-block">
-            <header>Отзывы <span>(105)</span></header>
-            <div class="comments">
-                <ul class="comments-list">
-                    <li>
-                        <p class="name">Анaстасия</p>
-                        <p>21.12.16</p>
-                        <p>Все отлично, скорость на высоте.
-                        Качество изумительное</p>
-                    </li>
-                    <li>
-                        <p class="name">Анaстасия</p>
-                        <p>21.12.16</p>
-                        <p>Все отлично, скорость на высоте.
-                        Качество изумительное</p>
-                    </li>
-                 </ul>
+        <div class="min-sum">Минимальная сумма заказа 1200грн.</div>
+        <div class="catalog-wrap">
+            <div class="image-slider">
+                <div class="my-carousel">
+                    <div>
+                        <a class="slide-img" href="#">
+                            <img src="https://laprida.ua/library/media/banner/lk85/lk21/24ls/32124_zq82128az83889kd.jpg" alt="">
+                        </a>
+                    </div>
+                     <div>
+                        <a class="slide-img" href="#">
+                            <img src="https://laprida.ua/library/media/banner/lk85/lk21/24ls/32124_zq82128az83889kd.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="number-pages">
-                <ul class="list-pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">...</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
-            </div>   
+             <header>Декор <span>(1205 товаров)</span></header>
+             <div class="buttons-catalog">
+                 <button class="btn-new">Новинки</button>
+                 <button class="btn-sale">Распродажа</button>
+             </div>
+             <ul class="main-catalog-list">
+                 <li>
+                    <a class="wrap" href="#">
+                        <span><img src="https://laprida.ua/library/catalog/3721/2437/kdgf/32124_az51347uh52429uh.jpg" alt=""></span>
+                        <p>Детские товары</p>
+                        <p class="quality">(14)</p>
+                    </a>
+                </li>
+                  <li>
+                    <a class="wrap" href="#">
+                        <span><img src="https://laprida.ua/library/catalog/3721/2437/kdgf/32124_az51347uh52429uh.jpg" alt=""></span>
+                        <p>Детские товары</p>
+                        <p class="quality">(14)</p>
+                    </a>
+                </li>
+             </ul>
         </div>
-        <form action="">
-            <input class="input-action" type="text" placeholder="Ваше имя">
-            <input class="input-action" type="text" placeholder="Ваш e-mail адрес">
-            <textarea class="input-action" name="" id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
-            <span class="comment-left"></span>
-            <span class="comment-right"></span>
-            <p>Все поля являются обязательными для заполнения</p>
-            <div class="code-block">
-                <input class="input-code" type="text" placeholder="Код проверки">
-                <span class="code">52205</span>
-            </div>
-            <button class="btn-comment-action">Отправить</button>
-        </form>
-         <div class="blog-block">
-            <header>Читайте также</header>
-            <div class="blog-content">
-                <ul class="blog-list">
-                    <li>
-                        <a href="#">
-                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
-                            <p class="date">25.12.17</p>
-                            <p class="views"><span class="icon icon-eye"></span>229</p>
-                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
-                            <p class="date">25.12.17</p>
-                            <p class="views"><span class="icon icon-eye"></span>229</p>
-                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника
-                            Светящиеся палочки:неоновые палочки для яркого праздника  </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
-                            <p class="date">25.12.17</p>
-                            <p class="views"><span class="icon icon-eye"></span>229</p>
-                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="image"><img src="https://laprida.ua/library/blog/azaz/lskd/21lk/23544_az72255kd45786dc.jpg" alt=""></span>
-                            <p class="date">25.12.17</p>
-                            <p class="views"><span class="icon icon-eye"></span>229</p>
-                            <p ">Светящиеся палочки:неоновые палочки для яркого праздника  </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>    
+
+       
     </section>
 <!--**********
 **************
@@ -256,10 +219,9 @@
 ***************
 ***************-->
 
-   
     <footer>
-        <div class="footer-main">
-            <div class="container">
+		<div class="footer-main">
+			<div class="container">
                  <ul class="icons-block">
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fab fa-vk"></i></a></li>
@@ -280,13 +242,13 @@
                 </ul>
                 <div class="service">
                     <p>Служба поддержки:</p>
-                     <a href="tel:+38 (098) 68 27 680" class="footer-phone">+38 (098) 68 27 680</a>
+                    <a href="tel:+38 (098) 68 27 680" class="footer-phone">+38 (098) 68 27 680</a>
                     <a href="#" class="write-us">Напиши нам</a>
                 </div>  
             </div>
             
-        </div>
-        <div class="footer">
+		</div>
+		<div class="footer">
             <div class="container">
                   <div class="footer-content">
                     <div class="icon icon-footer-logo"></div>
@@ -300,14 +262,13 @@
                 </ul>
             </div>
         </div>
-        
-    </footer>
+		
+	</footer>
 
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
     <script src="slick/slick.min.js"></script>
-    <script src="template/www/js/main.js"></script>
-    
+	<script  src="template/www/js/main.js"></script>
+  
 </body>
 </html>
