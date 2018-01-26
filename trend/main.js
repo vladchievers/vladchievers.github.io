@@ -135,12 +135,15 @@ var heart = document.querySelectorAll('.heart');
             });
 
            $('.js-toggle').click(function(){
+            var closed = true;
                 if($(this).find('i').hasClass('fa-angle-down')){
                     $(this).find('i').removeClass('fa-angle-down');
                     $(this).find('i').addClass('fa-angle-right');
+                    closed = true;
                 }else{
                     $(this).find('i').removeClass('fa-angle-right');
-                    $(this).find('i').addClass('fa-angle-down')
+                    $(this).find('i').addClass('fa-angle-down');
+                    closed = false;
                 }
             $(this).next().toggleClass('block');
            })

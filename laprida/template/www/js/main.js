@@ -92,4 +92,28 @@ $('document').ready( function(){
         $(this).hide();
     })
     $('.my-carousel').slick();
+    $('.carousel-list').slick({
+        infinite: false,
+        slidesToShow: 8,
+        responsive: [
+            {
+                breakpoint: 1090,
+                settings: {
+                    slidesToShow: 6 
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
 });

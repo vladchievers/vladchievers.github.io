@@ -124,6 +124,7 @@ textarea{
 	padding-bottom: 20px;
 	border: 1px solid #c7c7c7;
 	display: none;
+	padding-right: 10px; 
 }
 .phone-block .product-list{
 	color: #000;
@@ -149,6 +150,8 @@ textarea{
 }
 .phone-number{
 	font-size: 16px;
+}
+.phone-number a{
 	color: #1c8621;
 }
 .phone-number .phone:before{
@@ -186,11 +189,11 @@ textarea{
     padding: 0 10px;
 }
  .close{
-	text-align: right;
-	display: block;
+	float: right;
+	display: inline-block;
 	padding: 20px 10px;
 	font-size: 14px;
-	
+	color: #003469;
 }
 .side-menu form{
 	text-align: center; 
@@ -778,12 +781,12 @@ textarea{
     font-size: 12px;
 }
 .header-list li a{
-    color: #444444;
-}
-.header-list .visited a{
     color: #CCCCCC;
 }
-.header-list .visited:after{
+.header-list .active a{
+    color: #444444;
+}
+.header-list li:after{
     display: inline-block;
     font-weight: 900;
     font-family: Font Awesome\ 5 Free;
@@ -792,6 +795,9 @@ textarea{
     margin:0 10px;
     font-size: 14px;
     vertical-align: -1px;
+}
+.header-list li.active:after{
+	display: none;
 }
 /***************header-list-block end **********************/
 
@@ -1016,10 +1022,11 @@ textarea{
 	font-size: 14px;
 	text-transform: uppercase; 
 	min-width: 135px;
-	
+	color: #0070DF;
 }
 .btn-sale{
 	margin-left: 10px;
+	color: #F01722;
 }
 .main-catalog-list{
 	font-size: 0;
@@ -1029,6 +1036,8 @@ textarea{
 	box-sizing: border-box;
 	font-size: 14px;
 	display: inline-block;
+	margin-bottom: 20px;
+	vertical-align: top;
 }
 .main-catalog-list li .wrap{
 	display: block;
@@ -1036,6 +1045,22 @@ textarea{
 	text-align: center;
 }
 .main-catalog-list li .wrap img{
+	max-width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.main-catalog-list li .wrap .sum{
+	color: #AAAAAA;
+	margin-top: 7px;
+}
+.sider-list header{
+	margin: 20px 0;
+}
+.slider-list .carousel-list-wrap{
+	width: 100px;
+	display: inline-block;
+}
+.slider-list .carousel-list-wrap img{
 	max-width: 100%;
 }
 /***************main-catalog end**********************/
@@ -1080,6 +1105,9 @@ textarea{
 	}
 	.btn-new,.btn-sale{
 		width: 215px;
+	}
+	.main-catalog-list li{
+		width: 33.333333%;
 	}
 }
 @media screen and (min-width: 720px){
@@ -1286,6 +1314,12 @@ textarea{
 	.btn-new,.btn-sale{
 		width: 335px;
 	}
+	.main-catalog-list{
+		padding: 0 50px;
+	}
+	.main-catalog-list li{
+		width: 25%;
+	}
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -1364,5 +1398,14 @@ textarea{
 	}
 	.btn-new,.btn-sale{
 		width: 405px;
+	}
+	.main-catalog-list{
+		padding: 0 ;
+	}
+	.main-catalog-list li{
+		width: 33.3%;
+	}
+	.main-catalog-list li .wrap{
+		width: 	270px;
 	}
 }

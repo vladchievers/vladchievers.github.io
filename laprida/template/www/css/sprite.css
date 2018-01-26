@@ -435,6 +435,7 @@
     background: url('../img/sprite.png') no-repeat -147px -88px;
     background-size: 500px 500px;
     margin-right: 10px;
+    vertical-align: -5px;
 }
 .icon-red-percent {
     width: 15px;
@@ -442,6 +443,7 @@
     background: url('../img/sprite.png') no-repeat -174px -88px;
     background-size: 500px 500px;
     margin-right: 10px;
+    vertical-align: -5px;
 }
 .status.discount {
     background: url('../img/sprite.png') no-repeat -300px -82px;
