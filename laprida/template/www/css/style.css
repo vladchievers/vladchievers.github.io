@@ -993,6 +993,9 @@ textarea{
 	text-align: center;  
 	font-size: 16px;
 }
+.main-catalog{
+	padding-bottom: 30px
+}
 .main-catalog header{
 	font-size: 20px;
 	margin: 20px 0;
@@ -1043,6 +1046,7 @@ textarea{
 	display: block;
 	width: 136px;
 	text-align: center;
+	position: relative;
 }
 .main-catalog-list li .wrap img{
 	max-width: 100%;
@@ -1053,15 +1057,40 @@ textarea{
 	color: #AAAAAA;
 	margin-top: 7px;
 }
-.sider-list header{
+.slider-list header{
 	margin: 20px 0;
+	font-size: 16px;
+	color: #444444;
+	text-align: left;
 }
 .slider-list .carousel-list-wrap{
 	width: 100px;
 	display: inline-block;
+	position: relative;
+	padding-top: 5px; 
 }
 .slider-list .carousel-list-wrap img{
 	max-width: 100%;
+}
+.slick-track{
+	float: left;
+}
+.slick-slider{
+	overflow: hidden;
+}
+.main-catalog .link-down{
+	margin-top: 30px;
+}
+.main-catalog .link-down i{
+	display: inline-block;
+	vertical-align: -1px;
+}
+.status-new span{
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 /***************main-catalog end**********************/
 

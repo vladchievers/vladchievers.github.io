@@ -449,9 +449,14 @@
     background: url('../img/sprite.png') no-repeat -300px -82px;
     background-size: 360px 350px;
 }
-.status.new {
+.status-new {
     background: url('../img/sprite.png') no-repeat -249px -82px;
     background-size: 360px 350px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 5px;
 }
 .gallery-container .status.discount {
     background: url('../img/sprite.png') no-repeat -434px -128px;
