@@ -687,6 +687,8 @@ textarea{
 }
 .blog-list li .image{
     width: 135px;
+    height: 108px;
+    line-height: 130px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: inline-block;
@@ -694,7 +696,7 @@ textarea{
 }
 .blog-list li .image img{
     max-width: 100%;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
 }
 .date,.views{
@@ -978,14 +980,16 @@ textarea{
 		margin-right: 20px;
 	}
 	.catalog-list li .image{
-    width: 210px;
-    height: 310px;
+	    width: 210px;
+	    height: 310px;
 	}
-	.blog-list li:nth-child(2n){
-	margin-right: 10px;
+	.blog-list li{
+		max-width: 215px;
 	}
-	.blog-list li:nth-child(3n){
-	margin-right: 0;
+	.blog-list li .image{
+	    width: 215px;
+	    height: 160px;
+		line-height: 185px;
 	}
 	.blog-items .item{
    		width: 440px;
@@ -1016,8 +1020,8 @@ textarea{
 		margin-right: 10px;
 	}
 	.catalog-list li .image{
-    width: 160px;
-    height: 235px;
+	    width: 160px;
+	    height: 235px;
     
 	}
 	.catalog-list li:nth-child(2){
@@ -1026,10 +1030,28 @@ textarea{
 	.catalog-list li:last-child{
 		margin-right: 0;
 	}
+	.blog-list li{
+		max-width: 156px;
+	}
+	.blog-list li:nth-child(2){
+		margin-right: 10px;
+	}
+	.blog-list li:nth-child(0){
+		margin-right: 0;
+	}
+	.blog-list li .image{
+	    width: 156px;
+	    height: 129px;
+	    line-height: 150px;
+	}
+	.blog-list li:nth-child(4){
+		margin-right: 0;
+	}
 	.diamant-image{
 		position: absolute;
-		top: 100px;
-		left: 190px;
+		top: 120px;
+		left: 50%;
+		margin-left: -145px;
 	}
 	.info-content {
 		   height: 450px;
@@ -1043,7 +1065,7 @@ textarea{
 	}
 	.info-list li{
 		position: absolute;
-		width: 205px;
+		width: 215px;
 		vertical-align: top;
 	} 
 	.info-list li:after{
@@ -1053,7 +1075,7 @@ textarea{
 	}
 	.info-list li:first-child{
 		left: 0;
-		top: 50px;
+		top: 0px;
 		text-align: left;
 	}
 	.info-list li:first-child p{
@@ -1064,7 +1086,7 @@ textarea{
 	}
 	.info-list li:nth-child(2){
 		left: 0;
-		top: 230px;
+		top: 170px;
 		text-align: left;
 	}
 	.info-list li:nth-child(2) .icon{
@@ -1075,7 +1097,7 @@ textarea{
 	}
 	.info-list li:nth-child(3){
 		left: 0;
-		top: 360px;
+		top: 300px;
 		text-align: left;
 	}
 	.info-list li:nth-child(3) .icon{
@@ -1086,9 +1108,9 @@ textarea{
 	}
 	.info-list li:nth-child(4){
 		right: 0;
-		top: 50px;
+		top: 0px;
 		text-align: right;
-		width: 255px;
+		width: 245px;
 	}
 	.info-list li:nth-child(4) .icon{
 		float: right;
@@ -1099,7 +1121,7 @@ textarea{
 	}	
 	.info-list li:nth-child(5){
 		right: 0;
-		top: 230px;
+		top: 170px;
 		text-align: right;
 	}
 	.info-list li:nth-child(5) .icon{
@@ -1111,7 +1133,7 @@ textarea{
 	}
 	.info-list li:nth-child(6){
 		right: 0;
-		top: 360px;
+		top: 300px;
 		text-align: right;
 	}
 	.info-list li:nth-child(6) .icon{
@@ -1126,9 +1148,6 @@ textarea{
 	}
 	.blog-list li:nth-child(4n){
 		margin-right: 0;
-	}
-	.social-block{
-		margin-top: 70px;
 	}
 	.footer-main .icons-block{
 		position: absolute;
@@ -1213,20 +1232,32 @@ textarea{
 		display: none !important;
 	}
 	.info-content{
-		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat 42px 50px;
+		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat 42px 20px;
 	}
 	.info-list li{
 		width: 340px;
 	}
+	.info-list li:first-child{
+		top: 30px;
+	}
+	.info-list li:nth-child(2){
+		top: 160px;
+	}
+	.info-list li:nth-child(3){
+		top: 290px;
+	}
+	.info-list li:nth-child(5){
+		top: 160px;
+	}
 	.info-list li:nth-child(4){
 		width: 350px;
-		top: 100px;
+		top: 30px;
+	}
+	.info-list li:last-child{
+		top: 290px;
 	}
 	.info-list li .title{
 		width: 80%;
-	}
-	.info-list li:first-child{
-		top: 100px;
 	}
 	.image-triangle{
 		width: 220px;
@@ -1234,12 +1265,16 @@ textarea{
 	.info-business-content .row .item{
 		margin: 0 50px;
 	}
-	.blog-list li:nth-child(4n){
-	margin-right: 10px;
+	.blog-list li{
+		max-width: 215px;
+	}
+	.blog-list li .image{
+		width: 215px;
+		height: 160px;
+		line-height: 185px;
 	}
 	.footer-content{
 		max-width: 240px;
-
 	}
 	.comment-left,.comment-right{
 		display: inline-block;
