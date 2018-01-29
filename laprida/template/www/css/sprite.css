@@ -450,9 +450,9 @@
     background-size: 360px 350px;
 }
 .status-new {
-    background: url('../img/sprite.png') no-repeat -249px -82px;
+    background: url('../img/sprite.png') no-repeat -249px -80px;
     background-size: 360px 350px;
-    width: 40px;
+    width: 46px;
     height: 40px;
     position: absolute;
     top: 0;
@@ -479,6 +479,7 @@
 .icon-filter.vertical.active {
     background: url('../img/sprite.png') no-repeat -348px -87px;
     background-size: 500px 500px;
+    opacity: 1;
 }
 .icon-filter.vertical {
     display: inline-block;
@@ -487,6 +488,10 @@
     background: url('../img/sprite.png') no-repeat -374px -87px;
     background-size: 500px 500px;
     cursor: pointer;
+    opacity: 0.7;
+    vertical-align: middle;
+    margin-left: 10px;
+    zoom: 0.9;
 }
 .icon-filter.horizontal {
     cursor: pointer;
@@ -495,10 +500,15 @@
     height: 22px;
     background: url('../img/sprite.png') no-repeat -437px -87px;
     background-size: 500px 500px;
+    opacity: 0.7;
+    vertical-align: middle;
+    margin-left: 10px;
+    zoom: 0.9;
 }
 .icon-filter.horizontal.active {
     background: url('../img/sprite.png') no-repeat -405px -87px;
     background-size: 500px 500px;
+    opacity: 1;
 }
 .icon-sorting-down {
     background: url('../img/sprite.png') no-repeat -366px -50px;

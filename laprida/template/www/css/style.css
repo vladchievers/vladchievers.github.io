@@ -116,7 +116,7 @@ textarea{
 	background-color: #fff;
 	top: 40px;
 	left: 0;
-	z-index: 100;
+	z-index: 1000;
 	font-size: 14px;
 	width: 280px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
@@ -125,6 +125,7 @@ textarea{
 	border: 1px solid #c7c7c7;
 	display: none;
 	padding-right: 10px; 
+    box-sizing: border-box;
 }
 .phone-block .product-list{
 	color: #000;
@@ -138,7 +139,7 @@ textarea{
 	color: #003469;
 	vertical-align: top;
 }
-.product-list li{
+.phone-block .product-list li{
 	margin-bottom: 20px;
 }
 .number-list li{
@@ -359,7 +360,7 @@ textarea{
 	text-align: center;
 	margin-top: -65px;
 	position: relative;
-	z-index: 100;
+	z-index: 20;
 }
 .footer-content .icon{
 	margin-bottom: 20px;  
@@ -857,7 +858,7 @@ textarea{
 .list-pages li{
     display: inline-block;
     margin: 0 5px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .list-pages li a{
     color: #9a9a9a;
@@ -963,7 +964,7 @@ textarea{
 	vertical-align: top;
 	border-radius: 2px;
 }
-.code-block .code{
+.code-block .sale-code{
 	width: 135px;
 	margin-left: 10px;
 	display: inline-block;
@@ -1093,6 +1094,68 @@ textarea{
 	left: 10px;
 }
 /***************main-catalog end**********************/
+
+/***************catalog-page**********************/
+.catalog-page header{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #000;
+}
+.catalog-page header span{
+    color: #aeaeae;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.sort-block{
+    padding: 10px 0;  
+}
+.sort{
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    padding: 10px; 
+    box-sizing: border-box;
+    position: relative;
+    display:  inline-block; 
+}
+.sort .fa{
+    float: right;
+    vertical-align: -2px;
+    font-size: 16px;
+    color: #5d5d5d;
+}
+.sort li{
+    position: relative;
+}
+.sort-list{
+    display: none;
+    margin-top: 10px;
+    position: absolute; 
+    top: 27px;
+    left: -1px;
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    background-color: #fff;
+    border-top: none ;
+}
+.sort-list li{
+    padding: 5px;
+    display: block;
+}
+.filters{
+    display:  inline-block; 
+    margin-top: 20px;
+    width:  100%; 
+}
+.icons-filters{
+    display:  inline-block;
+    float:  right;
+}
+.filters p{
+    display: inline-block;
+    vertical-align: middle;
+}
+/***************catalog-page end**********************/
 
 
 
@@ -1338,7 +1401,7 @@ textarea{
     	width: 520px;
 	}
 	.phone-block{
-		width: 334px;
+		width: 335px;
 	}
 	.btn-new,.btn-sale{
 		width: 335px;
@@ -1349,6 +1412,35 @@ textarea{
 	.main-catalog-list li{
 		width: 25%;
 	}
+    .sort{
+        border: none;
+        width: 375px; 
+        padding: 0;     
+       /* vertical-align:    top;*/
+    }
+    .sort p{
+        display:    inline-block; 
+        padding-top: 5px;       
+    }
+    .sort .fa{
+        display:  none;
+    }
+    .sort-list{
+        position:   static; 
+        display:    inline-block;  
+        width:  auto; 
+        border: none;
+        margin: 0;
+        
+    }
+    .sort-list li{
+        display:    inline-block;   
+    }
+    .filters{
+        width: 185px; 
+        float:  right;
+        margin-top:  4px;
+    }
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -1423,7 +1515,7 @@ textarea{
 		display: inline-block;
 	}
 	.phone-block{
-		width: 479px;
+		width: 480px;
 	}
 	.btn-new,.btn-sale{
 		width: 405px;

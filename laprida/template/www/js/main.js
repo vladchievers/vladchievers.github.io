@@ -116,4 +116,14 @@ $('document').ready( function(){
             }
         ]
     });
+    $('.sort').click(function(){
+        $('.sort-list').slideToggle();
+        if($('.sort i').hasClass('fa-angle-right')){
+            $('.sort i').removeClass('fa-angle-right');
+            $('.sort i').addClass('fa-angle-down');
+        }else{
+            $('.sort i').removeClass('fa-angle-down');
+            $('.sort i').addClass('fa-angle-right');
+        };
+    });
 });
