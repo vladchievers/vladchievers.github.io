@@ -1155,6 +1155,57 @@ textarea{
     display: inline-block;
     vertical-align: middle;
 }
+product-block ul{
+    font-size: 0;
+}
+.product-block li{
+    width: 135px;
+    font-size: 12px;
+    margin: 5px;
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+.product-block li .image{
+    width: 135px;
+}
+.product-block li .image img{
+    max-width: 100%;
+}
+.sum-input{
+    display: inline-block;
+    max-width: 117px;
+}
+.sum-input{
+    font-size: 14px;
+    margin: 10px; 
+
+}
+.sum-input .decrem,.increm{
+    border: 1px solid #c7c7c7;
+    padding: 3px 7px;
+    padding-bottom: 4px;
+    font-size: 18px; 
+    display: inline-block;
+    vertical-align:     middle  ;
+}
+.sum-input .decrem{
+    padding: 4px 10px;    
+}
+.sum-input input{
+    width:  40px;
+    border: none;
+    text-align:  center; 
+    outline:    none;
+}
+.btn-cart{
+    background-color: #f1bc59;
+    border: 1px solid   #a27c31;
+    color:  #000;
+    padding: 10px 0;   
+    text-align: center ; 
+    width:  85px;  
+}
+
 /***************catalog-page end**********************/
 
 
@@ -1431,7 +1482,6 @@ textarea{
         width:  auto; 
         border: none;
         margin: 0;
-        
     }
     .sort-list li{
         display:    inline-block;   
