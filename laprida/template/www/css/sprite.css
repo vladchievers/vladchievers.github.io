@@ -1,4 +1,4 @@
-.main-header-logo {
+-.main-header-logo {
     width: 200px;
     height: 60px;
     background: url('../img/sprite.png') no-repeat -270px -289px;
@@ -476,12 +476,12 @@
     z-index: 300;
 }
 
-.icon-filter.vertical.active {
+.icon-filter-vertical.active {
     background: url('../img/sprite.png') no-repeat -348px -87px;
     background-size: 500px 500px;
     opacity: 1;
 }
-.icon-filter.vertical {
+.icon-filter-vertical {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -493,7 +493,7 @@
     margin-left: 10px;
     zoom: 0.9;
 }
-.icon-filter.horizontal {
+.icon-filter-horizontal {
     cursor: pointer;
     display: inline-block;
     width: 22px;
@@ -505,7 +505,7 @@
     margin-left: 10px;
     zoom: 0.9;
 }
-.icon-filter.horizontal.active {
+.icon-filter-horizontal.active {
     background: url('../img/sprite.png') no-repeat -405px -87px;
     background-size: 500px 500px;
     opacity: 1;

@@ -1155,44 +1155,49 @@ textarea{
     display: inline-block;
     vertical-align: middle;
 }
-product-block ul{
+.product-block ul{
     font-size: 0;
 }
-.product-block li{
+.vertical.product-block li{
     width: 135px;
     font-size: 12px;
-    margin: 5px;
+    margin-right: 10px; 
     margin-bottom: 20px; 
     box-sizing: border-box;
+    display: inline-block;
+    vertical-align:    top;
 }
-.product-block li .image{
+.vertical.product-block li:nth-child(2n){
+    margin-right: 0; 
+}
+.vertical.product-block li .image{
     width: 135px;
+    display: block;
+    text-align:  center;    
 }
 .product-block li .image img{
     max-width: 100%;
 }
-.sum-input{
+ .sum-input{
     display: inline-block;
     max-width: 117px;
-}
-.sum-input{
     font-size: 14px;
     margin: 10px; 
-
+    box-sizing: border-box;
 }
 .sum-input .decrem,.increm{
     border: 1px solid #c7c7c7;
-    padding: 3px 7px;
-    padding-bottom: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 1.6;  
     font-size: 18px; 
+    text-align: center;
     display: inline-block;
     vertical-align:     middle  ;
 }
-.sum-input .decrem{
-    padding: 4px 10px;    
-}
+
 .sum-input input{
-    width:  40px;
+    width:  38px;
     border: none;
     text-align:  center; 
     outline:    none;
@@ -1200,12 +1205,68 @@ product-block ul{
 .btn-cart{
     background-color: #f1bc59;
     border: 1px solid   #a27c31;
+    border-radius: 4px; 
     color:  #000;
-    padding: 10px 0;   
+    padding: 8px 0;   
     text-align: center ; 
-    width:  85px;  
+    width:  85px; 
+    box-sizing: border-box;  
+    display:    inline-block;   
 }
-
+.vertical .product-info{
+    margin-top: 10px ;
+}
+.vertical.product-block .product-info .wrap{
+    display:    none;
+}
+.pack{
+    color: #777777;
+    margin: 10px 0;
+}
+.product-info .sale{
+    color: #444444;
+    text-decoration: line-through;
+}
+.product-info .price{
+    margin: 4px 0;
+    font-size: 16px;
+    color: #B12604;
+}
+.product-info .code{
+    margin: 5px 0;
+    color: #777777;
+}
+.horizontal.product-block li{
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position:   relative;   
+}
+.horizontal.product-block .product-image-info{
+    display: inline-block;  
+    vertical-align:  top;
+    width:  135px;
+    margin-right: 6px;
+}
+.horizontal.product-block li .image{
+    width: 135px;
+    display: block; 
+    position:  relative;
+    text-align:  center;       
+}
+.horizontal.product-block .product-info{
+    display: inline-block;  
+    vertical-align:  top;
+    width: 47%;
+}
+.horizontal.product-block .product-image-info .wrap{
+    display:   block;
+    text-align:  center;      
+}
+.horizontal.product-block .product-info .wrap {
+       display:   none ;
+}
 /***************catalog-page end**********************/
 
 
@@ -1252,6 +1313,14 @@ product-block ul{
 	.main-catalog-list li{
 		width: 33.333333%;
 	}
+    .vertical.product-block li:nth-child(2n){
+            margin-right: 10px; 
+    }
+    .vertical.product-block li:nth-child(3n){
+            margin-right: 0; 
+    }
+   
+
 }
 @media screen and (min-width: 720px){
 	.container{
@@ -1491,6 +1560,44 @@ product-block ul{
         float:  right;
         margin-top:  4px;
     }
+    .vertical.product-block li{
+        width:  200px;
+        margin-right: 20px;   
+    }
+     .vertical.product-block li .image{
+        width:  200px;
+           
+    }
+    .vertical.product-block li:nth-child(2n){
+            margin-right: 20px; 
+    }
+    .sum-input{
+        margin-left: 0;
+    }
+     .vertical.product-block .text{
+        font-size: 14px;
+     }
+     .sum-input input{
+         width:  28px;
+    }
+    .horizontal.product-block .product-image-info{
+        width:  270px;
+        margin-right: 10px;
+    }
+    .horizontal.product-block li .image{
+            width: 270px;  
+            height: 195px;  
+    }
+    .horizontal.product-block .product-image-info .wrap {
+           display:   none;
+    } 
+    .horizontal.product-block .product-info .wrap {
+            margin-top: 10px; 
+           display:   block;
+    }
+    .horizontal.product-block .product-info{
+        width:  55%;
+    }      
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -1579,4 +1686,10 @@ product-block ul{
 	.main-catalog-list li .wrap{
 		width: 	270px;
 	}
+    .vertical.product-block li:nth-child(3n){
+            margin-right: 20px; 
+    }
+    .vertical.product-block li:nth-child(4n){
+            margin-right: 0; 
+    }
 }

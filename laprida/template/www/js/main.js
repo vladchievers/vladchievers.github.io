@@ -126,4 +126,20 @@ $('document').ready( function(){
             $('.sort i').addClass('fa-angle-right');
         };
     });
+    $('.icon-filter-vertical').click(function(){
+        if($(this).hasClass('') !== 'active' ){
+            $(this).addClass('active');
+            $('.icon-filter-horizontal').removeClass('active');
+            $('.product-block').addClass('vertical');
+            $('.product-block').removeClass('horizontal');
+        }
+    });
+    $('.icon-filter-horizontal').click(function(){
+        if($(this).hasClass('') !== 'active' ){
+            $(this).addClass('active');
+            $('.icon-filter-vertical').removeClass('active');
+            $('.product-block').addClass('horizontal');
+            $('.product-block').removeClass('vertical');
+        }
+    });
 });
