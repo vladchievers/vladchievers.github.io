@@ -124,13 +124,12 @@ textarea{
 	padding-bottom: 20px;
 	border: 1px solid #c7c7c7;
 	display: none;
-	padding-right: 10px; 
     box-sizing: border-box;
 }
 .phone-block .product-list{
 	color: #000;
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 36px;
 	vertical-align: top;
 	text-align: left;
 }
@@ -1093,6 +1092,15 @@ textarea{
 	top: 10px;
 	left: 10px;
 }
+.status-discount span{
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    text-align: center;
+    font-weight: bold; 
+}
 /***************main-catalog end**********************/
 
 /***************catalog-page**********************/
@@ -1130,7 +1138,8 @@ textarea{
 .sort-list{
     display: none;
     margin-top: 10px;
-    position: absolute; 
+    position: absolute;
+    z-index: 100; 
     top: 27px;
     left: -1px;
     width: 100%;
@@ -1173,7 +1182,9 @@ textarea{
 .vertical.product-block li .image{
     width: 135px;
     display: block;
-    text-align:  center;    
+    text-align:  center; 
+    position:  relative;
+    padding-top: 5px;   
 }
 .product-block li .image img{
     max-width: 100%;
@@ -1239,7 +1250,7 @@ textarea{
 .horizontal.product-block li{
     width: 100%;
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: inline-block;
     position:   relative;   
 }
@@ -1253,7 +1264,7 @@ textarea{
     width: 135px;
     display: block; 
     position:  relative;
-    text-align:  center;       
+    text-align:  center;  
 }
 .horizontal.product-block .product-info{
     display: inline-block;  
@@ -1268,8 +1279,54 @@ textarea{
        display:   none ;
 }
 /***************catalog-page end**********************/
+/***************product-page *********************/
+.product-page{
+    padding: 20px 0;
+}
+.product-page header{
+    color: #2F2F2F;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.product-page .image-slider{
+    min-width: 0;
+    max-width: 100%;
+    display: inline-block;
+}
+/***************product-page end**********************/
+/***************login-page **********************/
+.login-page header{
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+}
+.login-page form{
+    margin: 20px 0;
+    text-align: center;
+}
+.login-page form input{
+    width: 280px;
+    border: 2px solid #CCCCCC; 
+    padding: 10px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 4px;
 
-
+} 
+.btn{
+    background-color: #F3C556;
+    border: 1px solid #A9862D;
+    border-radius: 4px;
+    width: 200px;
+    margin: 0 auto; 
+}
+/***************login-page end**********************/
+.slick-dots li button{
+    background-color: black;
+    border: 2px solid gray;
+}
 
 @media screen and (min-width: 480px){
 	.container{
@@ -1582,7 +1639,7 @@ textarea{
     }
     .horizontal.product-block .product-image-info{
         width:  270px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .horizontal.product-block li .image{
             width: 270px;  
@@ -1597,7 +1654,10 @@ textarea{
     }
     .horizontal.product-block .product-info{
         width:  55%;
-    }      
+    }  
+    .product-page .image-slider{
+        max-width: 430px;
+    }    
 }
 @media screen and (min-width: 1019px){
 	.container{

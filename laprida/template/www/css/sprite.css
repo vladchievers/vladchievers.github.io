@@ -445,9 +445,15 @@
     margin-right: 10px;
     vertical-align: -5px;
 }
-.status.discount {
+.status-discount {
     background: url('../img/sprite.png') no-repeat -300px -82px;
     background-size: 360px 350px;
+    width: 46px;
+    height: 40px;
+    position: absolute;
+    top: -6px;
+    left: 5px;
+    z-index: 50;
 }
 .status-new {
     background: url('../img/sprite.png') no-repeat -249px -80px;
@@ -455,12 +461,14 @@
     width: 46px;
     height: 40px;
     position: absolute;
-    top: 0;
+    top: -6px;
     left: 5px;
+    z-index: 50;
 }
 .gallery-container .status.discount {
     background: url('../img/sprite.png') no-repeat -434px -128px;
     background-size: 520px 550px;
+
 }
 .gallery-container .status.new {
     background: url('../img/sprite.png') no-repeat -361px -128px;

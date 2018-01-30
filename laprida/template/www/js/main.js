@@ -92,6 +92,9 @@ $('document').ready( function(){
         $(this).hide();
     })
     $('.my-carousel').slick();
+    $('.my-carousel-dots').slick({
+        dots: true
+    });
     $('.carousel-list').slick({
         infinite: false,
         slidesToShow: 8,
@@ -142,14 +145,20 @@ $('document').ready( function(){
             $('.product-block').removeClass('vertical');
         }
     });
-    $('.increm').click(function(){
-        var $input = $('.sum-input input');
-         $input.val(parseInt($input.val())+1);
+    $('.sum-input').each(function(){
+        var $par = $(this);
+        $par.find('.increm').click(function(){
+            var $input = $par.find('input');
+            if($input.val() >= 0 || $input.val() == '')
+            $input.val(parseInt($input.val())+1);
+        });
+
+        $par.find('.decrem').click(function(){
+            var $input = $par.find('input');
+            if($input.val() > 0 ){
+                $input.val(parseInt($input.val())-1);
+            }   
+        });
     });
-    $('.decrem').click(function(){
-        var $input = $('.sum-input input');
-        if($input.val() > 0 ){
-            $input.val(parseInt($input.val())-1);
-        }   
-    });
+    
 });
