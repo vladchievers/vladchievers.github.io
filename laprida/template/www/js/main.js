@@ -142,4 +142,14 @@ $('document').ready( function(){
             $('.product-block').removeClass('vertical');
         }
     });
+    $('.increm').click(function(){
+        var $input = $('.sum-input input');
+         $input.val(parseInt($input.val())+1);
+    });
+    $('.decrem').click(function(){
+        var $input = $('.sum-input input');
+        if($input.val() > 0 ){
+            $input.val(parseInt($input.val())-1);
+        }   
+    });
 });
