@@ -160,5 +160,17 @@ $('document').ready( function(){
             }   
         });
     });
+    $('.btn-order').click(function(){
+        $('.order-block').addClass('active');
+    });
+    $('.select-icon').click(function(){
+        if($(this).find('i').hasClass('fa-angle-right')){
+            $(this).find('i').removeClass('fa-angle-right');
+            $(this).find('i').addClass('fa-angle-down');
+        }else{
+             $(this).find('i').addClass('fa-angle-right');
+            $(this).find('i').removeClass('fa-angle-down');
+        }
+    })
     
 });

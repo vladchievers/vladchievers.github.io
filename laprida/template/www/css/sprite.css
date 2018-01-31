@@ -32,8 +32,8 @@
     width: 16px;
     height: 16px;
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 30px;
+    right: 0;
     cursor: pointer;
 }
 .icon-logo {

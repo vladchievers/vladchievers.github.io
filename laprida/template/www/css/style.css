@@ -8,7 +8,7 @@
 html, body{
     font-family: Tahoma,  sans-serif;
     background-color: white;
-    color: #494949;
+    color: #444444;
 }
 body{
     position: relative;
@@ -1328,6 +1328,7 @@ textarea{
     color: #000;
     padding: 12px;
     box-sizing: border-box;
+    text-align: center;
 }
 .help{
     text-align: center;
@@ -1348,10 +1349,8 @@ textarea{
     text-align: center;
 }
 .registration-page form{
-    margin: 20px 0;
-    text-align: center;
     width: 280px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .registration-page form > input{
     width: 280px;
@@ -1375,7 +1374,348 @@ textarea{
 .registration-page .code-block{
     margin-top: 7px; 
 }
+.registration-page .checkbox .text{
+    width: 250px;
+    margin-left: 10px;
+    display: inline-block; 
+    vertical-align: top;
+    font-size: 12px;
+}
+.registration-page .checkbox input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+
 /***************registration-page end**********************/
+/***************basket**********************/
+.basket header{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #000;
+}
+.basket header span{
+    color: #aeaeae;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.head-text{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #525252; 
+}
+.basket .sale{
+    text-decoration: none;
+}
+.basket .code{
+    margin: 15px 0; 
+}
+.sale-no{
+    color: #F22124;
+}
+.basket .product-info{
+    padding-top: 20px;
+}
+.promo-code{
+    margin: 0 auto;
+    width: 280px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+.promo-head{
+    font-size: 16px;
+    margin-bottom: 10px; 
+}
+.promo-code input{
+    width: 185px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 5px; 
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid #B4B4B4;
+    padding: 10px;
+}
+.promo-text{
+    max-width: 440px;
+    font-size: 12px;
+    margin: 0 auto; 
+}
+.min-order{
+    color: #8C0000;
+    text-align: center;
+    background-color: #FFEFBF;
+    margin: 25px 0;
+    padding: 15px 0;
+}
+.basket-continue{
+    text-align: center;
+    padding-bottom: 20px; 
+}
+.basket-sale{
+    color: #525252;
+}
+.basket-continue .btn{
+    margin-bottom: 15px;
+}
+.basket-sum{
+    color: #008500;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;  
+}
+.order-block.active{
+    display: block;
+}
+.order-block{
+    max-width: 350px;
+    margin: 50px auto;
+    display: none;
+    margin-top: 100px; 
+}
+.order-block.active{
+    display: block;
+}
+.order-block form select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 2px;
+    border: 1px solid #B4B4B4;
+    position: relative;
+}
+.order-block form .select-icon{
+    position: relative;
+}
+.order-block form i{
+    position: absolute;
+    background-color: #fff;
+    top: 16px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+.order-block form input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 2px;
+    border: 1px solid #B4B4B4;
+}
+.order-block form input.mail-number{
+    width: 150px;
+    text-align: left; 
+}
+.order-block form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 4px 0;
+    border-radius: 2px;
+    border: 1px solid #B4B4B4;
+}
+.order-block form p{
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.finish-sum{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px; 
+}
+.order-block .btn{
+    margin: 15px auto; 
+}
+.login-block{
+    margin: 50px 0;
+    padding: 20px 0; 
+    display: none;
+}
+.login-block header{
+    font-size: 16px;
+    text-align: center;
+    color: #525252;
+    margin-bottom: 20px; 
+}
+.login-block form{
+    margin: 20px 0;
+    text-align: center;
+}
+.login-block form input{
+    width: 280px;
+    border: 2px solid #CCCCCC; 
+    padding: 10px;
+    display: block;
+    margin: 7px auto;
+    border-radius: 4px;
+    box-sizing: border-box;
+} 
+/***************basket end**********************/
+
+/***************profile**********************/
+.profile{
+    padding-bottom: 30px; 
+}
+.profile header{
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.profile-input {
+    max-width: 280px;
+    padding: 20px 0;
+    margin-bottom: 20px; 
+}
+.profile-input form input{
+    width: 100%;
+    margin: 4px 0;
+    border: 1px solid #B4B4B4;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 2px;
+}
+.profile-input .btn-cart{
+    margin: 10px 0
+}
+.archive-orders-list{
+    margin-top: 10px;
+    margin-bottom: 20px;  
+}
+.archive-orders-list .row{
+    font-size: 0;
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #CCCCCC
+}
+.archive-orders-list .item-date{
+    width: 30%;
+    display: inline-block;
+}
+.archive-orders-list .item-order{
+    width: 30%;
+    display: inline-block;
+}
+.archive-orders-list .item-number{
+    display: inline-block;
+    width: 40%;
+}
+.archive-orders-list .title-row {
+    background-color: #ececec;
+    border:  none;
+}
+.archive-orders-list .fs{
+    font-size: 12px;
+}
+/***************profile end**********************/
+
+/***************archive-page**********************/
+
+.archive-page{
+    padding-bottom: 30px; 
+}
+.archive-page header{
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.archive-info{
+    width: 280px;
+    padding: 20px 0;
+}
+.archive-info .row{
+    margin-bottom: 5px; 
+}
+.archive-info .left{
+    width: 48%;
+    display: inline-block;
+    color: #525252;
+}
+.archive-info .right{
+    width: 48%;
+    display: inline-block;
+}
+.archive-product li{
+    padding: 14px 0;
+    border-top: 1px solid #CCCCCC; 
+}
+.archive-product li:last-child{
+    border-bottom: 1px solid #CCCCCC; 
+}
+.archive-product .image-block{
+    display: inline-block;
+    margin-right: 10px; 
+    text-align: center;
+    width: 135px; 
+    vertical-align: top;
+}
+.archive-product .image-block .image{
+    width: 135px;
+    display: block;
+    margin-bottom: 10px; 
+}
+.archive-product .image-block .image img{
+    max-width: 100%;
+}
+.archive-product .product-info{
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+}
+.archive-product .product-info{
+    font-size: 12px;
+}
+.archive-product .product-info .code{
+    margin-top: 15px;
+    margin-bottom: 20px;  
+}
+.archive-product .product-info .info-text{
+    display: inline-block;
+    vertical-align: top;
+}
+.archive-product .product-info .sum-block{
+    display: inline-block;
+    vertical-align: top;
+}
+.archive-product .product-info .sum-amt{
+    font-size: 16px;
+    margin-top: 20px; 
+}
+
+/***************archive-page end**********************/
+/***************profile**********************/
+.history-block ul{
+    font-size: 0;
+}
+.history-block li{
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px; 
+    vertical-align: top;
+}
+.history-block li .wrap{
+    width: 135px;
+    display: block;
+    margin: 0 auto;
+}
+.history-block li .wrap img{
+    max-width: 100%;
+}
+.history-block li .wrap .text{
+    margin: 10px 0;
+    display: block;
+}
+/***************profile end**********************/
 
 .slick-dots li button{
     background-color: black;
@@ -1430,8 +1770,26 @@ textarea{
     .vertical.product-block li:nth-child(3n){
             margin-right: 0; 
     }
-   
-
+    .basket .product-info{
+        padding-top: 0px;
+    }
+    .archive-orders-list .row{
+        text-align: left;
+    }
+    .archive-product .product-info{
+        width: 65%;
+    }
+    .sum-order{
+        margin: 15px 0;
+        text-align: right;
+        font-size: 16px; 
+    }
+    .history-block li{
+        width: 50%;
+    }
+    .history-block li .wrap{
+        width: 200px;
+    }
 }
 @media screen and (min-width: 720px){
 	.container{
@@ -1647,7 +2005,6 @@ textarea{
         border: none;
         width: 375px; 
         padding: 0;     
-       /* vertical-align:    top;*/
     }
     .sort p{
         display:    inline-block; 
@@ -1685,7 +2042,7 @@ textarea{
     .sum-input{
         margin-left: 0;
     }
-     .vertical.product-block .text{
+    .product-block .text{
         font-size: 14px;
      }
      .sum-input input{
@@ -1699,6 +2056,14 @@ textarea{
             width: 270px;  
             height: 195px;  
     }
+    .basket .horizontal.product-block .product-image-info{
+        width:  135px;
+        margin-right: 20px;
+    }
+    .basket .horizontal.product-block li .image{
+            width: 135px;  
+            height: auto;
+    }
     .horizontal.product-block .product-image-info .wrap {
            display:   none;
     } 
@@ -1706,12 +2071,43 @@ textarea{
             margin-top: 10px; 
            display:   block;
     }
+    .basket .horizontal.product-block .product-image-info .wrap {
+           display:   block;
+    } 
+    .basket .horizontal.product-block .product-info .wrap {
+            margin-top: 10px; 
+           display:   none;
+    }
     .horizontal.product-block .product-info{
         width:  55%;
     }  
     .product-page .image-slider{
         max-width: 430px;
-    }    
+    }   
+    .archive-orders-list .fs{
+        font-size: 14px;
+    } 
+    .archive-product .product-info{
+        width: 77%;
+    }
+    .archive-product .product-info .info-text{
+        width: 70%;
+    }
+    .archive-product .product-info .info-text a{
+        font-size: 14px;
+    }
+    .archive-product .product-info .sum-block{
+        float: right;
+    }
+    .sum-order{
+        text-align: center;
+    } 
+     .history-block li{
+        width: 33.3333333%;
+    }
+    .history-block li .wrap{
+        width: 200px;
+    }
 }
 @media screen and (min-width: 1019px){
 	.container{

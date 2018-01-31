@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="template/www/css/sprite.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template/www/css/sprite.css">
 
-	<link rel="stylesheet" href="slick/slick-theme.css">
-	<link rel="stylesheet" href="slick/slick.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="template/www/css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="template/www/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
-	<header>
+    <header>
           <div class="header-top">
                     <div class="container">
                         <a class="icon icon-logo" href=""></a>
@@ -26,7 +29,7 @@
                         <div class="clearfix"></div>
                     </div>
             </div>
-           <div class="header-buttons">
+             <div class="header-buttons">
                 <div class="container">
                     <a class="btn-header button-call">
                         <span class="phone-wrap">
@@ -35,8 +38,8 @@
                     </a>
                     <a href="#" class="btn-header button-enter"><span class="icon icon-person"></span></a>
                      <div class="phone-block">
-                            <a class="close close-block">Закрыть</a>
-                             <div class="clearfix"> </div>
+                            <div class="close close-block">Закрыть</div>
+                            <div class="clearfix"></div>
                             <ul class="product-list">
                                 <li>Бижутерия</li>
                                 <li>Декор-упаковка</li>
@@ -55,15 +58,16 @@
                  </div>
             </div>  
     </header>
-	<aside id="side-menu" style="width: 0px;">
+    
+    <aside id="side-menu" style="width: 0px;">
     <div class="side-menu">
 
-     	<a class="close" onclick="closeMenu()">Закрыть</a>
+        <a class="close" onclick="closeMenu()">Закрыть</a>
 
-    	<form action="">
-    		<input class="search" placeholder="Поиск" type="text">
-    		<button class="btn-search"><i class="fa fa-search"></i></button>
-    	</form>
+        <form action="">
+            <input class="search" placeholder="Поиск" type="text">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+        </form>
 
         <ul class="menu-header">
             <li><p>Каталог продукции</p></li>
@@ -146,7 +150,7 @@
         </ul>
     </div>
     <div class="close-menu" onclick="closeMenu();"></div>
-	</aside>
+    </aside>
 <!--**********
 **************
 ***************
@@ -157,22 +161,64 @@
 ***************
 ***************
 ***************-->
-    <section class="login-page container">
-        <div class="header-list-block">
+    <section class="history-page container">
+         <div class="header-list-block">
             <ul class="header-list">
                 <li ><a href="#">Главная</a></li>
-                <li class="active"><a href="#">Вход</a></li>
+                <li class="active"><a href="#">История просмотров</a></li>    
             </ul>
         </div>
-        <header>Вход</header>
-        <form action="">
-            <input type="text" placeholder="Ваше имя">
-            <input type="password" placeholder="Ваш пароль">
-            <div class="btn">Вход</div>
-        </form> 
-        <div class="help">
-            <a href="#">Забыли пароль?</a>
-            <a href="https://vladchievers.github.io/laprida/registration-page.html">Регистрация</a>
+        <div class="history-block">
+            <ul>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <!-- <div class="price">Цена: 150 грн.</div> -->
+                    </a>
+                </li>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <div class="price">Цена: 150 грн.</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <div class="price">Цена: 150 грн.</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <div class="price">Цена: 150 грн.</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <div class="price">Цена: 150 грн.</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="wrap" href="#">
+                        <img src="https://laprida.ua/library/item/37kd/az85/21az/23550p_kd75810uh26476se.jpg" alt="">
+                        <p class="text" href="#">Cумка женская-клатч 
+                            и самая приятная кожа Сумка женская-клатч </p>
+                        <div class="price">Цена: 150 грн.</div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 <!--**********
@@ -234,9 +280,8 @@
 
 
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="template/www/js/main.js"></script>
-    
+    <script  src="template/www/js/main.js"></script>
+  
 </body>
 </html>
