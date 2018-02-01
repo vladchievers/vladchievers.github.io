@@ -102,7 +102,7 @@
     background-size: 465px 465px;
     vertical-align: middle;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -451,7 +451,7 @@
     width: 46px;
     height: 40px;
     position: absolute;
-    top: -6px;
+    top: -5px;
     left: 5px;
     z-index: 50;
 }
@@ -492,7 +492,7 @@
 .icon-filter-vertical {
     display: inline-block;
     width: 22px;
-    height: 22px;
+    height: 23px;
     background: url('../img/sprite.png') no-repeat -374px -87px;
     background-size: 500px 500px;
     cursor: pointer;
@@ -505,7 +505,7 @@
     cursor: pointer;
     display: inline-block;
     width: 22px;
-    height: 22px;
+    height: 23px;
     background: url('../img/sprite.png') no-repeat -437px -87px;
     background-size: 500px 500px;
     opacity: 0.7;

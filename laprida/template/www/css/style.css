@@ -14,7 +14,6 @@ body{
     position: relative;
     font-size: 14px;
 }
-
 a{
     text-decoration: none;
     color: #003469;
@@ -1098,7 +1097,7 @@ textarea{
     color: #fff;
     position: absolute;
     top: 12px;
-    left: 9px;
+    left: 7px;
     text-align: center;
     font-weight: bold; 
 }
@@ -1184,8 +1183,7 @@ textarea{
     width: 135px;
     display: block;
     text-align:  center; 
-    position:  relative;
-    padding-top: 5px;   
+    position:  relative; 
 }
 .product-block li .image img{
     max-width: 100%;
@@ -1213,6 +1211,7 @@ textarea{
     border: none;
     text-align:  center; 
     outline:    none;
+    color: #777777;
 }
 .btn-cart{
     background-color: #f1bc59;
@@ -1289,10 +1288,132 @@ textarea{
     font-size: 18px;
     margin-bottom: 30px;
 }
+.product-page header.product-head{
+    display: none;
+}
 .product-page .image-slider{
     min-width: 0;
     max-width: 100%;
     display: inline-block;
+}
+.product-page-info .sum-input{
+    margin-left: 0; 
+}
+.product-page-info{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;  
+}
+.product-page-info .row{
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.product-page-info .left{
+    width: 80px;
+    display: inline-block; 
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: top;
+    color: #777777
+}
+.product-page-info .right{
+    display: inline-block;
+    width: 65%;
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: top;
+    color: #2F2F2F;
+}
+.product-page-info .sale{
+    text-decoration: line-through;
+}
+.product-page-info .price span{
+    font-size: 20px;
+    color: #B12604;
+} 
+.product-page-info .price{
+    margin: 4px 0;
+}
+.product-page-info .for-one{
+    margin-left: 30px; 
+}
+.product-page-info .btn-cart{
+    position: relative;
+    width: 140px;
+    padding: 11px 0;
+    padding-left: 35px;
+}
+.recom-block ul{
+    font-size: 0;
+}
+.recom-block li{
+    width: 33.3333333%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 30px; 
+}
+.recom-block .wrap{
+    width: 85px;
+    display: inline-block;
+}
+.recom-block .wrap img{
+    max-width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+}
+ .recom-block .wrap p{
+    font-size: 12px;
+}
+.recom-block{
+    margin-top: 30px;
+    margin-bottom: 50px; 
+}
+.product-page .product-block{
+    margin-top: 30px;
+    margin-bottom: 50px; 
+}
+.info-product-block{
+    margin: 30px 0; 
+}
+.info-product-block ul{
+    border-bottom:  2px solid #CCCCCC;
+} 
+.info-product-block ul > li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px; 
+    color: #00356A;
+}
+.info-product-block ul > li.active{
+    border: 2px solid #CCCCCC;
+    border-bottom: 2px solid #fff;
+    transform: translateY(2px);
+    color: #444444;
+}
+.tab-block{
+    padding: 20px 0;
+}
+.tab-block .row{
+    font-size: 0;
+    margin-bottom: 5px;
+    max-width: 280px;
+    padding-left: 20px; 
+}
+.tab-block .left , .tab-block .right{
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.tab-block .left{
+    color: #777;
+    width: 60%;
+    text-align: right;
+    padding-right: 10px; 
+}
+.hidden{
+    display: none;
 }
 /***************product-page end**********************/
 /***************login-page **********************/
@@ -1716,11 +1837,34 @@ textarea{
     display: block;
 }
 /***************profile end**********************/
-
-.slick-dots li button{
-    background-color: black;
-    border: 2px solid gray;
+/***************my-carousel-dots **********************/
+.slick-dots{
+    position: relative;
+    bottom: 0;
+    margin-top: 20px; 
 }
+.slick-dots li button{
+    background-color: transparent;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+.slick-dots li{
+    width: 15px;
+    height: 15px;
+}
+.slick-dots li.slick-active{
+    background-color: #00356A;
+    border-radius: 50%; 
+}
+.slick-dots li button:before{
+    content: "";
+}
+
+
+/***************my-carousel-dots  end**********************/
 
 @media screen and (min-width: 480px){
 	.container{
@@ -1789,6 +1933,9 @@ textarea{
     }
     .history-block li .wrap{
         width: 200px;
+    }
+    .recom-block .wrap{
+        width: 130px;
     }
 }
 @media screen and (min-width: 720px){
@@ -2108,6 +2255,21 @@ textarea{
     .history-block li .wrap{
         width: 200px;
     }
+    .product-page header.product-head{
+        display: block;
+    }
+    .product-page-info{
+        width: 34%;
+    }
+    .product-page header.hide{
+        display: none;
+    }
+    .recom-block li{
+        width: 25%;
+    }
+    .recom-block .wrap p{
+        font-size: 14px;
+    }
 }
 @media screen and (min-width: 1019px){
 	.container{
@@ -2201,5 +2363,11 @@ textarea{
     }
     .vertical.product-block li:nth-child(4n){
             margin-right: 0; 
+    }
+    .product-page-info{
+        width: 54%;
+    }
+    .recom-block li{
+        width: 20%;
     }
 }
