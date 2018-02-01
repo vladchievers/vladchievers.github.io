@@ -184,6 +184,7 @@ $('document').ready( function(){
     $('.btn-order').click(function(){
         $('.order-block').addClass('active').scrollTop(100);
     });
+
     $('.select-icon').click(function(){
         if($(this).find('i').hasClass('fa-angle-right')){
             $(this).find('i').removeClass('fa-angle-right');
@@ -192,33 +193,25 @@ $('document').ready( function(){
              $(this).find('i').addClass('fa-angle-right');
             $(this).find('i').removeClass('fa-angle-down');
         }
-    })
-    $(window).resize(function() {
+    });
+
+
+    function myFunction() {
         var $res = $('.product-page').find('.product-block');
         if($(window).width() > 720){
             $res.removeClass('horizontal').addClass('vertical');
         }else{
             $res.removeClass('vertical').addClass('horizontal');
         }
-    }); 
-    // $('.tab').click(function(){
-    //     var $tab1 = $('.tab[rel=1]');
-    //     var $tab2 = $('.tab[rel=2]');
-    //     var $tab-block1 = $('.tab-block [rel=1]');
-    //     var $tab-block2 = $('.tab-block [rel=2]');
+    }; 
+    myFunction();
+    $(window).resize( function(){
+        myFunction();
+    });
 
-    //     if($tab1){
-    //         $tab1.addClass('active');
-    //         $tab2.removeClass('active');
-    //         $tab-block1.addClass('active');
-    //         $tab-block2.removeClass('active');
-    //     }else if($tab2){
-    //         $tab2.addClass('active');
-    //         $tab1.removeClass('active');
-    //         $tab-block2.addClass('active');
-    //         $tab-block1.removeClass('active');
-    //     }
-    // })
+
+
+
      $('.tab').click( function () {
         var tempRel = $(this).attr('rel');
         $(this).closest('ul').find('.tab').removeClass('active');
