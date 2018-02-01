@@ -96,8 +96,7 @@ $('document').ready( function(){
         autoplaySpeed: 5000
     });
     $('.my-carousel-dots').slick({
-        dots: true,
-        arrows: true
+        dots: true
     });
     $('.carousel-list').slick({
         infinite: false,
