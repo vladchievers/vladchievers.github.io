@@ -329,7 +329,7 @@ textarea{
 }
 .icons-block{
     font-size: 0;
-    text-align: left;
+    text-align: center;
 }
 .icons-block a{
     width: 30px;
@@ -371,6 +371,9 @@ textarea{
 	margin-top: -65px;
 	position: relative;
 	z-index: 20;
+}
+.footer-content .icon{
+    margin-bottom: 20px; 
 }
 .footer p{
 	color: #fff;
@@ -2096,6 +2099,7 @@ textarea{
 		max-width: 135px;
 		right: 0;
 		bottom: 0;
+        text-align: right;
 	}
 	.footer-list{
 		text-align: left;
