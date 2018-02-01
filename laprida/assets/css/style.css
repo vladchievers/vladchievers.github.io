@@ -781,23 +781,23 @@ textarea{
 
 
 /***************header-list-block **********************/
-.header-list-block{
+.breadcrumb-block{
     margin-bottom: 20px;
 }
-.header-list{
+.breadcrumb-list{
     font-size: 0;
 }
-.header-list li{
+.breadcrumb-list li{
     display: inline-block;
     font-size: 12px;
 }
-.header-list li a{
+.breadcrumb-list li a{
     color: #CCCCCC;
 }
-.header-list .active a{
+.breadcrumb-list .active a{
     color: #444444;
 }
-.header-list li:after{
+.breadcrumb-list li:after{
     display: inline-block;
     font-weight: 900;
     font-family: Font Awesome\ 5 Free;
@@ -807,7 +807,7 @@ textarea{
     font-size: 14px;
     vertical-align: -1px;
 }
-.header-list li.active:after{
+.breadcrumb-list li.active:after{
 	display: none;
 }
 /***************header-list-block end **********************/
@@ -904,21 +904,20 @@ textarea{
 }
 /***************blog-view end**********************/
 
-/***************how-order**********************/
-.how-order header{
+/***************page**********************/
+.page header{
 	color: #000;
 	font-size: 20px;
 	margin-bottom: 10px; 
 }
-.how-order-content{
+.page-content{
 	padding: 20px 0;
 	border-top: 2px solid #e7e7e7;
 }
-.how-order-content p{
+.page-content p{
 	margin-bottom: 20px; 
-	font-size: 14px;
 }
-/***************how-order end**********************/
+/***************page end**********************/
 
 /***************comments-page **********************/
 .comments-page{
