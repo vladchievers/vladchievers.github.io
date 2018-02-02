@@ -83,7 +83,7 @@ textarea{
 .btn-header{
 	display: inline-block;
 	background-color:#ececec;
-	width: 135px;
+	width: 48%;
 	height: 40px;
 	font-size: 14px;
 	position: relative;
@@ -908,14 +908,21 @@ textarea{
 .page header{
 	color: #000;
 	font-size: 20px;
+    padding-bottom: 8px; 
 	margin-bottom: 10px; 
+    border-bottom: 2px solid #e7e7e7;
 }
 .page-content{
-	padding: 20px 0;
-	border-top: 2px solid #e7e7e7;
+	padding: 20px 0;	
 }
 .page-content p{
 	margin-bottom: 20px; 
+}
+.text-content{
+    min-width: 280px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 /***************page end**********************/
 
@@ -1873,19 +1880,12 @@ textarea{
 .slick-dots li button:before{
     content: "";
 }
-.fotorama-block{
-    position: fixed;
+#lightgallery a{
     width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #fff;
-    z-index: 1500;
-    display: none;
+
 }
-.fotorama-block.active{
-    display: block;
+#lightgallery a img{
+    max-width: 100%;
 }
 
 /***************my-carousel-dots  end**********************/
@@ -1895,9 +1895,6 @@ textarea{
 @media screen and (min-width: 480px){
 	.container{
 	    max-width: 440px;
-	}
-	.btn-header{
-		width: 215px;
 	}
 	.catalog-list li{
 		width: 210px;
@@ -1972,7 +1969,7 @@ textarea{
 		display: none;
 	}
 	.btn-header{
-		width: 335px;
+		width: 49%;
 	}
 	.catalog-list li{
 		width: 160px;

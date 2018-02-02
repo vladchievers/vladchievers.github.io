@@ -58,7 +58,12 @@ $('document').ready( function(){
         };
     });
     $('.close-block').click(function(){
-        $(this).parent().css('display','none');
+        if($(this).parent().parent().hasClass('active')){
+            $(this).parent().parent().removeClass('active');
+        }else{
+            $(this).parent().css('display','none');
+        }
+        
     });
     $('.expand').click(function(){
         $(this).prev().css('height', 'auto');
@@ -214,5 +219,8 @@ $('document').ready( function(){
     });
      $('.slick-slide').click(function(){
         $('.fotorama-block').toggleClass('active');
-     })
+     });
+     $("#lightgallery").lightGallery({
+        selector: '.slide-img'
+     }); 
 });
