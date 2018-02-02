@@ -90,7 +90,8 @@ $('document').ready( function(){
         autoplaySpeed: 5000
     });
     $('.my-carousel-dots').slick({
-        dots: true
+        dots: true,
+        infinite: false
     });
     $('.carousel-list').slick({
         infinite: false,
