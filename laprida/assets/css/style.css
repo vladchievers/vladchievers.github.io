@@ -218,6 +218,8 @@ textarea{
 	background-color: #fff;
 	border: none;
 	padding:10px; 
+    vertical-align: -2px;
+    display: inline-block;
 }
 .btn-search .fa{
 	color:#002f5d;
@@ -272,7 +274,7 @@ textarea{
 #side-menu .side-menu .menu li a{
     box-sizing: border-box;
     display:inline-block;
-    width:200px;
+    width: 100%;
     height: auto;
     line-height:20px;
     font-weight:normal;
