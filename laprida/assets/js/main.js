@@ -5,16 +5,6 @@ function closeMenu(){
     document.getElementById('side-menu').style.width = 0;
 }
 
-
-// window.addEventListener('scroll', function(){
-//     var scroll = window.pageYOffset || document.documentElement.scrollTop;
-//     if ( scroll >= 50 ) {
-//         document.getElementById('top-menu').style.top = '0px';
-//     } else if ( scroll < 50 ) {
-//         document.getElementById('top-menu').style.top = '50px';
-//     }
-// });
-
 function toggleList(that){
 
     var that_id = that.id;
@@ -58,7 +48,6 @@ function toggleList(that){
     }
 
 }
-
 $('document').ready( function(){
     $('.button-call').click( function(){
         var phone = $('.phone-block');
@@ -223,4 +212,7 @@ $('document').ready( function(){
             }
         });
     });
+     $('.slick-slide').click(function(){
+        $('.fotorama-block').toggleClass('active');
+     })
 });
