@@ -578,12 +578,12 @@ textarea{
     max-width: 100%;
 }
 .info-blue-block{
-    background: url("https://m.laprida.ua/template/mobile/img/background-sample.jpg");
-     background-size: cover;
-     padding: 30px 0;
-      color: #fff;
-      text-align: center;
-      margin: 40px 0;
+    background: url("https://../img/background-sample.jpg");
+    background-size: cover;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
 }  
 .info-blue-block header{
     font-size: 20px;
