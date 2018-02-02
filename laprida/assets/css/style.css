@@ -245,21 +245,19 @@ textarea{
     display:inline-block;
     text-align:left;
     width:100%;
-    height:40px;
     margin:0;
-    padding:0;
+    
 }
-#side-menu .side-menu .menu li i{
+#side-menu .side-menu .menu li a i{
     position: absolute;
-    top:0;
+    top: 50%;
     right:0;
     width:40px;
-    height:40px;
     line-height: 40px;
     text-align: center;
     font-size:14px;
     color:#002f5d;
-    margin: 0;
+    margin-top: -20px;
 }
 .side-menu .menu-header{
 	padding: 0 10px;
@@ -274,17 +272,18 @@ textarea{
 #side-menu .side-menu .menu li a{
     box-sizing: border-box;
     display:inline-block;
-    width:100%;
-    height:40px;
-
-    line-height:40px;
+    width:200px;
+    height: auto;
+    line-height:20px;
     font-weight:normal;
     font-size:14px;
     border-bottom:  1px solid #E4E4E4;
-    
+    word-wrap: break-word;
+    padding: 10px 40px 10px 0; 
+    position: relative;
 }
 #side-menu .side-menu .menu .sub-menu li a{
-    padding: 0 0 0 30px;
+    padding: 10px 0 10px 30px;
 }
 
 #side-menu .side-menu .menu li a.sale{
@@ -1885,7 +1884,7 @@ textarea{
 
 }
 #lightgallery a img{
-    max-width: 100%;
+    max-width: 100%
 }
 
 /***************my-carousel-dots  end**********************/
