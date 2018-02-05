@@ -223,6 +223,6 @@ $('document').ready( function(){
      });
      $("#lightgallery").lightGallery({
         selector: '.slide-img',
-        enableZoomAfter: 800
+        enableZoomAfter: 50
      }); 
 });
