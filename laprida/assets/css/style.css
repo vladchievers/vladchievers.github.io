@@ -1905,6 +1905,9 @@ textarea{
 .lg-backdrop{
     background-color: #fff; 
 }
+.lg-outer .lg-toogle-thumb:hover{
+    color: #999;
+}
 @media screen and (min-width: 480px){
 	.container{
 	    max-width: 440px;
