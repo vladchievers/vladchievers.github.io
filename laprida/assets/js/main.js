@@ -124,13 +124,13 @@ $('document').ready( function(){
         var $par = $(this);
         $par.find('.increm').click(function(){
             var $input = $par.find('input');
-            if($input.val() >= 0 || $input.val() == '')
+            if($input.val() >= 1 || $input.val() == '')
             $input.val(parseInt($input.val())+1);
         });
 
         $par.find('.decrem').click(function(){
             var $input = $par.find('input');
-            if($input.val() > 0 ){
+            if($input.val() > 1 ){
                 $input.val(parseInt($input.val())-1);
             }   
         });
