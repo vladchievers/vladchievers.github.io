@@ -222,6 +222,7 @@ $('document').ready( function(){
         $('.fotorama-block').toggleClass('active');
      });
      $("#lightgallery").lightGallery({
-        selector: '.slide-img'
+        selector: '.slide-img',
+        enableZoomAfter: 800
      }); 
 });

@@ -1881,18 +1881,30 @@ textarea{
 .slick-dots li button:before{
     content: "";
 }
-#lightgallery a{
-    width: 100%;
 
-}
-#lightgallery a img{
-    max-width: 100%
-}
 
 /***************my-carousel-dots  end**********************/
-
-
-
+.lg-toolbar{
+    background-color: rgba(0,0,0,.75);
+}
+#lg-counter {
+    color: #fff;
+}
+.lg-toolbar .lg-icon{
+    color: #fff;
+}
+.lg-outer .lg-thumb-outer {
+    background-color: #fff;
+}
+.lg-outer .lg-toogle-thumb {
+    background-color: #Fff;
+}
+.lg-outer .lg-toogle-thumb {
+    background-color: #Fff;
+}
+.lg-backdrop{
+    background-color: #fff; 
+}
 @media screen and (min-width: 480px){
 	.container{
 	    max-width: 440px;
