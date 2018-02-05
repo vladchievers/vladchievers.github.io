@@ -206,7 +206,6 @@ textarea{
 #side-menu .side-menu .search{
     display:inline-block;
     box-sizing: border-box;
-   /* margin:10px;*/
     width:200px;
     height:40px;
     border:1px solid #e7e7e7;
@@ -239,6 +238,10 @@ textarea{
 }
 #side-menu .side-menu .menu .sub-menu{
     padding:0;
+    display: none;
+}
+#side-menu .side-menu .menu .sub-menu.active{
+    display: block;
 }
 #side-menu .side-menu .menu .sub-menu li,
 #side-menu .side-menu .menu li{
@@ -248,18 +251,21 @@ textarea{
     text-align:left;
     width:100%;
     margin:0;
-    
+    position: relative;
 }
-#side-menu .side-menu .menu li a i{
+#side-menu .side-menu .menu li .wrapper i{
     position: absolute;
     top: 50%;
     right:0;
+    margin-top: -20px; 
     width:40px;
     line-height: 40px;
     text-align: center;
     font-size:14px;
     color:#002f5d;
-    margin-top: -20px;
+}
+#side-menu .side-menu .menu li .wrapper{
+    position: relative;
 }
 .side-menu .menu-header{
 	padding: 0 10px;
@@ -282,7 +288,6 @@ textarea{
     border-bottom:  1px solid #E4E4E4;
     word-wrap: break-word;
     padding: 10px 40px 10px 0; 
-    position: relative;
 }
 #side-menu .side-menu .menu .sub-menu li a{
     padding: 10px 0 10px 30px;

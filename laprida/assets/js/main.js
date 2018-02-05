@@ -5,50 +5,15 @@ function closeMenu(){
     document.getElementById('side-menu').style.width = 0;
 }
 
-function toggleList(that){
-
-    var that_id = that.id;
-    var list_id = '';
-
-    if ( that_id.indexOf('fm_toggle_child') === 0 ){
-        // footer menu
-        list_id = that_id.replace('fm_toggle_child','fm_child_list');
-
-    } else if ( that_id.indexOf('am_toggle_child') === 0 ){
-        // aside menu
-        list_id = that_id.replace('am_toggle_child','am_child_list');
-
-    } else if ( that_id.indexOf('radio_catalog') === 0 ){
-        // radio menu
-        list_id = that_id.replace('radio_catalog','hm_list');
-
-    }    
-
-    if ( that.className == 'fa fa-angle-right' ){
-        that.className = 'fa fa-angle-down';
-    } else if ( that.className == 'fa fa-angle-down' ){
-        that.className = 'fa fa-angle-right';
-    }
-
-    var list = document.getElementById(list_id);
-
-    if ( list.getAttribute('rel') == 'site_trigger' ){
-        var list_arr = document.querySelectorAll('[rel=site_trigger]');
-        if ( typeof list_arr == 'object' ){
-            for (var i = 0; i < list_arr.length; i++){
-                list_arr[i].style.height = '0px';
-            }
-        }
-    } 
-
-    if ( list.style.height == 'auto' ){
-        list.style.height = '0px';
-    } else if ( list.style.height == '0px' ) {
-        list.style.height = 'auto';
-    }
-
-}
 $('document').ready( function(){
+    $('.menu i').click(function(){
+        $(this).parent().next().toggleClass('active');
+        if($(this).hasClass('fa-angle-right')){
+            $(this).removeClass('fa-angle-right').addClass('fa-angle-down');
+        }else{
+             $(this).removeClass('fa-angle-down').addClass('fa-angle-right');
+        }
+    })
     $('.button-call').click( function(){
         var phone = $('.phone-block');
         if(phone.css('display') === 'none'){
@@ -58,12 +23,7 @@ $('document').ready( function(){
         };
     });
     $('.close-block').click(function(){
-        if($(this).parent().parent().hasClass('active')){
-            $(this).parent().parent().removeClass('active');
-        }else{
             $(this).parent().css('display','none');
-        }
-        
     });
     $('.expand').click(function(){
         $(this).prev().css('height', 'auto');
@@ -176,7 +136,8 @@ $('document').ready( function(){
         });
     });
     $('.btn-order').click(function(){
-        $('.order-block').addClass('active').scrollTop(100);
+        $('.order-block').addClass('active');
+        $("html").animate({scrollTop: $(".btn-order").height()+ 700 },"slow");
     });
 
     $('.select-icon').click(function(){
@@ -218,11 +179,8 @@ $('document').ready( function(){
             }
         });
     });
-     $('.slick-slide').click(function(){
-        $('.fotorama-block').toggleClass('active');
-     });
+
      $("#lightgallery").lightGallery({
-        selector: '.slide-img',
-        enableZoomAfter: 50
+        selector: '.slide-img'
      }); 
 });

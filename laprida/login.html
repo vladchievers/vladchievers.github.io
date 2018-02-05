@@ -5,7 +5,7 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/sprite.css">
-
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick/slick.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -64,15 +64,16 @@
                 <input class="search" placeholder="Поиск" type="text">
                 <button class="btn-search"><i class="fa fa-search"></i></button>
             </form>
-
-            <ul class="menu-header">
+ <ul class="menu-header">
                 <li><p>Каталог продукции</p></li>
             </ul>
-            <ul class="menu" rel="site_trigger" id="hm_list_trend">
+            <ul class="menu">
                 <li>
-                    <a href="#"> Заколки Заколки ЗаколкиЗаколки Заколки Заколки <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_76"></i></a>
-                    
-                    <ul class="sub-menu" id="am_child_list_76" style="height: 0px;">
+                    <div class="wrapper">
+                        <a href="#"> Заколки Заколки ЗаколкиЗаколки Заколки Заколки</a>
+                        <i class="fa fa-angle-right" ></i>
+                    </div>
+                    <ul class="sub-menu">
                         <li><a href="#">Расчески</a></li>
                         <li><a href="#">Часы</a></li>
                         <li><a href="#">Кошельки</a></li>
@@ -80,44 +81,54 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Бижутерия<i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_72"></i></a>
-                    
-                    <ul class="sub-menu" id="am_child_list_72" style="height: 0px;">
+                    <div class="wrapper">
+                        <a href="#">Бижутерия</a> 
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <ul class="sub-menu">
                         <li><a href="#">Брендовые браслеты</a></li>
                         <li><a href="#">Браслеты</a></li>
                         <li><a href="#">Броши</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Аксессуары <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_73"></i></a>
-                   
-                    <ul class="sub-menu" id="am_child_list_73" style="height: 0px;">
+                    <div class="wrapper">
+                        <a href="#">Аксессуары </a>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <ul class="sub-menu">
                         <li><a href="#">Заколки</a></li>
                         <li><a href="#">Обручи</a></li>
                         <li><a href="#">Резинки</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Декор <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_74"></i></a>
-                   
-                    <ul class="sub-menu" id="am_child_list_74" style="height: 0px;">
+                    <div class="wrapper">
+                        <a href="#">Декор </a>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <ul class="sub-menu">
                         <li><a href="#">Сумки</a></li>
                         <li><a href="#">Рюкзаки</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Товары для творчества</a>
-                    <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_75"></i>
-                    <ul class="sub-menu" id="am_child_list_75" style="height: 0px;">
-                        <li><a href="#/">Брендовые браслеты</a></li>
+                    <div class="wrapper">
+                        <a href="#">Товары для творчества</a>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">Брендовые браслеты</a></li>
                         <li><a href="#">Браслеты</a></li>
                         <li><a href="#">Броши</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Упаковка - Пакеты Коробки</a>
-                    <i class="fa fa-angle-right" ontouchstart="toggleList(this);" id="am_toggle_child_77"></i>
-                    <ul class="sub-menu" id="am_child_list_77" style="height: 0px;">
+                    <div class="wrapper">
+                        <a href="#">Упаковка - Пакеты Коробки </a>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <ul class="sub-menu">
                         <li><a href="#">Брендовые браслеты</a></li>
                         <li><a href="#">Браслеты</a></li>
                     </ul>
@@ -236,6 +247,10 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets//js/lightgallery.min.js"></script>
+    <script src="assets/js/lg-fullscreen.min.js"></script>
+    <script src="assets/js/lg-thumbnail.min.js"></script>
+    <script src="assets/js/lg-zoom.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
     
