@@ -1006,6 +1006,11 @@ textarea{
 	padding: 10px 20px; 
 	border-radius: 2px;
 }
+.thanks{
+    margin: 20px 0;
+    text-align: center;
+    color: blue;
+}
 /***************comments-page end**********************/
 
 /***************main-catalog **********************/

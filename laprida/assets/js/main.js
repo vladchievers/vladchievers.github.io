@@ -142,11 +142,9 @@ $('document').ready( function(){
 
     $('.select-icon').click(function(){
         if($(this).find('i').hasClass('fa-angle-right')){
-            $(this).find('i').removeClass('fa-angle-right');
-            $(this).find('i').addClass('fa-angle-down');
+            $(this).find('i').removeClass('fa-angle-right').addClass('fa-angle-down');
         }else{
-             $(this).find('i').addClass('fa-angle-right');
-            $(this).find('i').removeClass('fa-angle-down');
+             $(this).find('i').removeClass('fa-angle-down');.addClass('fa-angle-right');
         }
     });
 
