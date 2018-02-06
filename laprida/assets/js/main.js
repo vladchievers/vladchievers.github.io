@@ -183,4 +183,6 @@ $('document').ready( function(){
      $("#lightgallery").lightGallery({
         selector: '.slide-img'
      }); 
+      $('#phone').mask('+38 (000) 000-00-00', {placeholder: "+38 (__) ___-__-__"});
+
 });
