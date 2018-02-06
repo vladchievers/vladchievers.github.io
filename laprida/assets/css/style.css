@@ -1482,11 +1482,14 @@ textarea{
 .help a{
     margin: 5px; 
 }
-.error-message{
+.error-message, .good-message{
     color: red;
     text-align: center;
     margin: 20px 0;
-   
+    
+}
+.good-message{
+    color: green;
 }
 /***************login-page end**********************/
 /***************registration-page end**********************/
