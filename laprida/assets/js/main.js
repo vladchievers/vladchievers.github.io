@@ -144,7 +144,7 @@ $('document').ready( function(){
         if($(this).find('i').hasClass('fa-angle-right')){
             $(this).find('i').removeClass('fa-angle-right').addClass('fa-angle-down');
         }else{
-             $(this).find('i').removeClass('fa-angle-down');.addClass('fa-angle-right');
+             $(this).find('i').removeClass('fa-angle-down').addClass('fa-angle-right');
         }
     });
 
@@ -163,8 +163,6 @@ $('document').ready( function(){
     });
 
 
-
-
      $('.tab').click( function () {
         var tempRel = $(this).attr('rel');
         $(this).closest('ul').find('.tab').removeClass('active');
@@ -178,9 +176,13 @@ $('document').ready( function(){
         });
     });
 
+
      $("#lightgallery").lightGallery({
         selector: '.slide-img'
      }); 
+
+
       $('#phone').mask('+38 (000) 000-00-00', {placeholder: "+38 (__) ___-__-__"});
 
+      
 });

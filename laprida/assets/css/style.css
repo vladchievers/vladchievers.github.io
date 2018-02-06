@@ -987,18 +987,19 @@ textarea{
 	border-radius: 2px;
     box-sizing: border-box;
 }
-.code-block .sale-code{
+.code-block .sale-code {
 	width: 135px;
+    height: 35px;
 	margin-left: 10px;
 	display: inline-block;
 	box-sizing: border-box;
-	font-size: 20px;
-	text-align: center;
-	padding: 7px 0;
-	background-color: #c7c7c7;
-	font-size: 20px;
 	vertical-align: top;
 	border-radius: 2px;
+    text-align: center;
+}
+.code-block .sale-code img{
+    width: 100%;
+    height: auto;
 }
 .btn-comment-action{
 	background-color: #f1bc59;
@@ -1010,6 +1011,9 @@ textarea{
     margin: 20px 0;
     text-align: center;
     color: blue;
+}
+.comments-list .comment-text{
+    color: #464646;
 }
 /***************comments-page end**********************/
 
