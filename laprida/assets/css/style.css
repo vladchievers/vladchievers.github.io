@@ -1801,10 +1801,12 @@ textarea{
     width: 48%;
     display: inline-block;
     color: #525252;
+    vertical-align: top;
 }
 .archive-info .right{
     width: 48%;
     display: inline-block;
+    vertical-align: top;
 }
 .archive-product li{
     padding: 14px 0;
