@@ -1394,6 +1394,7 @@ textarea{
 .recom-block .wrap{
     width: 85px;
     display: inline-block;
+    word-wrap: break-word;
 }
 .recom-block .wrap img{
     max-width: 100%;
