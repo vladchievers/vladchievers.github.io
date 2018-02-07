@@ -97,13 +97,14 @@ $('document').ready( function(){
     $('.sort').click(function(){
         $('.sort-list').slideToggle();
         if($('.sort i').hasClass('fa-angle-right')){
-            $('.sort i').removeClass('fa-angle-right');
-            $('.sort i').addClass('fa-angle-down');
+            $('.sort i').removeClass('fa-angle-right').addClass('fa-angle-down');
         }else{
-            $('.sort i').removeClass('fa-angle-down');
-            $('.sort i').addClass('fa-angle-right');
+            $('.sort i').removeClass('fa-angle-down').addClass('fa-angle-right');
         };
     });
+
+
+    // filter for catalog-page
     $('.icon-filter-vertical').click(function(){
         if($(this).hasClass('') !== 'active' ){
             $(this).addClass('active');
@@ -120,6 +121,8 @@ $('document').ready( function(){
             $('.product-block').removeClass('vertical');
         }
     });
+
+    // sum-input block
     $('.sum-input').each(function(){
         var $par = $(this);
         $par.find('.increm').click(function(){
@@ -135,11 +138,14 @@ $('document').ready( function(){
             }   
         });
     });
+
+    // order for basket
     $('.btn-order').click(function(){
         $('.order-block').addClass('active');
         $("html").animate({scrollTop: $(".btn-order").height()+ 700 },"slow");
     });
 
+    // icons for select
     $('.select-icon').click(function(){
         if($(this).find('i').hasClass('fa-angle-right')){
             $(this).find('i').removeClass('fa-angle-right').addClass('fa-angle-down');
@@ -148,7 +154,7 @@ $('document').ready( function(){
         }
     });
 
-
+    //resize window for product-page
     function myFunction() {
         var $res = $('.product-page').find('.product-block');
         if($(window).width() > 720){
@@ -162,7 +168,7 @@ $('document').ready( function(){
         myFunction();
     });
 
-
+    // tabs
      $('.tab').click( function () {
         var tempRel = $(this).attr('rel');
         $(this).closest('ul').find('.tab').removeClass('active');
@@ -176,12 +182,12 @@ $('document').ready( function(){
         });
     });
 
-
+     // lightgallery
      $("#lightgallery").lightGallery({
         selector: '.slide-img'
      }); 
 
-
+     // phone input
       $('#phone').mask('+38 (000) 000-00-00', {placeholder: "+38 (__) ___-__-__"});
 
       
