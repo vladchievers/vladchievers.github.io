@@ -1358,15 +1358,19 @@ textarea{
     vertical-align: top;
     color: #2F2F2F;
 }
+.product-page-info .left-price{
+    padding-top: 4px;
+}
 .product-page-info .sale{
     text-decoration: line-through;
+    margin: 4px 0;  
 }
 .product-page-info .price span{
     font-size: 20px;
     color: #B12604;
 } 
 .product-page-info .price{
-    margin: 4px 0;
+    margin-bottom: 4px;
 }
 .product-page-info .for-one{
     margin-left: 30px; 
