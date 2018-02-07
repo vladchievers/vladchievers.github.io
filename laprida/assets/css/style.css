@@ -1389,6 +1389,7 @@ textarea{
     box-sizing: border-box;
     display: inline-block;
     margin-bottom: 30px; 
+    vertical-align: top;
 }
 .recom-block .wrap{
     width: 85px;
