@@ -403,9 +403,11 @@ textarea{
 }
 .image-slider .slide-img{
 	display: block;
+    text-align: center;
 }
 .image-slider .slide-img img{
 	max-width: 100%;
+    display: inline-block;
 }
 /***************image-slider END**********************/
 
