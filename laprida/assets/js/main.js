@@ -141,8 +141,13 @@ $('document').ready( function(){
 
     // order for basket
     $('.btn-order').click(function(){
-        $('.order-block').addClass('active');
-        $("html").animate({scrollTop: $(".btn-order").height()+ 700 },"slow");
+    	if($(this).hasClass('none-user')){
+    		window.location('/login/');
+    	}else{
+    		$('.order-block').addClass('active');
+        	$('.basket').hide();
+    	}
+        
     });
 
     // icons for select

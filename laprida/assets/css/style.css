@@ -1631,11 +1631,16 @@ textarea{
 .order-block.active{
     display: block;
 }
+.order-block header{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
 .order-block{
     max-width: 350px;
-    margin: 50px auto;
+    margin: 20px auto;
     display: none;
-    margin-top: 100px; 
 }
 .order-block.active{
     display: block;
