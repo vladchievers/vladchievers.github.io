@@ -450,29 +450,50 @@
     background-size: 360px 350px;
     width: 46px;
     height: 40px;
-    position: absolute;
+    position:   absolute;
     top: -5px;
-    left: 5px;
-    z-index: 50;
+    left: 10px;
+    text-align: center;
+    line-height: 40px;
+    color:  #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 .status-new {
     background: url('../img/sprite.png') no-repeat -249px -80px;
     background-size: 360px 350px;
     width: 46px;
     height: 40px;
-    position: absolute;
-    top: -6px;
-    left: 5px;
-    z-index: 50;
+    position:   absolute;
+    top: -5px;
+    left: 10px;
+    text-align: center;
+    line-height: 40px;
+    color:  #fff;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-right: 5px;
 }
-.gallery-container .status.discount {
+.image-slider .status-discount {
     background: url('../img/sprite.png') no-repeat -434px -128px;
     background-size: 520px 550px;
-
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
 }
-.gallery-container .status.new {
+.image-slider .status-new {
     background: url('../img/sprite.png') no-repeat -361px -128px;
     background-size: 520px 550px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
 }
 .stars.small .stars-image {
     background: url('../img/sprite.png') no-repeat -310px -89px;

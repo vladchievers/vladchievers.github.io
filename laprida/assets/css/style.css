@@ -1117,22 +1117,7 @@ textarea{
 	display: inline-block;
 	vertical-align: -1px;
 }
-.status-new span{
-	font-size: 10px;
-	color: #fff;
-	position: absolute;
-	top: 10px;
-	left: 10px;
-}
-.status-discount span{
-    font-size: 14px;
-    color: #fff;
-    position: absolute;
-    top: 12px;
-    left: 7px;
-    text-align: center;
-    font-weight: bold; 
-}
+
 /***************main-catalog end**********************/
 
 /***************catalog-page**********************/
@@ -1331,6 +1316,7 @@ textarea{
     min-width: 0;
     max-width: 100%;
     display: inline-block;
+    position: relative;
 }
 .product-page-info .sum-input{
     margin-left: 0; 
@@ -1409,8 +1395,7 @@ textarea{
     font-size: 12px;
 }
 .recom-block{
-    margin-top: 30px;
-    margin-bottom: 50px; 
+    margin: 30px 0; 
 }
 .product-page .product-block{
     margin-top: 30px;
@@ -1946,6 +1931,10 @@ textarea{
 .lg-outer .lg-toogle-thumb:hover{
     color: #999;
 }
+iframe{
+        width:  280px !important;
+        height:  222px !important;
+    }
 @media screen and (min-width: 480px){
 	.container{
 	    max-width: 440px;
@@ -2341,6 +2330,10 @@ textarea{
     }
     .recom-block .wrap p{
         font-size: 14px;
+    }
+    iframe{
+        width:  500px !important;
+        height:  380px !important;
     }
 }
 @media screen and (min-width: 1019px){
