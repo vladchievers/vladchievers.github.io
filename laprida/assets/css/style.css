@@ -60,7 +60,6 @@ textarea{
     font-size: 18px;
 }
 .header-burger{
-	display: inline-block;
 	float: right;
 }
 .header-burger div{
@@ -195,7 +194,6 @@ textarea{
 }
  .close{
 	float: right;
-	display: inline-block;
 	padding: 20px 10px;
 	font-size: 14px;
 	color: #003469;
@@ -1115,7 +1113,7 @@ textarea{
 .main-catalog .link-down{
 	margin-top: 30px;
 }
-.main-catalog .link-down i{
+.main-catalog .link-down .fa-angle-double-right{
 	display: inline-block;
 	vertical-align: -1px;
 }
@@ -1191,7 +1189,6 @@ textarea{
     width:  100%; 
 }
 .icons-filters{
-    display:  inline-block;
     float:  right;
 }
 .filters p{
