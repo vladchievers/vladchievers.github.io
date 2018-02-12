@@ -1,8 +1,12 @@
 function openMenu(){
-    document.getElementById('side-menu').style.width = '100%';
-}
+    document.getElementById('side-menu').style.display = 'block';
+    $('#side-nav').animate({
+        marginRight: '0'
+    }, 500);
+};
 function closeMenu(){
-    document.getElementById('side-menu').style.width = 0;
+    document.getElementById('side-menu').style.display = 'none';
+    document.getElementById('#side-nav').style.marginRight = '-280px';
 }
 
 $('document').ready( function(){

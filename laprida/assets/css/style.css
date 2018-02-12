@@ -180,18 +180,20 @@ textarea{
     position: fixed;
     top:0;
    	right:0;
-    width:0;
+    width:100%;
     height:100vh;
     background-color: transparent;
     overflow-x:hidden;
     z-index:1000;
-    transition: .3s;
 }
 #side-menu .side-menu{
     display:block;
     float:right;
     width:280px;
+    margin-right: -280px;
     height:100vh;
+    z-index: 1100;
+    position: relative;
     overflow-x:hidden;
     background-color:white;
     font-size:0;
@@ -309,9 +311,13 @@ textarea{
 }
 
 #side-menu .close-menu{
-    display:block;
+    display: block;
     float:right;
-    width:calc(100% - 280px);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width:100%;
     height:100%;
     background-color:#000;
     opacity: .4;
