@@ -94,13 +94,22 @@ $('document').ready( function(){
             }
         ]
     });
-    $('.sort').click(function(){
-        $('.sort-list').slideToggle();
-        if($('.sort i').hasClass('fa-angle-right')){
-            $('.sort i').removeClass('fa-angle-right').addClass('fa-angle-down');
-        }else{
-            $('.sort i').removeClass('fa-angle-down').addClass('fa-angle-right');
+    $('.sort').click(function (){
+        if($(window).width() < 720){
+            $('.sort-list').slideToggle();
+            if($('.sort i').hasClass('fa-angle-right')){
+                $('.sort i').removeClass('fa-angle-right').addClass('fa-angle-down');
+            }else{
+                $('.sort i').removeClass('fa-angle-down').addClass('fa-angle-right');
+            };
         };
+    });
+     $(window).resize( function(){
+        if($(window).width() > 720){
+            $('.sort-list').css('display' , 'inline-block');
+        }else{
+            $('.sort-list').css('display' , 'none');
+        }
     });
 
 
