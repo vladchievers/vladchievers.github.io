@@ -1097,6 +1097,7 @@ textarea{
 	width: 136px;
 	text-align: center;
 	position: relative;
+    margin: 0 auto;
 }
 .main-catalog-list li .wrap img{
 	max-width: 100%;
@@ -1201,20 +1202,19 @@ textarea{
 .product-block ul{
     font-size: 0;
 }
+.vertical .product-image-info{
+    padding: 5px;
+}
 .vertical.product-block li{
-    width: 135px;
+    width: 50%;
     font-size: 12px;
-    margin-right: 10px; 
     margin-bottom: 30px; 
     box-sizing: border-box;
     display: inline-block;
     vertical-align:    top;
 }
-.vertical.product-block li:nth-child(2n){
-    margin-right: 0; 
-}
+
 .vertical.product-block li .image{
-    width: 135px;
     display: block;
     text-align:  center; 
     position:  relative; 
@@ -1266,6 +1266,8 @@ textarea{
 }
 .vertical .product-info{
     margin-top: 10px ;
+    padding-left: 5px;
+    padding-right: 5px; 
 }
 .vertical.product-block .product-info .wrap{
     display:    none;
@@ -1993,9 +1995,6 @@ iframe{
 	.main-catalog-list li{
 		width: 33.333333%;
 	}
-    .vertical.product-block li:nth-child(2n){
-            margin-right: 10px; 
-    }
     .basket .product-info{
         padding-top: 0px;
     }
@@ -2021,6 +2020,9 @@ iframe{
     }
     .images-list .item-image{
         width: 140px;
+    }
+    .vertical.product-block li{
+        width: 33.3333333%;
     }
 }
 @media screen and (min-width: 720px){
@@ -2259,17 +2261,6 @@ iframe{
         float:  right;
         margin-top:  4px;
     }
-    .vertical.product-block li{
-        width:  200px;
-        margin-right: 20px;   
-    }
-     .vertical.product-block li .image{
-        width:  200px;
-           
-    }
-    .vertical.product-block li:nth-child(2n){
-            margin-right: 20px; 
-    }
     .sum-input{
         margin-left: 0;
     }
@@ -2357,6 +2348,14 @@ iframe{
     iframe{
         width:  500px !important;
         height:  380px !important;
+    }
+    .vertical .product-image-info{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vertical .product-info{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media screen and (min-width: 1019px){
@@ -2448,16 +2447,7 @@ iframe{
 		width: 	270px;
 	}
     .vertical.product-block li{
-            margin-right: 10px; 
-    }
-    .vertical.product-block li:nth-child(2n){
-            margin-right: 10px; 
-    }
-    .vertical.product-block li:nth-child(3n){
-            margin-right: 10px; 
-    }
-    .vertical.product-block li:nth-child(4n){
-            margin-right: 0; 
+            width: 25%; 
     }
     .product-page-info{
         width: 54%;
