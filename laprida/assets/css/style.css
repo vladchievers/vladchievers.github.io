@@ -851,7 +851,8 @@ textarea{
 }
 .blog-items .item{
     display: inline-block;
-    width: 280px;
+    width: 100%;
+    max-width: 520px;
     margin-bottom: 30px;
     font-size: 14px;
    	text-align: left;
@@ -1981,16 +1982,6 @@ iframe{
 	    height: 160px;
 		line-height: 185px;
 	}
-	.blog-items .item{
-   		width: 440px;
-	}
-	.item .image{
-		width: 440px;
-	   height: 275px;
-	}
-	.blog-view-content .item{
-    	width: 440px;
-	}
 	.main-catalog-list li{
 		width: 33.333333%;
 	}
@@ -2213,7 +2204,6 @@ iframe{
 	}
 	.item .image{
 		width: 520px;
-	   height: 325px;
 	}
 	.blog-view-content .item{
     	width: 520px;
