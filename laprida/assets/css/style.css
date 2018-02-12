@@ -2373,7 +2373,7 @@ iframe{
 		display: none !important;
 	}
 	.info-content{
-		background: url("https://laprida.ua/library/index/diamond-image.png") no-repeat 42px 20px;
+		background: url(../img/diamond-image.png) no-repeat 42px 20px;
 	}
 	.info-list li{
 		width: 340px;
@@ -2402,9 +2402,6 @@ iframe{
 	}
 	.image-triangle{
 		width: 220px;
-	}
-	.info-business-content .row .item{
-		margin: 0 50px;
 	}
 	.blog-list li{
 		max-width: 215px;
