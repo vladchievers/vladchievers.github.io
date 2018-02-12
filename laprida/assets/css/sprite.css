@@ -1,3 +1,4 @@
+
 .main-header-logo {
     width: 200px;
     height: 60px;
@@ -82,6 +83,11 @@
 
 .icon-person {
     background: url('../img/sprite.png') no-repeat -154px -52px;
+    background-size: 500px 500px;
+    vertical-align: middle;
+}
+.icon-person.green{
+     background: url('../img/spriten.png') no-repeat -460px -8px;
     background-size: 500px 500px;
     vertical-align: middle;
 }

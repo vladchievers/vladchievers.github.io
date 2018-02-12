@@ -34,7 +34,7 @@ textarea{
 /***************HEADER**********************/
 .header-top{
 	background-color: #003368;
-	padding: 16px 15px;
+	padding: 16px 0;
 	text-align: center;
     position: fixed;
     top: 0;
@@ -54,13 +54,15 @@ textarea{
 }
 .header-basket .fa{
     margin-right: 10px;
+    font-size: 18px;
 }
 .header-top .fa-bars{
 	color: #fff;
     font-size: 18px;
 }
 .header-burger{
-	float: right;
+	position: absolute;
+    right: 0;
 }
 .header-burger div{
 	width: 25px;
@@ -76,8 +78,12 @@ textarea{
 	padding-top: 10px;
 	padding-bottom: 10px; 
 	font-size: 0;
-	position: relative;
+	position: fixed;
     margin-top: 50px; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
 }
 .btn-header{
 	display: inline-block;
@@ -89,7 +95,6 @@ textarea{
 	color: #1c8621;
 	box-sizing: border-box;
 	vertical-align: top;
-	
 }
 .button-enter{
 	margin-left: 10px;
@@ -122,7 +127,7 @@ textarea{
 	left: 0;
 	z-index: 1000;
 	font-size: 14px;
-	width: 280px;
+	width: 100%;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
 	text-align: center;
 	padding-bottom: 20px;
@@ -180,6 +185,7 @@ textarea{
     background-color: transparent;
     overflow-x:hidden;
     z-index:1000;
+    transition: .3s;
 }
 #side-menu .side-menu{
     display:block;
@@ -207,7 +213,7 @@ textarea{
     width:200px;
     height:40px;
     border:1px solid #e7e7e7;
-    color: #a5a5a5;
+    color: #444;
     font-size:16px;
     padding: 10px;
 }
@@ -413,9 +419,11 @@ textarea{
 
 /***************main-page **********************/
 .container{
-    max-width: 280px;
-    margin: 0 auto;
+    margin: 0 20px ;
     position: relative;
+}
+.main-page{
+    margin-top: 110px;
 }
 .catalog-block header{
     text-align: center;
@@ -437,7 +445,7 @@ textarea{
     font-size: 0;
 }
 .catalog-list li{
-    width: 135px;
+    width: 48%;
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -450,9 +458,11 @@ textarea{
 .catalog-list li:nth-child(2n){
 	margin-right: 0;
 }
+.catalog-list li a{
+    display: block;
+}
 .catalog-list li .image{
-    width: 135px;
-    height: 200px;
+    width: 100%;
     display: inline-block;
 }
 .catalog-list li .image img{
@@ -574,7 +584,7 @@ textarea{
     display: inline-block;
     margin: 10px;
     color: #000;
-    max-width: 200px;
+    width: 100%;
     text-align: center;
 }
 .image-triangle{
@@ -615,7 +625,7 @@ textarea{
     display: inline-block;
     margin-bottom: 20px;
     vertical-align: top;
-    width: 140px;
+    width: 50%;
     box-sizing: border-box;
     text-align: center;
 }
@@ -788,7 +798,8 @@ textarea{
 
 /***************header-list-block **********************/
 .breadcrumb-block{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 110px;
 }
 .breadcrumb-list{
     font-size: 0;
@@ -796,6 +807,7 @@ textarea{
 .breadcrumb-list li{
     display: inline;
     font-size: 12px;
+    line-height: 1.5;
 }
 .breadcrumb-list li a{
     color: #CCCCCC;
@@ -845,8 +857,7 @@ textarea{
    	text-align: left;
 }
 .item .image{
-    width:280px;
- 	height: 175px;
+    width: 100%;
     display: inline-block;
     box-sizing: border-box;
     margin: 0 auto;
@@ -876,13 +887,17 @@ textarea{
     margin: 0 5px;
     font-size: 14px;
 }
+.list-pages li.left-arrow{
+    margin-right: 30px;
+}
+.list-pages li.right-arrow{
+    margin-left: 30px;
+}
 .list-pages li a{
     color: #9a9a9a;
     
 }
-.list-pages li:last-child{
-    margin-left: 10px;
-}
+
 .list-pages .active a{
     color: #2c5986;
     border-bottom: 1px solid #2c5986;
@@ -905,7 +920,7 @@ textarea{
 	color: #000;
 }
 .blog-view-content .item{
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
 }
 /***************blog-view end**********************/
@@ -1006,6 +1021,7 @@ textarea{
 	border: 2px solid #b98e3c;
 	padding: 10px 20px; 
 	border-radius: 2px;
+    display: inline-block;
 }
 .thanks{
     margin: 20px 0;
@@ -1073,7 +1089,7 @@ textarea{
 	box-sizing: border-box;
 	font-size: 14px;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	vertical-align: top;
 }
 .main-catalog-list li .wrap{
@@ -1189,7 +1205,7 @@ textarea{
     width: 135px;
     font-size: 12px;
     margin-right: 10px; 
-    margin-bottom: 20px; 
+    margin-bottom: 30px; 
     box-sizing: border-box;
     display: inline-block;
     vertical-align:    top;
@@ -1211,6 +1227,7 @@ textarea{
     max-width: 117px;
     font-size: 14px;
     margin: 10px; 
+    margin-left: 0;
     box-sizing: border-box;
 }
 .sum-input .decrem,.increm{
@@ -1305,6 +1322,7 @@ textarea{
 /***************product-page *********************/
 .product-page{
     padding: 20px 0;
+    padding-top: 110px;
 }
 .product-page header{
     color: #2F2F2F;
@@ -1943,9 +1961,6 @@ iframe{
         height:  222px !important;
     }
 @media screen and (min-width: 480px){
-	.container{
-	    max-width: 440px;
-	}
 	.catalog-list li{
 		width: 210px;
 		margin-right: 20px;
@@ -1972,9 +1987,6 @@ iframe{
 	.blog-view-content .item{
     	width: 440px;
 	}
-	.phone-block{
-		width: 440px;
-	}
 	.btn-new,.btn-sale{
 		width: 215px;
 	}
@@ -1983,9 +1995,6 @@ iframe{
 	}
     .vertical.product-block li:nth-child(2n){
             margin-right: 10px; 
-    }
-    .vertical.product-block li:nth-child(3n){
-            margin-right: 0; 
     }
     .basket .product-info{
         padding-top: 0px;
@@ -2010,11 +2019,18 @@ iframe{
     .recom-block .wrap{
         width: 130px;
     }
+    .images-list .item-image{
+        width: 140px;
+    }
 }
 @media screen and (min-width: 720px){
 	.container{
 	    max-width: 680px;
+        margin: 0 auto;
 	}
+    .info-business-content .row .item{
+        width: 30%;
+    }
 	.expand{
 		display: none;
 	}
@@ -2346,6 +2362,7 @@ iframe{
 @media screen and (min-width: 1019px){
 	.container{
 	    max-width: 980px;
+        margin: 0 auto;
 	}
 	.btn-header{
 		width: 480px;
@@ -2430,8 +2447,14 @@ iframe{
 	.main-catalog-list li .wrap{
 		width: 	270px;
 	}
+    .vertical.product-block li{
+            margin-right: 10px; 
+    }
+    .vertical.product-block li:nth-child(2n){
+            margin-right: 10px; 
+    }
     .vertical.product-block li:nth-child(3n){
-            margin-right: 20px; 
+            margin-right: 10px; 
     }
     .vertical.product-block li:nth-child(4n){
             margin-right: 0; 
