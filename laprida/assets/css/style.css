@@ -1950,6 +1950,12 @@ textarea{
 .lg-outer .lg-toogle-thumb:hover{
     color: #999;
 }
+.lg-download {
+    display: none;
+}
+#lg-actual-size{
+    display: none;
+}
 iframe{
         width:  280px !important;
         height:  222px !important;
