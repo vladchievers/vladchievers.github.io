@@ -209,5 +209,28 @@ $('document').ready( function(){
      // phone input
       $('#phone').mask('+38 (000) 000-00-00', {placeholder: "+38 (__) ___-__-__"});
 
-      
+     $(window).bind('scroll' , function() {
+        var up = $(this).scrollTop();
+        if(up > 400){
+            $('#scroll-top').show();
+        }else{
+            $('#scroll-top').hide();
+        }
+     });
+
 });
+function scrollToTop(scrollDuration, scrollParts) {
+        if (scrollDuration == undefined) {
+            scrollDuration = 500;
+        }
+        if (scrollParts == undefined) {
+            scrollParts = 15;
+        }
+        var scrollStep = -window.scrollY / (scrollDuration / scrollParts),
+                scrollInterval = setInterval(function () {
+                    if (window.scrollY != 0) {
+                        window.scrollBy(0, scrollStep);
+                    }
+                    else clearInterval(scrollInterval);
+                }, 15);
+    }

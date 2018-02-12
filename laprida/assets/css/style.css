@@ -1968,6 +1968,22 @@ iframe{
         width:  280px !important;
         height:  222px !important;
     }
+
+
+#scroll-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/up.png);
+    display: none;
+}
+
+
+/************** MEDIA ***********************/
+
+
 @media screen and (min-width: 480px){
 	.catalog-list li{
 		width: 210px;
