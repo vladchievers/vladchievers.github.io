@@ -1332,6 +1332,7 @@ textarea{
     max-width: 100%;
     display: inline-block;
     position: relative;
+    padding-bottom: 30px;
 }
 .product-page-info .sum-input{
     margin-left: 0; 
