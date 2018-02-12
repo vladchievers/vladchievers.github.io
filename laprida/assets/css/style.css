@@ -1067,7 +1067,7 @@ textarea{
 	display: inline-block;
 	font-size: 14px;
 	text-transform: uppercase; 
-	min-width: 135px;
+	width: 48%;
 	color: #0070DF;
     box-sizing: border-box;
 }
@@ -1991,9 +1991,6 @@ iframe{
 	.blog-view-content .item{
     	width: 440px;
 	}
-	.btn-new,.btn-sale{
-		width: 215px;
-	}
 	.main-catalog-list li{
 		width: 33.333333%;
 	}
@@ -2222,9 +2219,6 @@ iframe{
     	width: 520px;
 	}
 	.phone-block{
-		width: 335px;
-	}
-	.btn-new,.btn-sale{
 		width: 335px;
 	}
 	.main-catalog-list{

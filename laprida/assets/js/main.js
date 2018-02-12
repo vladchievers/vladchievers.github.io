@@ -155,6 +155,7 @@ $('document').ready( function(){
     	}else{
     		$('.order-block').addClass('active');
         	$('.basket').hide();
+            $('html body').scrollTop(0);
     	}
         
     });
