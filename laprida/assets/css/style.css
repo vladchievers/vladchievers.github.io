@@ -939,12 +939,6 @@ textarea{
 .page-content p{
 	margin-bottom: 20px; 
 }
-.text-content{
-    min-width: 280px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 /***************page end**********************/
 
 /***************comments-page **********************/
@@ -1324,7 +1318,6 @@ textarea{
 /***************product-page *********************/
 .product-page{
     padding: 20px 0;
-    padding-top: 110px;
 }
 .product-page header{
     color: #2F2F2F;
@@ -1402,10 +1395,9 @@ textarea{
     vertical-align: top;
 }
 .recom-block .wrap{
-    width: 85px;
     display: inline-block;
     word-wrap: break-word;
-    hyphens: auto;
+    padding: 5px;
 }
 .recom-block .wrap img{
     max-width: 100%;
@@ -1967,6 +1959,9 @@ iframe{
 		width: 210px;
 		margin-right: 20px;
 	}
+    .recom-block li{
+        width: 25%;
+    }
 	.catalog-list li .image{
 	    width: 210px;
 	    height: 310px;
@@ -2014,9 +2009,6 @@ iframe{
     }
     .history-block li .wrap{
         width: 200px;
-    }
-    .recom-block .wrap{
-        width: 130px;
     }
     .images-list .item-image{
         width: 140px;
@@ -2340,7 +2332,7 @@ iframe{
         display: none;
     }
     .recom-block li{
-        width: 25%;
+        width: 20%;
     }
     .recom-block .wrap p{
         font-size: 14px;
