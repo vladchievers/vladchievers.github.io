@@ -1182,9 +1182,8 @@ textarea{
     position: absolute;
     z-index: 100; 
     top: 27px;
-    left: 0px;
+    left: -1px;
     width: 100%;
-    box-sizing: border-box;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid #c7c7c7;
