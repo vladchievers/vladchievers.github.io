@@ -47,7 +47,10 @@ textarea{
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
-   margin: 0 auto;
+    margin: 0 auto;
+}
+.header-basket.active .fa{
+    color: #1c8621;
 }
 .header-basket .small{
 	font-weight: 400;
