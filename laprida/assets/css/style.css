@@ -930,6 +930,12 @@ textarea{
     width: 100%;
     margin: 0 auto;
 }
+.text-content img{
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    
+}
 /***************blog-view end**********************/
 
 /***************page**********************/
@@ -1558,7 +1564,7 @@ textarea{
     display: inline-block;
 }
 .registration-page .checkbox .text{
-    width: 250px;
+    width: 245px;
     margin-left: 10px;
     display: inline-block; 
     vertical-align: top;
@@ -1668,11 +1674,17 @@ textarea{
 .order-block form select{
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0 10px;
     margin: 4px 0;
+    background: #fff;
+    line-height: 38px;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
     position: relative;
+    height: 40px;
+    z-index: 1;
+    outline: none;
+    box-shadow: none;
 }
 .order-block form .select-icon{
     position: relative;
@@ -1685,14 +1697,16 @@ textarea{
     width: 20px;
     height: 20px;
     pointer-events: none;
+    z-index: 10;
 }
 .order-block form input{
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0 10px;
     margin: 4px 0;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
+    height: 40px;
 }
 .order-block form input.mail-number{
     width: 150px;
@@ -1967,7 +1981,7 @@ textarea{
 iframe{
         width:  280px !important;
         height:  222px !important;
-    }
+}
 
 
 #scroll-top{
