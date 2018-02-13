@@ -707,7 +707,7 @@ textarea{
     font-style: italic;
 }
 .blog-block{
-	padding: 50px 0; 
+	padding: 50px 0 20px 0; 
 }
 .blog-block header{
     text-align: center;
@@ -721,22 +721,20 @@ textarea{
     text-align: center;
 }
 .blog-list li{
-    max-width: 135px;
-    margin-right: 10px;
-    margin-bottom: 25px;
+    width: 50%;
+    margin-bottom: 30px;
     box-sizing: border-box;
     display: inline-block;
     font-size: 14px;
     vertical-align: top;
     text-align: left;
 }
-.blog-list li:nth-child(2n){
-	margin-right: 0;
+.blog-list li a{
+    display: block;
+    padding: 5px;
 }
 .blog-list li .image{
-    width: 135px;
-    height: 108px;
-    line-height: 130px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
     display: inline-block;
@@ -931,7 +929,7 @@ textarea{
     margin: 0 auto;
 }
 .text-content img{
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;
     max-width: 100% !important;
     
@@ -1671,13 +1669,12 @@ textarea{
 .order-block.active{
     display: block;
 }
-.order-block form select:hover,
 .order-block form select{
     width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
     margin: 4px 0;
-    background: #fff;
+    background: transparent;
     line-height: 38px;
     border-radius: 2px;
     border: 1px solid #B4B4B4;
@@ -1686,6 +1683,7 @@ textarea{
     z-index: 1;
     outline: none;
     box-shadow: none;
+    -webkit-appearance:none;
 }
 .order-block form .select-icon{
     position: relative;
@@ -1699,7 +1697,7 @@ textarea{
     height: 38px;
     pointer-events: none;
     z-index: 10;
-    line-height: 35px;
+    line-height: 37px;
 }
 .order-block form input{
     width: 100%;
@@ -2012,14 +2010,6 @@ iframe{
 	    width: 210px;
 	    height: 310px;
 	}
-	.blog-list li{
-		max-width: 215px;
-	}
-	.blog-list li .image{
-	    width: 215px;
-	    height: 160px;
-		line-height: 185px;
-	}
 	.main-catalog-list li{
 		width: 33.333333%;
 	}
@@ -2080,21 +2070,7 @@ iframe{
 		margin-right: 0;
 	}
 	.blog-list li{
-		max-width: 156px;
-	}
-	.blog-list li:nth-child(2){
-		margin-right: 10px;
-	}
-	.blog-list li:nth-child(0){
-		margin-right: 0;
-	}
-	.blog-list li .image{
-	    width: 156px;
-	    height: 129px;
-	    line-height: 150px;
-	}
-	.blog-list li:nth-child(4){
-		margin-right: 0;
+		width: 25%;
 	}
 	.diamant-image{
 		position: absolute;
@@ -2191,12 +2167,6 @@ iframe{
 	}
 	.info-list li:nth-child(6) p{
 		padding-right: 50px;
-	}
-	.blog-list li:nth-child(3n){
-		margin-right: 10px;
-	}
-	.blog-list li:nth-child(4n){
-		margin-right: 0;
 	}
 	.footer-main .icons-block{
 		position: absolute;
@@ -2434,14 +2404,6 @@ iframe{
 	}
 	.image-triangle{
 		width: 220px;
-	}
-	.blog-list li{
-		max-width: 215px;
-	}
-	.blog-list li .image{
-		width: 215px;
-		height: 160px;
-		line-height: 185px;
 	}
 	.footer-content{
 		max-width: 240px;
