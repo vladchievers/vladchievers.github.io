@@ -1192,6 +1192,7 @@ textarea{
     border-top: none ;
 }
 .sort-list li{
+    padding: 5px;
     padding-left: 10px;
     display: block;
 }
