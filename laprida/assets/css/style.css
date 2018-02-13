@@ -741,7 +741,7 @@ textarea{
     text-align: center;
 }
 .blog-list li .image img{
-    max-width: 100%;
+    width: 100%;
     display: inline-block;
     margin: 0 auto;
 }
