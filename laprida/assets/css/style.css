@@ -1996,7 +1996,10 @@ iframe{
     background: url(../img/up.png);
     display: none;
 }
-
+.profile-history-link-down{
+    margin-top: 30px;
+    margin-bottom: 60px
+}
 
 /************** MEDIA ***********************/
 
