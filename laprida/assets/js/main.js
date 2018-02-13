@@ -201,12 +201,23 @@ $('document').ready( function(){
         });
     });
 
+
+     // lc_lightbox('#lcl_elems_wrapper div a' , {
+     //    thumbs_nav: true,
+     //    slideshow: true,
+     //    img_zoom: true
+     // });
+
+
+
      // lightgallery
-     $("#lightgallery").lightGallery({
-        selector: '.slide-img'
-     }); 
+     // $("#lightgallery").lightGallery({
+     //    selector: '.slide-img'
+     // }); 
+     //
 
      // phone input
+     
       $('#phone').mask('+38 (000) 000-00-00', {placeholder: "+38 (__) ___-__-__"});
 
      $(window).bind('scroll' , function() {

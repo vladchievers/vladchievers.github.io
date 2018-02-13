@@ -78,7 +78,6 @@ textarea{
 }
 .header-buttons{
 	text-align: center;
-	padding-top: 10px;
 	padding-bottom: 10px; 
 	font-size: 0;
 	position: fixed;
@@ -91,16 +90,14 @@ textarea{
 .btn-header{
 	display: inline-block;
 	background-color:#ececec;
-	width: 48%;
+	width: 50%;
 	height: 40px;
 	font-size: 14px;
 	position: relative;
 	color: #1c8621;
 	box-sizing: border-box;
 	vertical-align: top;
-}
-.button-enter{
-	margin-left: 10px;
+    border: 1px solid #878787;
 }
 .button-enter .icon{
 	margin-top: 10px; 
@@ -2059,9 +2056,6 @@ iframe{
 	.expand{
 		display: none;
 	}
-	.btn-header{
-		width: 49%;
-	}
 	.catalog-list li{
 		width: 160px;
 		margin-right: 10px;
@@ -2225,7 +2219,7 @@ iframe{
     	width: 520px;
 	}
 	.phone-block{
-		width: 335px;
+		width: 50%;
 	}
 	.main-catalog-list{
 		padding: 0 50px;
@@ -2362,12 +2356,6 @@ iframe{
 	    max-width: 980px;
         margin: 0 auto;
 	}
-	.btn-header{
-		width: 480px;
-	}
-	.button-enter{
-		margin-left: 20px;
-	}
 	.catalog-list li{
 		width: 210px;
 		margin-right: 20px;
@@ -2418,9 +2406,6 @@ iframe{
 	}
 	.comment-left,.comment-right{
 		display: inline-block;
-	}
-	.phone-block{
-		width: 480px;
 	}
 	.btn-new,.btn-sale{
 		width: 405px;
