@@ -1671,6 +1671,7 @@ textarea{
 .order-block.active{
     display: block;
 }
+.order-block form select:hover,
 .order-block form select{
     width: 100%;
     box-sizing: border-box;
@@ -1693,9 +1694,9 @@ textarea{
     position: absolute;
     background-color: #fff;
     top: 16px;
-    right: 3px;
-    width: 20px;
-    height: 20px;
+    right: 1px;
+    width: 25px;
+    height: 25px;
     pointer-events: none;
     z-index: 10;
 }
