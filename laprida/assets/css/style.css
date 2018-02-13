@@ -1693,12 +1693,13 @@ textarea{
 .order-block form i{
     position: absolute;
     background-color: #fff;
-    top: 16px;
+    top: 5px;
     right: 1px;
     width: 25px;
-    height: 25px;
+    height: 38px;
     pointer-events: none;
     z-index: 10;
+    line-height: 35px;
 }
 .order-block form input{
     width: 100%;
